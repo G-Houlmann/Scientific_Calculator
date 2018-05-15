@@ -9,6 +9,7 @@ namespace Scientific_Calculator
 {
     class Calculation
     {
+        #region Private math methods
 
         #region simple operations
         /// <summary>
@@ -245,5 +246,37 @@ namespace Scientific_Calculator
         }
 
         #endregion
+
+        #endregion
+
+
+        /// <summary>
+        /// Reads the operation string and transforms it into an array.
+        /// The array contains all the math operations and numbers that will have to be used
+        /// </summary>
+        /// <returns>An array conaining the necesarry information to do the operation</returns>
+        private string[] ReadOperation(string operationString)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Reads the array sent by ReadOperation and does all the mathematics to finally find the result of the operation.
+        /// </summary>
+        /// <returns></returns>
+        private double Calculate(string[] operationArray)
+        {
+            return 0;
+        }
+
+        /// <summary>
+        /// Sends the operation string to the ReadOperation method, then sends the resulted array to the Calculate method, thus obtaining the numeric result.
+        /// </summary>
+        /// <param name="operationString"></param>
+        /// <returns></returns>
+        public double Solve(string operationString)
+        {
+            return 0;
+        }
     }
 }

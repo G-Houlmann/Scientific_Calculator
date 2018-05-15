@@ -16,5 +16,15 @@ namespace Scientific_Calculator
         {
             InitializeComponent();
         }
+
+        private void nudDecimalsAmount_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nudHistoryAmount_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

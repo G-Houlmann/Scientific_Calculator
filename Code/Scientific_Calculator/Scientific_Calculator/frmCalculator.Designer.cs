@@ -28,772 +28,820 @@ namespace Scientific_Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.button43 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
+            this.cmdGraphDisplayer = new System.Windows.Forms.Button();
+            this.cmdSettings = new System.Windows.Forms.Button();
+            this.cmdHistory = new System.Windows.Forms.Button();
+            this.cmdExponential = new System.Windows.Forms.Button();
+            this.cmdSin = new System.Windows.Forms.Button();
+            this.cmdCos = new System.Windows.Forms.Button();
+            this.cmdReciprocal = new System.Windows.Forms.Button();
+            this.cmdLog = new System.Windows.Forms.Button();
+            this.cmdNA = new System.Windows.Forms.Button();
+            this.cmdTan = new System.Windows.Forms.Button();
+            this.cmdPi = new System.Windows.Forms.Button();
+            this.cmdExponentiation = new System.Windows.Forms.Button();
+            this.cmdDiv = new System.Windows.Forms.Button();
+            this.cmdRoot = new System.Windows.Forms.Button();
+            this.cmdMult = new System.Windows.Forms.Button();
+            this.cmdInvSin = new System.Windows.Forms.Button();
+            this.cmdMinus = new System.Windows.Forms.Button();
+            this.cmdInvCos = new System.Windows.Forms.Button();
+            this.cmdPlus = new System.Windows.Forms.Button();
+            this.cmdInvTan = new System.Windows.Forms.Button();
+            this.rtxtDisplay = new System.Windows.Forms.RichTextBox();
+            this.cmdSquare = new System.Windows.Forms.Button();
+            this.cmdInvert = new System.Windows.Forms.Button();
+            this.cmdSqrt = new System.Windows.Forms.Button();
+            this.cmdComma = new System.Windows.Forms.Button();
+            this.cmdAbsValue = new System.Windows.Forms.Button();
+            this.cmdZero = new System.Windows.Forms.Button();
+            this.cmdFactorial = new System.Windows.Forms.Button();
+            this.cmdThree = new System.Windows.Forms.Button();
+            this.cmdLn = new System.Windows.Forms.Button();
+            this.cmdTwo = new System.Windows.Forms.Button();
+            this.cmdConvDecBin = new System.Windows.Forms.Button();
+            this.cmdOne = new System.Windows.Forms.Button();
+            this.cmdConvDecOct = new System.Windows.Forms.Button();
+            this.cmdSix = new System.Windows.Forms.Button();
+            this.cmdConvDecHex = new System.Windows.Forms.Button();
+            this.cmdFive = new System.Windows.Forms.Button();
+            this.cmdDel = new System.Windows.Forms.Button();
+            this.cmdFour = new System.Windows.Forms.Button();
+            this.cmdClear = new System.Windows.Forms.Button();
+            this.cmdNine = new System.Windows.Forms.Button();
+            this.cmdEqual = new System.Windows.Forms.Button();
+            this.cmdEight = new System.Windows.Forms.Button();
+            this.cmdRound = new System.Windows.Forms.Button();
+            this.cmdSeven = new System.Windows.Forms.Button();
+            this.cmdLightSpeed = new System.Windows.Forms.Button();
+            this.cmdCloseParenthesis = new System.Windows.Forms.Button();
+            this.cmdOpenParenthesis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button43
-            // 
-            this.button43.Location = new System.Drawing.Point(20, 397);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(116, 50);
-            this.button43.TabIndex = 49;
-            this.button43.Text = "Ouvrir l\'afficheur de graphe";
-            this.button43.UseVisualStyleBackColor = true;
-            // 
-            // button44
-            // 
-            this.button44.Location = new System.Drawing.Point(142, 397);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(116, 50);
-            this.button44.TabIndex = 51;
-            this.button44.Text = "Ouvrir les paramètres";
-            this.button44.UseVisualStyleBackColor = true;
-            // 
-            // button45
-            // 
-            this.button45.Location = new System.Drawing.Point(264, 397);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(116, 50);
-            this.button45.TabIndex = 52;
-            this.button45.Text = "Ouvrir l\'historique des opérations";
-            this.button45.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button24.Location = new System.Drawing.Point(296, 305);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(35, 35);
-            this.button24.TabIndex = 24;
-            this.button24.Text = "e^x";
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
-            this.button18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button18.Location = new System.Drawing.Point(32, 141);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(53, 35);
-            this.button18.TabIndex = 23;
-            this.button18.Text = "Sin";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
-            this.button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button23.Location = new System.Drawing.Point(91, 141);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(53, 35);
-            this.button23.TabIndex = 25;
-            this.button23.Text = "Cos";
-            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button23.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button22.Location = new System.Drawing.Point(296, 224);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(35, 35);
-            this.button22.TabIndex = 22;
-            this.button22.Text = "1/x";
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button28.Location = new System.Drawing.Point(196, 223);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(53, 35);
-            this.button28.TabIndex = 26;
-            this.button28.Text = "log(x)";
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.SystemColors.Info;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(296, 346);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(35, 35);
-            this.button19.TabIndex = 19;
-            this.button19.Text = "Na";
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
-            this.button27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button27.Location = new System.Drawing.Point(150, 141);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(53, 35);
-            this.button27.TabIndex = 27;
-            this.button27.Text = "Tan";
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.SystemColors.Info;
-            this.button17.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(255, 346);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(35, 35);
-            this.button17.TabIndex = 17;
-            this.button17.Text = "π";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button25.Location = new System.Drawing.Point(296, 264);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(35, 35);
-            this.button25.TabIndex = 29;
-            this.button25.Text = "x^y";
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Location = new System.Drawing.Point(32, 346);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(35, 35);
-            this.button13.TabIndex = 16;
-            this.button13.Text = "/";
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button31.Location = new System.Drawing.Point(337, 264);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(35, 35);
-            this.button31.TabIndex = 31;
-            this.button31.Text = "x√y";
-            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button31.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(32, 305);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(35, 35);
-            this.button14.TabIndex = 15;
-            this.button14.Text = "X";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
-            this.button32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button32.Location = new System.Drawing.Point(32, 182);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(53, 35);
-            this.button32.TabIndex = 34;
-            this.button32.Text = "Sin^−1";
-            this.button32.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button15.Location = new System.Drawing.Point(32, 264);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(35, 35);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "-";
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
-            this.button30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button30.Location = new System.Drawing.Point(91, 182);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(53, 35);
-            this.button30.TabIndex = 35;
-            this.button30.Text = "Cos^-1";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button30.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button16.Location = new System.Drawing.Point(32, 223);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(35, 35);
-            this.button16.TabIndex = 13;
-            this.button16.Text = "+";
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
-            this.button26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button26.Location = new System.Drawing.Point(150, 182);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(53, 35);
-            this.button26.TabIndex = 36;
-            this.button26.Text = "Tan^-1";
-            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(27, 30);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(343, 66);
-            this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "";
-            // 
-            // button33
-            // 
-            this.button33.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button33.Location = new System.Drawing.Point(255, 224);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(35, 35);
-            this.button33.TabIndex = 37;
-            this.button33.Text = "x^2";
-            this.button33.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button33.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button10.Location = new System.Drawing.Point(155, 346);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(35, 35);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "+/-";
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button34.Location = new System.Drawing.Point(255, 264);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(35, 35);
-            this.button34.TabIndex = 38;
-            this.button34.Text = "2√x";
-            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button34.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button11.Location = new System.Drawing.Point(114, 346);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(35, 35);
-            this.button11.TabIndex = 10;
-            this.button11.Text = ",";
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button35.Location = new System.Drawing.Point(255, 305);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(35, 35);
-            this.button35.TabIndex = 39;
-            this.button35.Text = "|x|";
-            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button12.Location = new System.Drawing.Point(73, 346);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(35, 35);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "0";
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button36.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button36.Location = new System.Drawing.Point(337, 224);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(35, 35);
-            this.button36.TabIndex = 40;
-            this.button36.Text = "x!";
-            this.button36.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button36.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button7.Location = new System.Drawing.Point(155, 305);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(35, 35);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "3";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button29.Location = new System.Drawing.Point(196, 264);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(53, 35);
-            this.button29.TabIndex = 41;
-            this.button29.Text = "ln(x)";
-            this.button29.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button29.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button8.Location = new System.Drawing.Point(114, 305);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(35, 35);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "2";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button37.Location = new System.Drawing.Point(250, 143);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(76, 35);
-            this.button37.TabIndex = 42;
-            this.button37.Text = "dec->bin";
-            this.button37.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button37.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button9.Location = new System.Drawing.Point(73, 305);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 35);
-            this.button9.TabIndex = 6;
-            this.button9.Text = "1";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button38.Location = new System.Drawing.Point(250, 184);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(76, 35);
-            this.button38.TabIndex = 43;
-            this.button38.Text = "dec->oct";
-            this.button38.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button38.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(155, 264);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 35);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "6";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button39.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button39.Location = new System.Drawing.Point(332, 185);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(76, 35);
-            this.button39.TabIndex = 44;
-            this.button39.Text = "dec->hex";
-            this.button39.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button39.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button5.Location = new System.Drawing.Point(114, 264);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 35);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "5";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button40.Location = new System.Drawing.Point(337, 305);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(35, 35);
-            this.button40.TabIndex = 45;
-            this.button40.Text = "<--";
-            this.button40.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button40.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button6.Location = new System.Drawing.Point(73, 264);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 35);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "4";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button41.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button41.Location = new System.Drawing.Point(332, 143);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(76, 35);
-            this.button41.TabIndex = 46;
-            this.button41.Text = "CLEAR";
-            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button41.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Location = new System.Drawing.Point(155, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 35);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "9";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.button21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button21.Location = new System.Drawing.Point(196, 346);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(53, 35);
-            this.button21.TabIndex = 47;
-            this.button21.Text = "=";
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.Location = new System.Drawing.Point(114, 223);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "8";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button42
-            // 
-            this.button42.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button42.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button42.Location = new System.Drawing.Point(196, 305);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(53, 35);
-            this.button42.TabIndex = 48;
-            this.button42.Text = "Round";
-            this.button42.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button42.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(73, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "7";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.SystemColors.Info;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(337, 346);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(35, 35);
-            this.button20.TabIndex = 20;
-            this.button20.Text = "C";
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button46
-            // 
-            this.button46.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button46.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button46.Location = new System.Drawing.Point(209, 182);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(35, 35);
-            this.button46.TabIndex = 53;
-            this.button46.Text = ")";
-            this.button46.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button46.UseVisualStyleBackColor = false;
-            // 
-            // button47
-            // 
-            this.button47.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button47.Location = new System.Drawing.Point(209, 142);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(35, 35);
-            this.button47.TabIndex = 54;
-            this.button47.Text = "(";
-            this.button47.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button47.UseVisualStyleBackColor = false;
-            // 
-            // FrmCalculator
+            // cmdGraphDisplayer
+            // 
+            this.cmdGraphDisplayer.Location = new System.Drawing.Point(20, 397);
+            this.cmdGraphDisplayer.Name = "cmdGraphDisplayer";
+            this.cmdGraphDisplayer.Size = new System.Drawing.Size(116, 50);
+            this.cmdGraphDisplayer.TabIndex = 49;
+            this.cmdGraphDisplayer.Text = "Ouvrir l\'afficheur de graphe";
+            this.cmdGraphDisplayer.UseVisualStyleBackColor = true;
+            this.cmdGraphDisplayer.Click += new System.EventHandler(this.cmdGraphDisplayer_Click);
+            // 
+            // cmdSettings
+            // 
+            this.cmdSettings.Location = new System.Drawing.Point(142, 397);
+            this.cmdSettings.Name = "cmdSettings";
+            this.cmdSettings.Size = new System.Drawing.Size(116, 50);
+            this.cmdSettings.TabIndex = 51;
+            this.cmdSettings.Text = "Ouvrir les paramètres";
+            this.cmdSettings.UseVisualStyleBackColor = true;
+            this.cmdSettings.Click += new System.EventHandler(this.cmdSettings_Click);
+            // 
+            // cmdHistory
+            // 
+            this.cmdHistory.Location = new System.Drawing.Point(264, 397);
+            this.cmdHistory.Name = "cmdHistory";
+            this.cmdHistory.Size = new System.Drawing.Size(116, 50);
+            this.cmdHistory.TabIndex = 52;
+            this.cmdHistory.Text = "Ouvrir l\'historique des opérations";
+            this.cmdHistory.UseVisualStyleBackColor = true;
+            this.cmdHistory.Click += new System.EventHandler(this.cmdHistory_Click);
+            // 
+            // cmdExponential
+            // 
+            this.cmdExponential.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdExponential.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdExponential.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdExponential.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdExponential.Location = new System.Drawing.Point(296, 305);
+            this.cmdExponential.Name = "cmdExponential";
+            this.cmdExponential.Size = new System.Drawing.Size(35, 35);
+            this.cmdExponential.TabIndex = 24;
+            this.cmdExponential.Text = "e^x";
+            this.cmdExponential.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdExponential.UseVisualStyleBackColor = false;
+            this.cmdExponential.Click += new System.EventHandler(this.cmdExponential_Click);
+            // 
+            // cmdSin
+            // 
+            this.cmdSin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdSin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
+            this.cmdSin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdSin.Location = new System.Drawing.Point(32, 141);
+            this.cmdSin.Name = "cmdSin";
+            this.cmdSin.Size = new System.Drawing.Size(53, 35);
+            this.cmdSin.TabIndex = 23;
+            this.cmdSin.Text = "Sin";
+            this.cmdSin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdSin.UseVisualStyleBackColor = false;
+            this.cmdSin.Click += new System.EventHandler(this.cmdSin_Click);
+            // 
+            // cmdCos
+            // 
+            this.cmdCos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdCos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdCos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
+            this.cmdCos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdCos.Location = new System.Drawing.Point(91, 141);
+            this.cmdCos.Name = "cmdCos";
+            this.cmdCos.Size = new System.Drawing.Size(53, 35);
+            this.cmdCos.TabIndex = 25;
+            this.cmdCos.Text = "Cos";
+            this.cmdCos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdCos.UseVisualStyleBackColor = false;
+            this.cmdCos.Click += new System.EventHandler(this.cmdCos_Click);
+            // 
+            // cmdReciprocal
+            // 
+            this.cmdReciprocal.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdReciprocal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdReciprocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdReciprocal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdReciprocal.Location = new System.Drawing.Point(296, 224);
+            this.cmdReciprocal.Name = "cmdReciprocal";
+            this.cmdReciprocal.Size = new System.Drawing.Size(35, 35);
+            this.cmdReciprocal.TabIndex = 22;
+            this.cmdReciprocal.Text = "1/x";
+            this.cmdReciprocal.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdReciprocal.UseVisualStyleBackColor = false;
+            this.cmdReciprocal.Click += new System.EventHandler(this.cmdReciprocal_Click);
+            // 
+            // cmdLog
+            // 
+            this.cmdLog.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.cmdLog.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdLog.Location = new System.Drawing.Point(196, 223);
+            this.cmdLog.Name = "cmdLog";
+            this.cmdLog.Size = new System.Drawing.Size(53, 35);
+            this.cmdLog.TabIndex = 26;
+            this.cmdLog.Text = "log(x)";
+            this.cmdLog.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdLog.UseVisualStyleBackColor = false;
+            this.cmdLog.Click += new System.EventHandler(this.cmdLog_Click);
+            // 
+            // cmdNA
+            // 
+            this.cmdNA.BackColor = System.Drawing.SystemColors.Info;
+            this.cmdNA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdNA.Location = new System.Drawing.Point(296, 346);
+            this.cmdNA.Name = "cmdNA";
+            this.cmdNA.Size = new System.Drawing.Size(35, 35);
+            this.cmdNA.TabIndex = 19;
+            this.cmdNA.Text = "Na";
+            this.cmdNA.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdNA.UseVisualStyleBackColor = false;
+            this.cmdNA.Click += new System.EventHandler(this.cmdNA_Click);
+            // 
+            // cmdTan
+            // 
+            this.cmdTan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdTan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdTan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
+            this.cmdTan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdTan.Location = new System.Drawing.Point(150, 141);
+            this.cmdTan.Name = "cmdTan";
+            this.cmdTan.Size = new System.Drawing.Size(53, 35);
+            this.cmdTan.TabIndex = 27;
+            this.cmdTan.Text = "Tan";
+            this.cmdTan.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdTan.UseVisualStyleBackColor = false;
+            this.cmdTan.Click += new System.EventHandler(this.cmdTan_Click);
+            // 
+            // cmdPi
+            // 
+            this.cmdPi.BackColor = System.Drawing.SystemColors.Info;
+            this.cmdPi.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdPi.Location = new System.Drawing.Point(255, 346);
+            this.cmdPi.Name = "cmdPi";
+            this.cmdPi.Size = new System.Drawing.Size(35, 35);
+            this.cmdPi.TabIndex = 17;
+            this.cmdPi.Text = "π";
+            this.cmdPi.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdPi.UseVisualStyleBackColor = false;
+            this.cmdPi.Click += new System.EventHandler(this.cmdPi_Click);
+            // 
+            // cmdExponentiation
+            // 
+            this.cmdExponentiation.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdExponentiation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdExponentiation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdExponentiation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdExponentiation.Location = new System.Drawing.Point(296, 264);
+            this.cmdExponentiation.Name = "cmdExponentiation";
+            this.cmdExponentiation.Size = new System.Drawing.Size(35, 35);
+            this.cmdExponentiation.TabIndex = 29;
+            this.cmdExponentiation.Text = "x^y";
+            this.cmdExponentiation.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdExponentiation.UseVisualStyleBackColor = false;
+            this.cmdExponentiation.Click += new System.EventHandler(this.cmdExponentiation_Click);
+            // 
+            // cmdDiv
+            // 
+            this.cmdDiv.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdDiv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDiv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdDiv.Location = new System.Drawing.Point(32, 346);
+            this.cmdDiv.Name = "cmdDiv";
+            this.cmdDiv.Size = new System.Drawing.Size(35, 35);
+            this.cmdDiv.TabIndex = 16;
+            this.cmdDiv.Text = "/";
+            this.cmdDiv.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdDiv.UseVisualStyleBackColor = false;
+            this.cmdDiv.Click += new System.EventHandler(this.cmdDiv_Click);
+            // 
+            // cmdRoot
+            // 
+            this.cmdRoot.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdRoot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdRoot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdRoot.Location = new System.Drawing.Point(337, 264);
+            this.cmdRoot.Name = "cmdRoot";
+            this.cmdRoot.Size = new System.Drawing.Size(35, 35);
+            this.cmdRoot.TabIndex = 31;
+            this.cmdRoot.Text = "x√y";
+            this.cmdRoot.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdRoot.UseVisualStyleBackColor = false;
+            this.cmdRoot.Click += new System.EventHandler(this.cmdRoot_Click);
+            // 
+            // cmdMult
+            // 
+            this.cmdMult.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdMult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdMult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.cmdMult.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdMult.Location = new System.Drawing.Point(32, 305);
+            this.cmdMult.Name = "cmdMult";
+            this.cmdMult.Size = new System.Drawing.Size(35, 35);
+            this.cmdMult.TabIndex = 15;
+            this.cmdMult.Text = "X";
+            this.cmdMult.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdMult.UseVisualStyleBackColor = false;
+            this.cmdMult.Click += new System.EventHandler(this.cmdMult_Click);
+            // 
+            // cmdInvSin
+            // 
+            this.cmdInvSin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdInvSin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdInvSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
+            this.cmdInvSin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdInvSin.Location = new System.Drawing.Point(32, 182);
+            this.cmdInvSin.Name = "cmdInvSin";
+            this.cmdInvSin.Size = new System.Drawing.Size(53, 35);
+            this.cmdInvSin.TabIndex = 34;
+            this.cmdInvSin.Text = "Sin^−1";
+            this.cmdInvSin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdInvSin.UseVisualStyleBackColor = false;
+            this.cmdInvSin.Click += new System.EventHandler(this.cmdInvSin_Click);
+            // 
+            // cmdMinus
+            // 
+            this.cmdMinus.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdMinus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdMinus.Location = new System.Drawing.Point(32, 264);
+            this.cmdMinus.Name = "cmdMinus";
+            this.cmdMinus.Size = new System.Drawing.Size(35, 35);
+            this.cmdMinus.TabIndex = 14;
+            this.cmdMinus.Text = "-";
+            this.cmdMinus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdMinus.UseVisualStyleBackColor = false;
+            this.cmdMinus.Click += new System.EventHandler(this.cmdMinus_Click);
+            // 
+            // cmdInvCos
+            // 
+            this.cmdInvCos.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdInvCos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdInvCos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
+            this.cmdInvCos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdInvCos.Location = new System.Drawing.Point(91, 182);
+            this.cmdInvCos.Name = "cmdInvCos";
+            this.cmdInvCos.Size = new System.Drawing.Size(53, 35);
+            this.cmdInvCos.TabIndex = 35;
+            this.cmdInvCos.Text = "Cos^-1";
+            this.cmdInvCos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdInvCos.UseVisualStyleBackColor = false;
+            this.cmdInvCos.Click += new System.EventHandler(this.cmdInvCos_Click);
+            // 
+            // cmdPlus
+            // 
+            this.cmdPlus.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdPlus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdPlus.Location = new System.Drawing.Point(32, 223);
+            this.cmdPlus.Name = "cmdPlus";
+            this.cmdPlus.Size = new System.Drawing.Size(35, 35);
+            this.cmdPlus.TabIndex = 13;
+            this.cmdPlus.Text = "+";
+            this.cmdPlus.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdPlus.UseVisualStyleBackColor = false;
+            this.cmdPlus.Click += new System.EventHandler(this.cmdPlus_Click);
+            // 
+            // cmdInvTan
+            // 
+            this.cmdInvTan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdInvTan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdInvTan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
+            this.cmdInvTan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdInvTan.Location = new System.Drawing.Point(150, 182);
+            this.cmdInvTan.Name = "cmdInvTan";
+            this.cmdInvTan.Size = new System.Drawing.Size(53, 35);
+            this.cmdInvTan.TabIndex = 36;
+            this.cmdInvTan.Text = "Tan^-1";
+            this.cmdInvTan.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdInvTan.UseVisualStyleBackColor = false;
+            this.cmdInvTan.Click += new System.EventHandler(this.cmdInvTan_Click);
+            // 
+            // rtxtDisplay
+            // 
+            this.rtxtDisplay.Location = new System.Drawing.Point(27, 30);
+            this.rtxtDisplay.Name = "rtxtDisplay";
+            this.rtxtDisplay.ReadOnly = true;
+            this.rtxtDisplay.Size = new System.Drawing.Size(343, 66);
+            this.rtxtDisplay.TabIndex = 12;
+            this.rtxtDisplay.Text = "";
+            // 
+            // cmdSquare
+            // 
+            this.cmdSquare.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdSquare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdSquare.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdSquare.Location = new System.Drawing.Point(255, 224);
+            this.cmdSquare.Name = "cmdSquare";
+            this.cmdSquare.Size = new System.Drawing.Size(35, 35);
+            this.cmdSquare.TabIndex = 37;
+            this.cmdSquare.Text = "x^2";
+            this.cmdSquare.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdSquare.UseVisualStyleBackColor = false;
+            this.cmdSquare.Click += new System.EventHandler(this.cmdSquare_Click);
+            // 
+            // cmdInvert
+            // 
+            this.cmdInvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdInvert.Location = new System.Drawing.Point(155, 346);
+            this.cmdInvert.Name = "cmdInvert";
+            this.cmdInvert.Size = new System.Drawing.Size(35, 35);
+            this.cmdInvert.TabIndex = 11;
+            this.cmdInvert.Text = "+/-";
+            this.cmdInvert.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdInvert.UseVisualStyleBackColor = true;
+            this.cmdInvert.Click += new System.EventHandler(this.cmdInvert_Click);
+            // 
+            // cmdSqrt
+            // 
+            this.cmdSqrt.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdSqrt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdSqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdSqrt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdSqrt.Location = new System.Drawing.Point(255, 264);
+            this.cmdSqrt.Name = "cmdSqrt";
+            this.cmdSqrt.Size = new System.Drawing.Size(35, 35);
+            this.cmdSqrt.TabIndex = 38;
+            this.cmdSqrt.Text = "2√x";
+            this.cmdSqrt.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdSqrt.UseVisualStyleBackColor = false;
+            this.cmdSqrt.Click += new System.EventHandler(this.cmdSqrt_Click);
+            // 
+            // cmdComma
+            // 
+            this.cmdComma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdComma.Location = new System.Drawing.Point(114, 346);
+            this.cmdComma.Name = "cmdComma";
+            this.cmdComma.Size = new System.Drawing.Size(35, 35);
+            this.cmdComma.TabIndex = 10;
+            this.cmdComma.Text = ",";
+            this.cmdComma.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdComma.UseVisualStyleBackColor = true;
+            this.cmdComma.Click += new System.EventHandler(this.cmdComma_Click);
+            // 
+            // cmdAbsValue
+            // 
+            this.cmdAbsValue.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdAbsValue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdAbsValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdAbsValue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdAbsValue.Location = new System.Drawing.Point(255, 305);
+            this.cmdAbsValue.Name = "cmdAbsValue";
+            this.cmdAbsValue.Size = new System.Drawing.Size(35, 35);
+            this.cmdAbsValue.TabIndex = 39;
+            this.cmdAbsValue.Text = "|x|";
+            this.cmdAbsValue.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdAbsValue.UseVisualStyleBackColor = false;
+            this.cmdAbsValue.Click += new System.EventHandler(this.cmdAbsValue_Click);
+            // 
+            // cmdZero
+            // 
+            this.cmdZero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdZero.Location = new System.Drawing.Point(73, 346);
+            this.cmdZero.Name = "cmdZero";
+            this.cmdZero.Size = new System.Drawing.Size(35, 35);
+            this.cmdZero.TabIndex = 9;
+            this.cmdZero.Text = "0";
+            this.cmdZero.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdZero.UseVisualStyleBackColor = true;
+            this.cmdZero.Click += new System.EventHandler(this.cmdZero_Click);
+            // 
+            // cmdFactorial
+            // 
+            this.cmdFactorial.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdFactorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdFactorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdFactorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdFactorial.Location = new System.Drawing.Point(337, 224);
+            this.cmdFactorial.Name = "cmdFactorial";
+            this.cmdFactorial.Size = new System.Drawing.Size(35, 35);
+            this.cmdFactorial.TabIndex = 40;
+            this.cmdFactorial.Text = "x!";
+            this.cmdFactorial.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdFactorial.UseVisualStyleBackColor = false;
+            this.cmdFactorial.Click += new System.EventHandler(this.cmdFactorial_Click);
+            // 
+            // cmdThree
+            // 
+            this.cmdThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdThree.Location = new System.Drawing.Point(155, 305);
+            this.cmdThree.Name = "cmdThree";
+            this.cmdThree.Size = new System.Drawing.Size(35, 35);
+            this.cmdThree.TabIndex = 8;
+            this.cmdThree.Text = "3";
+            this.cmdThree.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdThree.UseVisualStyleBackColor = true;
+            this.cmdThree.Click += new System.EventHandler(this.cmdThree_Click);
+            // 
+            // cmdLn
+            // 
+            this.cmdLn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdLn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdLn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.cmdLn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdLn.Location = new System.Drawing.Point(196, 264);
+            this.cmdLn.Name = "cmdLn";
+            this.cmdLn.Size = new System.Drawing.Size(53, 35);
+            this.cmdLn.TabIndex = 41;
+            this.cmdLn.Text = "ln(x)";
+            this.cmdLn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdLn.UseVisualStyleBackColor = false;
+            this.cmdLn.Click += new System.EventHandler(this.cmdLn_Click);
+            // 
+            // cmdTwo
+            // 
+            this.cmdTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdTwo.Location = new System.Drawing.Point(114, 305);
+            this.cmdTwo.Name = "cmdTwo";
+            this.cmdTwo.Size = new System.Drawing.Size(35, 35);
+            this.cmdTwo.TabIndex = 7;
+            this.cmdTwo.Text = "2";
+            this.cmdTwo.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdTwo.UseVisualStyleBackColor = true;
+            this.cmdTwo.Click += new System.EventHandler(this.cmdTwo_Click);
+            // 
+            // cmdConvDecBin
+            // 
+            this.cmdConvDecBin.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdConvDecBin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdConvDecBin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdConvDecBin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdConvDecBin.Location = new System.Drawing.Point(250, 143);
+            this.cmdConvDecBin.Name = "cmdConvDecBin";
+            this.cmdConvDecBin.Size = new System.Drawing.Size(76, 35);
+            this.cmdConvDecBin.TabIndex = 42;
+            this.cmdConvDecBin.Text = "dec->bin";
+            this.cmdConvDecBin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdConvDecBin.UseVisualStyleBackColor = false;
+            this.cmdConvDecBin.Click += new System.EventHandler(this.cmdConvDecBin_Click);
+            // 
+            // cmdOne
+            // 
+            this.cmdOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdOne.Location = new System.Drawing.Point(73, 305);
+            this.cmdOne.Name = "cmdOne";
+            this.cmdOne.Size = new System.Drawing.Size(35, 35);
+            this.cmdOne.TabIndex = 6;
+            this.cmdOne.Text = "1";
+            this.cmdOne.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdOne.UseVisualStyleBackColor = true;
+            this.cmdOne.Click += new System.EventHandler(this.cmdOne_Click);
+            // 
+            // cmdConvDecOct
+            // 
+            this.cmdConvDecOct.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdConvDecOct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdConvDecOct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdConvDecOct.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdConvDecOct.Location = new System.Drawing.Point(250, 184);
+            this.cmdConvDecOct.Name = "cmdConvDecOct";
+            this.cmdConvDecOct.Size = new System.Drawing.Size(76, 35);
+            this.cmdConvDecOct.TabIndex = 43;
+            this.cmdConvDecOct.Text = "dec->oct";
+            this.cmdConvDecOct.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdConvDecOct.UseVisualStyleBackColor = false;
+            this.cmdConvDecOct.Click += new System.EventHandler(this.cmdConvDecOct_Click);
+            // 
+            // cmdSix
+            // 
+            this.cmdSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdSix.Location = new System.Drawing.Point(155, 264);
+            this.cmdSix.Name = "cmdSix";
+            this.cmdSix.Size = new System.Drawing.Size(35, 35);
+            this.cmdSix.TabIndex = 5;
+            this.cmdSix.Text = "6";
+            this.cmdSix.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdSix.UseVisualStyleBackColor = true;
+            this.cmdSix.Click += new System.EventHandler(this.cmdSix_Click);
+            // 
+            // cmdConvDecHex
+            // 
+            this.cmdConvDecHex.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdConvDecHex.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdConvDecHex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdConvDecHex.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdConvDecHex.Location = new System.Drawing.Point(332, 185);
+            this.cmdConvDecHex.Name = "cmdConvDecHex";
+            this.cmdConvDecHex.Size = new System.Drawing.Size(76, 35);
+            this.cmdConvDecHex.TabIndex = 44;
+            this.cmdConvDecHex.Text = "dec->hex";
+            this.cmdConvDecHex.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdConvDecHex.UseVisualStyleBackColor = false;
+            this.cmdConvDecHex.Click += new System.EventHandler(this.cmdConvDecHex_Click);
+            // 
+            // cmdFive
+            // 
+            this.cmdFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdFive.Location = new System.Drawing.Point(114, 264);
+            this.cmdFive.Name = "cmdFive";
+            this.cmdFive.Size = new System.Drawing.Size(35, 35);
+            this.cmdFive.TabIndex = 4;
+            this.cmdFive.Text = "5";
+            this.cmdFive.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdFive.UseVisualStyleBackColor = true;
+            this.cmdFive.Click += new System.EventHandler(this.cmdFive_Click);
+            // 
+            // cmdDel
+            // 
+            this.cmdDel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdDel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdDel.Location = new System.Drawing.Point(337, 305);
+            this.cmdDel.Name = "cmdDel";
+            this.cmdDel.Size = new System.Drawing.Size(35, 35);
+            this.cmdDel.TabIndex = 45;
+            this.cmdDel.Text = "<--";
+            this.cmdDel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdDel.UseVisualStyleBackColor = false;
+            this.cmdDel.Click += new System.EventHandler(this.cmdDel_Click);
+            // 
+            // cmdFour
+            // 
+            this.cmdFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdFour.Location = new System.Drawing.Point(73, 264);
+            this.cmdFour.Name = "cmdFour";
+            this.cmdFour.Size = new System.Drawing.Size(35, 35);
+            this.cmdFour.TabIndex = 3;
+            this.cmdFour.Text = "4";
+            this.cmdFour.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdFour.UseVisualStyleBackColor = true;
+            this.cmdFour.Click += new System.EventHandler(this.cmdFour_Click);
+            // 
+            // cmdClear
+            // 
+            this.cmdClear.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdClear.Location = new System.Drawing.Point(332, 143);
+            this.cmdClear.Name = "cmdClear";
+            this.cmdClear.Size = new System.Drawing.Size(76, 35);
+            this.cmdClear.TabIndex = 46;
+            this.cmdClear.Text = "CLEAR";
+            this.cmdClear.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdClear.UseVisualStyleBackColor = false;
+            this.cmdClear.Click += new System.EventHandler(this.cmdClear_Click);
+            // 
+            // cmdNine
+            // 
+            this.cmdNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdNine.Location = new System.Drawing.Point(155, 223);
+            this.cmdNine.Name = "cmdNine";
+            this.cmdNine.Size = new System.Drawing.Size(35, 35);
+            this.cmdNine.TabIndex = 2;
+            this.cmdNine.Text = "9";
+            this.cmdNine.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdNine.UseVisualStyleBackColor = true;
+            this.cmdNine.Click += new System.EventHandler(this.cmdNine_Click);
+            // 
+            // cmdEqual
+            // 
+            this.cmdEqual.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdEqual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cmdEqual.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdEqual.Location = new System.Drawing.Point(196, 346);
+            this.cmdEqual.Name = "cmdEqual";
+            this.cmdEqual.Size = new System.Drawing.Size(53, 35);
+            this.cmdEqual.TabIndex = 47;
+            this.cmdEqual.Text = "=";
+            this.cmdEqual.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdEqual.UseVisualStyleBackColor = false;
+            this.cmdEqual.Click += new System.EventHandler(this.cmdEqual_Click);
+            // 
+            // cmdEight
+            // 
+            this.cmdEight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdEight.Location = new System.Drawing.Point(114, 223);
+            this.cmdEight.Name = "cmdEight";
+            this.cmdEight.Size = new System.Drawing.Size(35, 35);
+            this.cmdEight.TabIndex = 1;
+            this.cmdEight.Text = "8";
+            this.cmdEight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdEight.UseVisualStyleBackColor = true;
+            this.cmdEight.Click += new System.EventHandler(this.cmdEight_Click);
+            // 
+            // cmdRound
+            // 
+            this.cmdRound.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdRound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdRound.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdRound.Location = new System.Drawing.Point(196, 305);
+            this.cmdRound.Name = "cmdRound";
+            this.cmdRound.Size = new System.Drawing.Size(53, 35);
+            this.cmdRound.TabIndex = 48;
+            this.cmdRound.Text = "Round";
+            this.cmdRound.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdRound.UseVisualStyleBackColor = false;
+            this.cmdRound.Click += new System.EventHandler(this.cmdRound_Click);
+            // 
+            // cmdSeven
+            // 
+            this.cmdSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmdSeven.Location = new System.Drawing.Point(73, 223);
+            this.cmdSeven.Name = "cmdSeven";
+            this.cmdSeven.Size = new System.Drawing.Size(35, 35);
+            this.cmdSeven.TabIndex = 0;
+            this.cmdSeven.Text = "7";
+            this.cmdSeven.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdSeven.UseVisualStyleBackColor = true;
+            this.cmdSeven.Click += new System.EventHandler(this.cmdSeven_Click);
+            // 
+            // cmdLightSpeed
+            // 
+            this.cmdLightSpeed.BackColor = System.Drawing.SystemColors.Info;
+            this.cmdLightSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLightSpeed.Location = new System.Drawing.Point(337, 346);
+            this.cmdLightSpeed.Name = "cmdLightSpeed";
+            this.cmdLightSpeed.Size = new System.Drawing.Size(35, 35);
+            this.cmdLightSpeed.TabIndex = 20;
+            this.cmdLightSpeed.Text = "C";
+            this.cmdLightSpeed.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdLightSpeed.UseVisualStyleBackColor = false;
+            this.cmdLightSpeed.Click += new System.EventHandler(this.cmdLightSpeed_Click);
+            // 
+            // cmdCloseParenthesis
+            // 
+            this.cmdCloseParenthesis.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdCloseParenthesis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdCloseParenthesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmdCloseParenthesis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdCloseParenthesis.Location = new System.Drawing.Point(209, 182);
+            this.cmdCloseParenthesis.Name = "cmdCloseParenthesis";
+            this.cmdCloseParenthesis.Size = new System.Drawing.Size(35, 35);
+            this.cmdCloseParenthesis.TabIndex = 53;
+            this.cmdCloseParenthesis.Text = ")";
+            this.cmdCloseParenthesis.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdCloseParenthesis.UseVisualStyleBackColor = false;
+            this.cmdCloseParenthesis.Click += new System.EventHandler(this.cmdCloseParenthesis_Click);
+            // 
+            // cmdOpenParenthesis
+            // 
+            this.cmdOpenParenthesis.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.cmdOpenParenthesis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cmdOpenParenthesis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmdOpenParenthesis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cmdOpenParenthesis.Location = new System.Drawing.Point(209, 142);
+            this.cmdOpenParenthesis.Name = "cmdOpenParenthesis";
+            this.cmdOpenParenthesis.Size = new System.Drawing.Size(35, 35);
+            this.cmdOpenParenthesis.TabIndex = 54;
+            this.cmdOpenParenthesis.Text = "(";
+            this.cmdOpenParenthesis.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.cmdOpenParenthesis.UseVisualStyleBackColor = false;
+            this.cmdOpenParenthesis.Click += new System.EventHandler(this.cmdOpenParenthesis_Click);
+            // 
+            // frmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 482);
-            this.Controls.Add(this.button46);
-            this.Controls.Add(this.button47);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button45);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button44);
-            this.Controls.Add(this.button42);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button43);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button41);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button40);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.button39);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button38);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.button37);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button32);
-            this.Controls.Add(this.button36);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.button10);
-            this.Name = "FrmCalculator";
+            this.Controls.Add(this.cmdCloseParenthesis);
+            this.Controls.Add(this.cmdOpenParenthesis);
+            this.Controls.Add(this.cmdLightSpeed);
+            this.Controls.Add(this.cmdHistory);
+            this.Controls.Add(this.cmdSeven);
+            this.Controls.Add(this.cmdSettings);
+            this.Controls.Add(this.cmdRound);
+            this.Controls.Add(this.cmdEight);
+            this.Controls.Add(this.cmdGraphDisplayer);
+            this.Controls.Add(this.cmdEqual);
+            this.Controls.Add(this.rtxtDisplay);
+            this.Controls.Add(this.cmdNine);
+            this.Controls.Add(this.cmdExponential);
+            this.Controls.Add(this.cmdClear);
+            this.Controls.Add(this.cmdSin);
+            this.Controls.Add(this.cmdFour);
+            this.Controls.Add(this.cmdCos);
+            this.Controls.Add(this.cmdDel);
+            this.Controls.Add(this.cmdReciprocal);
+            this.Controls.Add(this.cmdFive);
+            this.Controls.Add(this.cmdLog);
+            this.Controls.Add(this.cmdConvDecHex);
+            this.Controls.Add(this.cmdNA);
+            this.Controls.Add(this.cmdSix);
+            this.Controls.Add(this.cmdTan);
+            this.Controls.Add(this.cmdConvDecOct);
+            this.Controls.Add(this.cmdPi);
+            this.Controls.Add(this.cmdOne);
+            this.Controls.Add(this.cmdExponentiation);
+            this.Controls.Add(this.cmdConvDecBin);
+            this.Controls.Add(this.cmdDiv);
+            this.Controls.Add(this.cmdTwo);
+            this.Controls.Add(this.cmdRoot);
+            this.Controls.Add(this.cmdLn);
+            this.Controls.Add(this.cmdMult);
+            this.Controls.Add(this.cmdThree);
+            this.Controls.Add(this.cmdInvSin);
+            this.Controls.Add(this.cmdFactorial);
+            this.Controls.Add(this.cmdMinus);
+            this.Controls.Add(this.cmdZero);
+            this.Controls.Add(this.cmdInvCos);
+            this.Controls.Add(this.cmdAbsValue);
+            this.Controls.Add(this.cmdPlus);
+            this.Controls.Add(this.cmdComma);
+            this.Controls.Add(this.cmdInvTan);
+            this.Controls.Add(this.cmdSqrt);
+            this.Controls.Add(this.cmdSquare);
+            this.Controls.Add(this.cmdInvert);
+            this.Name = "frmCalculator";
             this.Text = "Calculatrice scientifique";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button43;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button cmdGraphDisplayer;
+        private System.Windows.Forms.Button cmdSettings;
+        private System.Windows.Forms.Button cmdHistory;
+        private System.Windows.Forms.Button cmdExponential;
+        private System.Windows.Forms.Button cmdSin;
+        private System.Windows.Forms.Button cmdCos;
+        private System.Windows.Forms.Button cmdReciprocal;
+        private System.Windows.Forms.Button cmdLog;
+        private System.Windows.Forms.Button cmdNA;
+        private System.Windows.Forms.Button cmdTan;
+        private System.Windows.Forms.Button cmdPi;
+        private System.Windows.Forms.Button cmdExponentiation;
+        private System.Windows.Forms.Button cmdDiv;
+        private System.Windows.Forms.Button cmdRoot;
+        private System.Windows.Forms.Button cmdMult;
+        private System.Windows.Forms.Button cmdInvSin;
+        private System.Windows.Forms.Button cmdMinus;
+        private System.Windows.Forms.Button cmdInvCos;
+        private System.Windows.Forms.Button cmdPlus;
+        private System.Windows.Forms.Button cmdInvTan;
+        private System.Windows.Forms.RichTextBox rtxtDisplay;
+        private System.Windows.Forms.Button cmdSquare;
+        private System.Windows.Forms.Button cmdInvert;
+        private System.Windows.Forms.Button cmdSqrt;
+        private System.Windows.Forms.Button cmdComma;
+        private System.Windows.Forms.Button cmdAbsValue;
+        private System.Windows.Forms.Button cmdZero;
+        private System.Windows.Forms.Button cmdFactorial;
+        private System.Windows.Forms.Button cmdThree;
+        private System.Windows.Forms.Button cmdLn;
+        private System.Windows.Forms.Button cmdTwo;
+        private System.Windows.Forms.Button cmdConvDecBin;
+        private System.Windows.Forms.Button cmdOne;
+        private System.Windows.Forms.Button cmdConvDecOct;
+        private System.Windows.Forms.Button cmdSix;
+        private System.Windows.Forms.Button cmdConvDecHex;
+        private System.Windows.Forms.Button cmdFive;
+        private System.Windows.Forms.Button cmdDel;
+        private System.Windows.Forms.Button cmdFour;
+        private System.Windows.Forms.Button cmdClear;
+        private System.Windows.Forms.Button cmdNine;
+        private System.Windows.Forms.Button cmdEqual;
+        private System.Windows.Forms.Button cmdEight;
+        private System.Windows.Forms.Button cmdRound;
+        private System.Windows.Forms.Button cmdSeven;
+        private System.Windows.Forms.Button cmdLightSpeed;
+        private System.Windows.Forms.Button cmdCloseParenthesis;
+        private System.Windows.Forms.Button cmdOpenParenthesis;
     }
 }

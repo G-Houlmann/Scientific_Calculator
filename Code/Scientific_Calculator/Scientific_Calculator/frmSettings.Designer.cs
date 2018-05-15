@@ -28,84 +28,86 @@ namespace Scientific_Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.nudDecimalsAmount = new System.Windows.Forms.NumericUpDown();
+            this.lblDecimalsAmount = new System.Windows.Forms.Label();
+            this.lblHistoryAmount = new System.Windows.Forms.Label();
+            this.nudHistoryAmount = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDecimalsAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHistoryAmount)).BeginInit();
             this.SuspendLayout();
             // 
-            // numericUpDown1
+            // nudDecimalsAmount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 41);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudDecimalsAmount.Location = new System.Drawing.Point(15, 41);
+            this.nudDecimalsAmount.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.nudDecimalsAmount.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudDecimalsAmount.Name = "nudDecimalsAmount";
+            this.nudDecimalsAmount.Size = new System.Drawing.Size(120, 20);
+            this.nudDecimalsAmount.TabIndex = 0;
+            this.nudDecimalsAmount.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
+            this.nudDecimalsAmount.ValueChanged += new System.EventHandler(this.nudDecimalsAmount_ValueChanged);
             // 
-            // label1
+            // lblDecimalsAmount
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nombre de chiffres après la virgule";
+            this.lblDecimalsAmount.AutoSize = true;
+            this.lblDecimalsAmount.Location = new System.Drawing.Point(12, 25);
+            this.lblDecimalsAmount.Name = "lblDecimalsAmount";
+            this.lblDecimalsAmount.Size = new System.Drawing.Size(170, 13);
+            this.lblDecimalsAmount.TabIndex = 1;
+            this.lblDecimalsAmount.Text = "Nombre de chiffres après la virgule";
             // 
-            // label2
+            // lblHistoryAmount
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre d\'opérations visibles dans l\'historique";
+            this.lblHistoryAmount.AutoSize = true;
+            this.lblHistoryAmount.Location = new System.Drawing.Point(12, 104);
+            this.lblHistoryAmount.Name = "lblHistoryAmount";
+            this.lblHistoryAmount.Size = new System.Drawing.Size(219, 13);
+            this.lblHistoryAmount.TabIndex = 3;
+            this.lblHistoryAmount.Text = "Nombre d\'opérations visibles dans l\'historique";
             // 
-            // numericUpDown2
+            // nudHistoryAmount
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(15, 120);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.nudHistoryAmount.Location = new System.Drawing.Point(15, 120);
+            this.nudHistoryAmount.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 2;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudHistoryAmount.Name = "nudHistoryAmount";
+            this.nudHistoryAmount.Size = new System.Drawing.Size(120, 20);
+            this.nudHistoryAmount.TabIndex = 2;
+            this.nudHistoryAmount.Value = new decimal(new int[] {
             1000,
             0,
             0,
             0});
+            this.nudHistoryAmount.ValueChanged += new System.EventHandler(this.nudHistoryAmount_ValueChanged);
             // 
-            // FrmSettings
+            // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 182);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Name = "FrmSettings";
+            this.Controls.Add(this.lblHistoryAmount);
+            this.Controls.Add(this.nudHistoryAmount);
+            this.Controls.Add(this.lblDecimalsAmount);
+            this.Controls.Add(this.nudDecimalsAmount);
+            this.Name = "frmSettings";
             this.Text = "Paramètres";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDecimalsAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHistoryAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,9 +115,9 @@ namespace Scientific_Calculator
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nudDecimalsAmount;
+        private System.Windows.Forms.Label lblDecimalsAmount;
+        private System.Windows.Forms.Label lblHistoryAmount;
+        private System.Windows.Forms.NumericUpDown nudHistoryAmount;
     }
 }

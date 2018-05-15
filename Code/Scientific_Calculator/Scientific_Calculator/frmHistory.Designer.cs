@@ -28,24 +28,24 @@ namespace Scientific_Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstHistory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstHistory
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(646, 459);
-            this.listBox1.TabIndex = 0;
+            this.lstHistory.FormattingEnabled = true;
+            this.lstHistory.Location = new System.Drawing.Point(13, 13);
+            this.lstHistory.Name = "lstHistory";
+            this.lstHistory.Size = new System.Drawing.Size(646, 459);
+            this.lstHistory.TabIndex = 0;
             // 
-            // FrmHistory
+            // frmHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 481);
-            this.Controls.Add(this.listBox1);
-            this.Name = "FrmHistory";
+            this.Controls.Add(this.lstHistory);
+            this.Name = "frmHistory";
             this.Text = "Historique des opérations";
             this.ResumeLayout(false);
 
@@ -53,6 +53,6 @@ namespace Scientific_Calculator
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstHistory;
     }
 }
