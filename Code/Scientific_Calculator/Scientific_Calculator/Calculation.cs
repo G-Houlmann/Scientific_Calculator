@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 
 namespace Scientific_Calculator
@@ -258,7 +259,7 @@ namespace Scientific_Calculator
         /// The array contains all the math operations and numbers that will have to be used
         /// </summary>
         /// <returns>An array conaining the necesarry information to do the operation</returns>
-        private string[] ReadOperation(string operationString)
+        private string[] ReadOperation(List<string> operationList)
         {
             return null;
         }
@@ -267,9 +268,32 @@ namespace Scientific_Calculator
         /// Reads the array sent by ReadOperation and does all the mathematics to finally find the result of the operation.
         /// </summary>
         /// <returns></returns>
-        private double Calculate(string[] operationArray)
+        public static double Calculate(List<string> operationList)
         {
-            return 0;
+            string opString = "";
+            foreach (string s in operationList)
+            {
+                opString += s;
+            }
+            /*List<string> tempOperationList = new List<string>();
+            List<string> sortedList = new List<string>();
+
+            foreach (string s in operationList)
+            {
+                tempOperationList.Add(s);
+            }
+
+            foreach (string s in operationList)
+            {
+                if(s == "(")
+                {
+                    //for()
+                }
+            }*/
+            DataTable dt = new DataTable();
+            double result = (double)dt.Compute(opString, "");
+
+            return result;
         }
 
         /// <summary>

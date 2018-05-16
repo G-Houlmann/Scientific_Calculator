@@ -15,7 +15,8 @@ namespace Scientific_Calculator
     /// </summary>
     public partial class frmCalculator : Form
     {
-
+        private List<string> _operationList = new List<string>();
+        private string _currentNumber = "";
         /// <summary>
         /// Constructor
         /// </summary>
@@ -30,51 +31,61 @@ namespace Scientific_Calculator
 
         private void cmdZero_Click(object sender, EventArgs e)
         {
+            _currentNumber += "0";
             DisplayChar("0");
         }
 
         private void cmdOne_Click(object sender, EventArgs e)
         {
+            _currentNumber += "1";
             DisplayChar("1");
         }
 
         private void cmdTwo_Click(object sender, EventArgs e)
         {
+            _currentNumber += "2";
             DisplayChar("2");
         }
 
         private void cmdThree_Click(object sender, EventArgs e)
         {
+            _currentNumber += "3";
             DisplayChar("3");
         }
 
         private void cmdFour_Click(object sender, EventArgs e)
         {
+            _currentNumber += "4";
             DisplayChar("4");
         }
 
         private void cmdFive_Click(object sender, EventArgs e)
         {
+            _currentNumber += "5";
             DisplayChar("5");
         }
 
         private void cmdSix_Click(object sender, EventArgs e)
         {
+            _currentNumber += "6";
             DisplayChar("6");
         }
 
         private void cmdSeven_Click(object sender, EventArgs e)
         {
+            _currentNumber += "7";
             DisplayChar("7");
         }
 
         private void cmdEight_Click(object sender, EventArgs e)
         {
+            _currentNumber += "8";
             DisplayChar("8");
         }
 
         private void cmdNine_Click(object sender, EventArgs e)
         {
+            _currentNumber += "9";
             DisplayChar("9");
         }
 
@@ -151,27 +162,37 @@ namespace Scientific_Calculator
         #region simple operators
         private void cmdPlus_Click(object sender, EventArgs e)
         {
-            DisplayChar("+");
+            DisplayChar(" + ");
+            EndCurrentNumber();
+            _operationList.Add("+");
         }
 
         private void cmdMinus_Click(object sender, EventArgs e)
         {
-            DisplayChar("-");
+            DisplayChar(" - ");
+            EndCurrentNumber();
+            _operationList.Add("-");
         }
 
         private void cmdMult_Click(object sender, EventArgs e)
         {
-            DisplayChar("*");
+            DisplayChar(" x ");
+            EndCurrentNumber();
+            _operationList.Add("x");
         }
 
         private void cmdDiv_Click(object sender, EventArgs e)
         {
-            DisplayChar("/");
+            DisplayChar(" / ");
+            EndCurrentNumber();
+            _operationList.Add("/");
         }
 
         private void cmdReciprocal_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("1 / ", -1);
+            EndCurrentNumber();
+            _operationList.Add("1/x");
         }
 
         private void cmdFactorial_Click(object sender, EventArgs e)
@@ -275,10 +296,17 @@ namespace Scientific_Calculator
 
         private void cmdEqual_Click(object sender, EventArgs e)
         {
-
+            EndCurrentNumber();
+            Calculation.Calculate(_operationList);
         }
 
         #endregion
+
+        private void EndCurrentNumber()
+        {
+            _operationList.Add(_currentNumber);
+            _currentNumber = "";
+        }
 
         private void DisplayChar(string sign, int position = 0)
         {
