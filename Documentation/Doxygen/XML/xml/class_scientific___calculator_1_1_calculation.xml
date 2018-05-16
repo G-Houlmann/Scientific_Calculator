@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1_calculation" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::Calculation</compoundname>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1acd57ff317c7a74021321094782553d08" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Sum</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Sum</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>returns the sum of two numbers </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number to be added</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second number to be added</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the sum of x and y</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="24" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1aeb2335c5c921eb5bf8185e4870798d2e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Multiplication</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Multiplication</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>returns the product of two numbers </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number to be multiplied</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second number to be multiplied</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the product of x and y</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="36" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a3d11d827690efab11b230e1b454613eb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Substraction</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Substraction</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Substracts one number to another </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number from which &quot;y&quot; will be substracted</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number that will be substracted to &quot;x&quot;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the substraction of x by y</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="48" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1aca6b22292c0f9ced0ba4810bdaa3ce20" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Division</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Division</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Divides one number by the other </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number that will be divided by &quot;y&quot;</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number by which &quot;x&quot; will be divided</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the division of x by y</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="60" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a384cc804c75ea33f07a92727fcc34677" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Reciprocal</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Reciprocal</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the Reciprocal of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose reciprocal will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 divided by x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="72" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a186ff9468b43840cb7de7b814d09d825" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.AbsoluteValue</definition>
+        <argsstring>(double x)</argsstring>
+        <name>AbsoluteValue</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the absolute value of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose absolute value will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the absolute value</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="83" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1aa95a7b8a173e3064dc806a2d5f13f8cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Factorial</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Factorial</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the factorial of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose factorial will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The factorial of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="94" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="94" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a671db80ed24f0bb52e03da6146e4fe72" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Sine</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Sine</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the sine of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose sine will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sine of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="108" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a9603de6fcee17c21360f176192851e0b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Cosine</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Cosine</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the cosine of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose cosine will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cosine of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="118" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="118" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1ac921c07d7e228cd9ac45746c2349122e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Tangent</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Tangent</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the tangent of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose tangent will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The tangent of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="129" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1ac0dd4c6aec35f2b472f9e0513414fd86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.InverseSine</definition>
+        <argsstring>(double x)</argsstring>
+        <name>InverseSine</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the inverse sine of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose inverse sine will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The inverse sine of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="140" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a06f26095d2cb4016bfc488bccf256b58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.InverseCosine</definition>
+        <argsstring>(double x)</argsstring>
+        <name>InverseCosine</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the inverse cosine of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose inverse cosine will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The inverse cosine of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="151" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a7ba30b19785821cbf7d77d57d3ee0edd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.InverseTangent</definition>
+        <argsstring>(double x)</argsstring>
+        <name>InverseTangent</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the inverse tangent of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose inverse tangent will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The inverse tangent of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="162" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1ab5349c3fe4878a44c2cd6fa57c13ff4d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Square</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Square</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the square of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose square will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the square of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="176" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1ac2124e35db7b5ad3d22c837f6eadbdee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.squareRoot</definition>
+        <argsstring>(double x)</argsstring>
+        <name>squareRoot</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the square root of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose square root will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the square root of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="187" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="187" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a5ef1a7f265676eb21f239fe473367c36" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Exponentiation</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Exponentiation</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Calculates a number raised to the power of another </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base of the exponentiation</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exponent of the exponentiation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>X raised to the power of y</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="200" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1adbbaea5bbcff46cd1a062186f08b70da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Root</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Root</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the n-th root of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose n-th will be calculated</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The degree of the root</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The y-th root of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="212" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="212" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a683b7fa0090dc3207eef06cc3f88fd16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Exponential</definition>
+        <argsstring>(double x)</argsstring>
+        <name>Exponential</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the exponential of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to the power of which e will be raised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>e raised to the power of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="223" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a0395f62ea898d2a0a281be616ca31e72" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.TenthBaseLogarithm</definition>
+        <argsstring>(double x)</argsstring>
+        <name>TenthBaseLogarithm</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the 10th base logarithm of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose 10th base logarithm will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The 10th base logarithm of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="234" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="234" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a289f898c6c0967f9f08dd920267a5194" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.NaturalLogarithm</definition>
+        <argsstring>(double x)</argsstring>
+        <name>NaturalLogarithm</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the natural logarithm of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose natural logarithm will be calculated</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the natural logarithm of x</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="245" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="245" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1adf0728263a260c97384044a04bf93559" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string []</type>
+        <definition>string [] Scientific_Calculator.Calculation.ReadOperation</definition>
+        <argsstring>(string operationString)</argsstring>
+        <name>ReadOperation</name>
+        <param>
+          <type>string</type>
+          <declname>operationString</declname>
+        </param>
+        <briefdescription>
+<para>Reads the operation string and transforms it into an array. The array contains all the math operations and numbers that will have to be used </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An array conaining the necesarry information to do the operation</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="261" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a283b937b5eff752ef36c032e1bc8bb2f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Calculate</definition>
+        <argsstring>(string[] operationArray)</argsstring>
+        <name>Calculate</name>
+        <param>
+          <type>string []</type>
+          <declname>operationArray</declname>
+        </param>
+        <briefdescription>
+<para>Reads the array sent by ReadOperation and does all the mathematics to finally find the result of the operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="270" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="270" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1ab4879c2e7890c6dfd7e954e6c424764f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Scientific_Calculator.Calculation.Solve</definition>
+        <argsstring>(string operationString)</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>string</type>
+          <declname>operationString</declname>
+        </param>
+        <briefdescription>
+<para>Sends the operation string to the ReadOperation method, then sends the resulted array to the Calculate method, thus obtaining the numeric result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationString</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="280" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="280" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that handles all the mathematics of the program, and interpretes the operations inputs </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" line="14" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Calculation.cs" bodystart="13" bodyend="284"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1_calculation_1a186ff9468b43840cb7de7b814d09d825" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>AbsoluteValue</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a283b937b5eff752ef36c032e1bc8bb2f" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Calculate</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a9603de6fcee17c21360f176192851e0b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Cosine</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1aca6b22292c0f9ced0ba4810bdaa3ce20" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Division</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a683b7fa0090dc3207eef06cc3f88fd16" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Exponential</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a5ef1a7f265676eb21f239fe473367c36" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Exponentiation</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1aa95a7b8a173e3064dc806a2d5f13f8cf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Factorial</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a06f26095d2cb4016bfc488bccf256b58" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>InverseCosine</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1ac0dd4c6aec35f2b472f9e0513414fd86" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>InverseSine</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a7ba30b19785821cbf7d77d57d3ee0edd" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>InverseTangent</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1aeb2335c5c921eb5bf8185e4870798d2e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Multiplication</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a289f898c6c0967f9f08dd920267a5194" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>NaturalLogarithm</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1adf0728263a260c97384044a04bf93559" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>ReadOperation</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a384cc804c75ea33f07a92727fcc34677" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Reciprocal</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1adbbaea5bbcff46cd1a062186f08b70da" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Root</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a671db80ed24f0bb52e03da6146e4fe72" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Sine</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1ab4879c2e7890c6dfd7e954e6c424764f" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Solve</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1ab5349c3fe4878a44c2cd6fa57c13ff4d" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Square</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1ac2124e35db7b5ad3d22c837f6eadbdee" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>squareRoot</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a3d11d827690efab11b230e1b454613eb" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Substraction</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1acd57ff317c7a74021321094782553d08" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Sum</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1ac921c07d7e228cd9ac45746c2349122e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Tangent</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a0395f62ea898d2a0a281be616ca31e72" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>TenthBaseLogarithm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

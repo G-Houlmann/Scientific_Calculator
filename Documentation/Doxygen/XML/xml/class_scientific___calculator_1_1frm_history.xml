@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1frm_history" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::frmHistory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_history_1a492c4ae04c0fe471f730d3b43f2e806d" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Scientific_Calculator.frmHistory.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" line="8" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_history_1afe8e5dd5b56ce1651e3495c3f099f873" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ListBox</type>
+        <definition>System.Windows.Forms.ListBox Scientific_Calculator.frmHistory.lstHistory</definition>
+        <argsstring></argsstring>
+        <name>lstHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" line="56" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_history_1aab640c35614c8ad1c64b1e3150bd8ed1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Scientific_Calculator.frmHistory.frmHistory</definition>
+        <argsstring>()</argsstring>
+        <name>frmHistory</name>
+        <briefdescription>
+<para>Constructor. Calls the DisplayHistory method when finished. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" line="21" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_history_1a8d759e4cf606cb2c1b82297f9fc56b9c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmHistory.DisplayHistory</definition>
+        <argsstring>()</argsstring>
+        <name>DisplayHistory</name>
+        <briefdescription>
+<para>Displays the operations history retrieved from the database </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" line="29" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_history_1ae206e3038e65ea5857c7b1308091faee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmHistory.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" line="29" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" bodystart="29" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_history_1adf91a5ec5e4df47f129c8a1a57161155" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Scientific_Calculator.frmHistory.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" line="14" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Form that displays the operations history on a listbox </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>Form</label>
+      </node>
+      <node id="12">
+        <label>Scientific_Calculator.frmHistory</label>
+        <link refid="class_scientific___calculator_1_1frm_history"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>Form</label>
+      </node>
+      <node id="14">
+        <label>Scientific_Calculator.frmHistory</label>
+        <link refid="class_scientific___calculator_1_1frm_history"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" line="17" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmHistory.cs" bodystart="16" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1frm_history_1a492c4ae04c0fe471f730d3b43f2e806d" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>components</name></member>
+      <member refid="class_scientific___calculator_1_1frm_history_1a8d759e4cf606cb2c1b82297f9fc56b9c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>DisplayHistory</name></member>
+      <member refid="class_scientific___calculator_1_1frm_history_1adf91a5ec5e4df47f129c8a1a57161155" prot="protected" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>Dispose</name></member>
+      <member refid="class_scientific___calculator_1_1frm_history_1aab640c35614c8ad1c64b1e3150bd8ed1" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>frmHistory</name></member>
+      <member refid="class_scientific___calculator_1_1frm_history_1ae206e3038e65ea5857c7b1308091faee" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>InitializeComponent</name></member>
+      <member refid="class_scientific___calculator_1_1frm_history_1afe8e5dd5b56ce1651e3495c3f099f873" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmHistory</scope><name>lstHistory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

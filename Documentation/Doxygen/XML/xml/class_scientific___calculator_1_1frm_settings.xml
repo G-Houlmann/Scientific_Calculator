@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1frm_settings" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::frmSettings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_settings_1a77aa0c65de95722080f93ebfa1d5e080" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Scientific_Calculator.frmSettings.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="8" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_settings_1a48493e6bf882de9fce9d5f9124ac775a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.NumericUpDown</type>
+        <definition>System.Windows.Forms.NumericUpDown Scientific_Calculator.frmSettings.nudDecimalsAmount</definition>
+        <argsstring></argsstring>
+        <name>nudDecimalsAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="118" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_settings_1a9e06f49d652ab3a62ed92bd57caa25b1" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmSettings.lblDecimalsAmount</definition>
+        <argsstring></argsstring>
+        <name>lblDecimalsAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="119" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_settings_1aa655c41e67ae6a4849db9b064d19011e" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmSettings.lblHistoryAmount</definition>
+        <argsstring></argsstring>
+        <name>lblHistoryAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="120" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_settings_1a3f29f92296f81186bda9dfb3972fa6eb" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.NumericUpDown</type>
+        <definition>System.Windows.Forms.NumericUpDown Scientific_Calculator.frmSettings.nudHistoryAmount</definition>
+        <argsstring></argsstring>
+        <name>nudHistoryAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="121" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_settings_1a240b88000ca34b6a5e34b560e5e32f20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Scientific_Calculator.frmSettings.frmSettings</definition>
+        <argsstring>()</argsstring>
+        <name>frmSettings</name>
+        <briefdescription>
+<para>Constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" line="21" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_settings_1a085235e28d91ba332391bdedb7fa0bb7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmSettings.nudDecimalsAmount_ValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>nudDecimalsAmount_ValueChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>If the new value is valid and between the min and max value, the setting value is changed in the database </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" line="31" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_settings_1ac845af67aa50a7e67caa9c4f3ba6c78e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmSettings.nudHistoryAmount_ValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>nudHistoryAmount_ValueChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>If the new value is valid and between the min and max value, the setting value is changed in the database </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" line="41" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_settings_1a3e674f3bc61017f484dc6cd68223e4c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmSettings.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="29" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="29" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_settings_1a3f5e63317d8fef66f6587a1a19b21b44" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Scientific_Calculator.frmSettings.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" line="14" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Form that allows the user to change some application settings </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Form</label>
+      </node>
+      <node id="16">
+        <label>Scientific_Calculator.frmSettings</label>
+        <link refid="class_scientific___calculator_1_1frm_settings"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Form</label>
+      </node>
+      <node id="18">
+        <label>Scientific_Calculator.frmSettings</label>
+        <link refid="class_scientific___calculator_1_1frm_settings"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" line="17" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmSettings.cs" bodystart="16" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a77aa0c65de95722080f93ebfa1d5e080" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>components</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a3f5e63317d8fef66f6587a1a19b21b44" prot="protected" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>Dispose</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a240b88000ca34b6a5e34b560e5e32f20" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>frmSettings</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a3e674f3bc61017f484dc6cd68223e4c6" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>InitializeComponent</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a9e06f49d652ab3a62ed92bd57caa25b1" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>lblDecimalsAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1aa655c41e67ae6a4849db9b064d19011e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>lblHistoryAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a48493e6bf882de9fce9d5f9124ac775a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>nudDecimalsAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a085235e28d91ba332391bdedb7fa0bb7" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>nudDecimalsAmount_ValueChanged</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1a3f29f92296f81186bda9dfb3972fa6eb" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>nudHistoryAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_settings_1ac845af67aa50a7e67caa9c4f3ba6c78e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmSettings</scope><name>nudHistoryAmount_ValueChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

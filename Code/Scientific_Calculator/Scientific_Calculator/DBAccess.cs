@@ -7,6 +7,9 @@ using MySql.Data.MySqlClient;
 
 namespace Scientific_Calculator
 {
+    /// <summary>
+    /// Class that handles all the database operations
+    /// </summary>
     class DBAccess
     {
         #region Private Attributes
@@ -26,7 +29,17 @@ namespace Scientific_Calculator
         /// </summary>
         public DBAccess()
         {
-            
+            //Initializing values for the connection string
+            this._database = "Scientific_Calculator";
+            this._server = "localhost";
+            this._user = "root";
+            this._password = "";
+            string connectionString = "";
+
+            // Building connection string and creating connection
+            connectionString = "SERVER=" + this._server + ";" + "DATABASE=" +
+            this._database + ";" + "UID=" + this._user + ";" + "PASSWORD=" + this._password + ";";
+            this._connection = new MySqlConnection(connectionString);
         }
 
         #endregion
@@ -38,7 +51,14 @@ namespace Scientific_Calculator
         /// </summary>
         private void OpenConnection()
         {
-
+            try
+            {
+                _connection.Open();
+            }
+            catch (Exception)
+            {
+                System.Windows.Forms.MessageBox.Show("Impossible de se connecter à la base de données");
+            }
         }
 
         /// <summary>
@@ -46,7 +66,14 @@ namespace Scientific_Calculator
         /// </summary>
         private void CloseConnection()
         {
-
+            try
+            {
+                _connection.Close();
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+            }
         }
 
         #endregion

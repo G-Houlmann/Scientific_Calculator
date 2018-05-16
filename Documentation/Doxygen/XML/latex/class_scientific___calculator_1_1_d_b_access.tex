@@ -1,0 +1,154 @@
+\hypertarget{class_scientific___calculator_1_1_d_b_access}{}\section{Scientific\+\_\+\+Calculator.\+D\+B\+Access Class Reference}
+\label{class_scientific___calculator_1_1_d_b_access}\index{Scientific\+\_\+\+Calculator.\+D\+B\+Access@{Scientific\+\_\+\+Calculator.\+D\+B\+Access}}
+
+
+Class that handles all the database operations  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scientific___calculator_1_1_d_b_access_a6007d654070f5893e1876c19e1740a5c}{D\+B\+Access} ()
+\begin{DoxyCompactList}\small\item\em Constructor that creates the connection to the database \end{DoxyCompactList}\item 
+double \hyperlink{class_scientific___calculator_1_1_d_b_access_a55b2251a50067b4008e03b911770cdf7}{Get\+Constant} (string constant\+Name)
+\begin{DoxyCompactList}\small\item\em Gets a chosen constant from the database \end{DoxyCompactList}\item 
+int \hyperlink{class_scientific___calculator_1_1_d_b_access_a2b2a68c2a113ee7f4dabde92b4675d7e}{Get\+Default\+Setting} (string setting\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the default value of a chosen setting from the database \end{DoxyCompactList}\item 
+void \hyperlink{class_scientific___calculator_1_1_d_b_access_a3ada18c0a3a5a48dd7b88b166b715c7d}{Update\+Setting} (string setting\+Name, int new\+Value)
+\begin{DoxyCompactList}\small\item\em Updates the value of a chosen setting in the database \end{DoxyCompactList}\item 
+int \hyperlink{class_scientific___calculator_1_1_d_b_access_a738341bafa087495fe4c940ef3c74517}{Get\+Setting\+Value} (string setting\+Name)
+\begin{DoxyCompactList}\small\item\em Gets the current value of a chosen setting from the database \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_scientific___calculator_1_1_d_b_access_a0082501ed3f21914f17be60e4a7541b3}{Get\+Operation\+History} (int amount)
+\begin{DoxyCompactList}\small\item\em Gets the latest operations from the operation history \end{DoxyCompactList}\item 
+void \hyperlink{class_scientific___calculator_1_1_d_b_access_a9bfbf5393338345c6d5b41cb43fbc56b}{Insert\+Operation\+In\+History} (string Operation\+String)
+\begin{DoxyCompactList}\small\item\em Inserts a new operation in the operation history dated to today \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles all the database operations 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a6007d654070f5893e1876c19e1740a5c}\label{class_scientific___calculator_1_1_d_b_access_a6007d654070f5893e1876c19e1740a5c}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!D\+B\+Access@{D\+B\+Access}}
+\index{D\+B\+Access@{D\+B\+Access}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{D\+B\+Access()}{DBAccess()}}
+{\footnotesize\ttfamily Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+D\+B\+Access (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor that creates the connection to the database 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a55b2251a50067b4008e03b911770cdf7}\label{class_scientific___calculator_1_1_d_b_access_a55b2251a50067b4008e03b911770cdf7}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Get\+Constant@{Get\+Constant}}
+\index{Get\+Constant@{Get\+Constant}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Get\+Constant()}{GetConstant()}}
+{\footnotesize\ttfamily double Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Get\+Constant (\begin{DoxyParamCaption}\item[{string}]{constant\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets a chosen constant from the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the constant we want to retrieve\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the numeric value of the constant
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a2b2a68c2a113ee7f4dabde92b4675d7e}\label{class_scientific___calculator_1_1_d_b_access_a2b2a68c2a113ee7f4dabde92b4675d7e}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Get\+Default\+Setting@{Get\+Default\+Setting}}
+\index{Get\+Default\+Setting@{Get\+Default\+Setting}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Get\+Default\+Setting()}{GetDefaultSetting()}}
+{\footnotesize\ttfamily int Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Get\+Default\+Setting (\begin{DoxyParamCaption}\item[{string}]{setting\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the default value of a chosen setting from the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting\+Name} & the name of the setting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the numeric value of the setting
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a0082501ed3f21914f17be60e4a7541b3}\label{class_scientific___calculator_1_1_d_b_access_a0082501ed3f21914f17be60e4a7541b3}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Get\+Operation\+History@{Get\+Operation\+History}}
+\index{Get\+Operation\+History@{Get\+Operation\+History}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Get\+Operation\+History()}{GetOperationHistory()}}
+{\footnotesize\ttfamily List$<$string$>$ Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Get\+Operation\+History (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Gets the latest operations from the operation history 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount of operations that need to be retrieved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of the last operations ordered by date
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a738341bafa087495fe4c940ef3c74517}\label{class_scientific___calculator_1_1_d_b_access_a738341bafa087495fe4c940ef3c74517}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Get\+Setting\+Value@{Get\+Setting\+Value}}
+\index{Get\+Setting\+Value@{Get\+Setting\+Value}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Get\+Setting\+Value()}{GetSettingValue()}}
+{\footnotesize\ttfamily int Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Get\+Setting\+Value (\begin{DoxyParamCaption}\item[{string}]{setting\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets the current value of a chosen setting from the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting\+Name} & the name of the setting\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the setting
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a9bfbf5393338345c6d5b41cb43fbc56b}\label{class_scientific___calculator_1_1_d_b_access_a9bfbf5393338345c6d5b41cb43fbc56b}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Insert\+Operation\+In\+History@{Insert\+Operation\+In\+History}}
+\index{Insert\+Operation\+In\+History@{Insert\+Operation\+In\+History}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Insert\+Operation\+In\+History()}{InsertOperationInHistory()}}
+{\footnotesize\ttfamily void Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Insert\+Operation\+In\+History (\begin{DoxyParamCaption}\item[{string}]{Operation\+String }\end{DoxyParamCaption})}
+
+
+
+Inserts a new operation in the operation history dated to today 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Operation\+String} & the operaiton string that will be stored in the database\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scientific___calculator_1_1_d_b_access_a3ada18c0a3a5a48dd7b88b166b715c7d}\label{class_scientific___calculator_1_1_d_b_access_a3ada18c0a3a5a48dd7b88b166b715c7d}} 
+\index{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}!Update\+Setting@{Update\+Setting}}
+\index{Update\+Setting@{Update\+Setting}!Scientific\+\_\+\+Calculator\+::\+D\+B\+Access@{Scientific\+\_\+\+Calculator\+::\+D\+B\+Access}}
+\subsubsection{\texorpdfstring{Update\+Setting()}{UpdateSetting()}}
+{\footnotesize\ttfamily void Scientific\+\_\+\+Calculator.\+D\+B\+Access.\+Update\+Setting (\begin{DoxyParamCaption}\item[{string}]{setting\+Name,  }\item[{int}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Updates the value of a chosen setting in the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setting\+Name} & the name of the setting\\
+\hline
+{\em new\+Value} & the new value given to the setting\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Scientific\+\_\+\+Calculator/\+Scientific\+\_\+\+Calculator/\+Code/\+Scientific\+\_\+\+Calculator/\+Scientific\+\_\+\+Calculator/\hyperlink{_d_b_access_8cs}{D\+B\+Access.\+cs}\end{DoxyCompactItemize}

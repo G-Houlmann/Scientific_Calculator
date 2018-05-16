@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Scientific_Calculator
 {
+    /// <summary>
+    /// Class that handles all the mathematics of the program, and interpretes the operations inputs
+    /// </summary>
     class Calculation
     {
         #region Private math methods

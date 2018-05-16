@@ -40,7 +40,7 @@ namespace Scientific_Calculator
             // 
             this.nudDecimalsAmount.Location = new System.Drawing.Point(15, 41);
             this.nudDecimalsAmount.Maximum = new decimal(new int[] {
-            20,
+            12,
             0,
             0,
             0});
@@ -89,7 +89,7 @@ namespace Scientific_Calculator
             this.nudHistoryAmount.Size = new System.Drawing.Size(120, 20);
             this.nudHistoryAmount.TabIndex = 2;
             this.nudHistoryAmount.Value = new decimal(new int[] {
-            1000,
+            100,
             0,
             0,
             0});
