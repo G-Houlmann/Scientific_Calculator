@@ -363,10 +363,10 @@ namespace Scientific_Calculator
             // 
             this.rtxtDisplay.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.rtxtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rtxtDisplay.Location = new System.Drawing.Point(27, 30);
+            this.rtxtDisplay.Location = new System.Drawing.Point(12, 30);
             this.rtxtDisplay.Name = "rtxtDisplay";
             this.rtxtDisplay.ReadOnly = true;
-            this.rtxtDisplay.Size = new System.Drawing.Size(343, 66);
+            this.rtxtDisplay.Size = new System.Drawing.Size(419, 66);
             this.rtxtDisplay.TabIndex = 12;
             this.rtxtDisplay.Text = "";
             // 

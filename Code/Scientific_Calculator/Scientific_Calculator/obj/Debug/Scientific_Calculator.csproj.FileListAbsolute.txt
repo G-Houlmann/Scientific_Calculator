@@ -24,3 +24,8 @@ C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scient
 C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmFunctionPlot.resources
 C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmHistory.resources
 C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmSettings.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\NCalc.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Antlr3.Runtime.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\NCalc.pdb
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\mxparser.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\mxparser.pdb

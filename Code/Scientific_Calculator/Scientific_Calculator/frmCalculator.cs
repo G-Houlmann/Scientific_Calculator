@@ -114,6 +114,7 @@ namespace Scientific_Calculator
 
         private void cmdComma_Click(object sender, EventArgs e)
         {
+            _currentNumber += ".";
             DisplayChar(".");
         }
 
@@ -178,7 +179,7 @@ namespace Scientific_Calculator
         {
             DisplayChar(" x ");
             EndCurrentNumber();
-            _operationList.Add("x");
+            _operationList.Add("*");
         }
 
         private void cmdDiv_Click(object sender, EventArgs e)
@@ -292,12 +293,14 @@ namespace Scientific_Calculator
         private void cmdClear_Click(object sender, EventArgs e)
         {
             rtxtDisplay.Clear();
+            _operationList.Clear();
         }
 
         private void cmdEqual_Click(object sender, EventArgs e)
         {
             EndCurrentNumber();
-            Calculation.Calculate(_operationList);
+            double res = Calculation.Calculate(_operationList);
+            rtxtDisplay.Text += " = " + res.ToString();
         }
 
         #endregion

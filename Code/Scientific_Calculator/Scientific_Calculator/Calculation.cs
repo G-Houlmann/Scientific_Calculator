@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using org.mariuszgromada.math.mxparser;
 
 
 namespace Scientific_Calculator
@@ -273,27 +274,19 @@ namespace Scientific_Calculator
             string opString = "";
             foreach (string s in operationList)
             {
-                opString += s;
-            }
-            /*List<string> tempOperationList = new List<string>();
-            List<string> sortedList = new List<string>();
-
-            foreach (string s in operationList)
-            {
-                tempOperationList.Add(s);
-            }
-
-            foreach (string s in operationList)
-            {
-                if(s == "(")
+                float f;
+                /*if (float.TryParse(s, out f))
                 {
-                    //for()
-                }
-            }*/
-            DataTable dt = new DataTable();
-            double result = (double)dt.Compute(opString, "");
+                    opString += "F";
+                }*/
+                opString += s;
+                
+            }
 
-            return result;
+            Expression e = new Expression(opString);
+            double v = e.calculate();
+
+            return v;
         }
 
         /// <summary>
