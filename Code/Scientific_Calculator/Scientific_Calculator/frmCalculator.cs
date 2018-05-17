@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using org.mariuszgromada.math.mxparser;
 
 namespace Scientific_Calculator
 {
@@ -165,35 +166,35 @@ namespace Scientific_Calculator
         {
             DisplayChar(" + ");
             EndCurrentNumber();
-            _operationList.Add("+");
+            _operationList.Add(" + ");
         }
 
         private void cmdMinus_Click(object sender, EventArgs e)
         {
             DisplayChar(" - ");
             EndCurrentNumber();
-            _operationList.Add("-");
+            _operationList.Add(" - ");
         }
 
         private void cmdMult_Click(object sender, EventArgs e)
         {
             DisplayChar(" x ");
             EndCurrentNumber();
-            _operationList.Add("*");
+            _operationList.Add(" * ");
         }
 
         private void cmdDiv_Click(object sender, EventArgs e)
         {
             DisplayChar(" / ");
             EndCurrentNumber();
-            _operationList.Add("/");
+            _operationList.Add(" / ");
         }
 
         private void cmdReciprocal_Click(object sender, EventArgs e)
         {
             DisplayChar("1 / ", -1);
             EndCurrentNumber();
-            _operationList.Add("1/x");
+            _operationList.Add(" 1/ ");
         }
 
         private void cmdFactorial_Click(object sender, EventArgs e)
@@ -296,15 +297,23 @@ namespace Scientific_Calculator
             _operationList.Clear();
         }
 
+        /// <summary>
+        /// Ends the current number, then calls the Calculation.Calculate method to solve the operation contained in _operationList
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdEqual_Click(object sender, EventArgs e)
         {
             EndCurrentNumber();
-            double res = Calculation.Calculate(_operationList);
-            rtxtDisplay.Text += " = " + res.ToString();
+            double result = Calculation.Solve(_operationList);
+            rtxtDisplay.Text += " = " + result.ToString();
         }
 
         #endregion
 
+        /// <summary>
+        /// Ends the entry of the current number and stores it in the _operationList
+        /// </summary>
         private void EndCurrentNumber()
         {
             _operationList.Add(_currentNumber);

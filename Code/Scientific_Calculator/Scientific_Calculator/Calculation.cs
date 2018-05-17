@@ -12,7 +12,7 @@ namespace Scientific_Calculator
     /// <summary>
     /// Class that handles all the mathematics of the program, and interpretes the operations inputs
     /// </summary>
-    class Calculation
+    public class Calculation
     {
         #region Private math methods
 
@@ -266,27 +266,25 @@ namespace Scientific_Calculator
         }
 
         /// <summary>
-        /// Reads the array sent by ReadOperation and does all the mathematics to finally find the result of the operation.
+        /// Solves the operation given in parameter with a list using mXParser
         /// </summary>
         /// <returns></returns>
-        public static double Calculate(List<string> operationList)
+        public static double Solve(List<string> operationList)
         {
+            //Converts the list of strings into a single string
             string opString = "";
             foreach (string s in operationList)
             {
-                float f;
-                /*if (float.TryParse(s, out f))
-                {
-                    opString += "F";
-                }*/
-                opString += s;
-                
+                opString += s;   
             }
 
+            //Uses the Expression class, from the assembly mXParser
             Expression e = new Expression(opString);
-            double v = e.calculate();
 
-            return v;
+            //Solves the operation with the calculate method from the Expression class
+            double result = e.calculate();
+
+            return result;
         }
 
         /// <summary>
