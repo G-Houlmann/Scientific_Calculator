@@ -275,7 +275,7 @@ namespace Scientific_Calculator
             string opString = "";
             foreach (string s in operationList)
             {
-                opString += s;   
+                opString += s;
             }
 
             //Uses the Expression class, from the assembly mXParser

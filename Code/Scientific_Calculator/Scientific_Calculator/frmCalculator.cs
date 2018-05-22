@@ -121,7 +121,9 @@ namespace Scientific_Calculator
 
         private void cmdInvert_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("-", _currentNumber.Length * -1);
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, "-");
         }
 
         private void cmdOpenParenthesis_Click(object sender, EventArgs e)
@@ -162,6 +164,11 @@ namespace Scientific_Calculator
         #region Operators
 
         #region simple operators
+        /// <summary>
+        /// Gives the sum of two numbers
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdPlus_Click(object sender, EventArgs e)
         {
             DisplayChar(" + ");
@@ -169,6 +176,11 @@ namespace Scientific_Calculator
             _operationList.Add(" + ");
         }
 
+        /// <summary>
+        /// Gives the substraction of a number by another
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdMinus_Click(object sender, EventArgs e)
         {
             DisplayChar(" - ");
@@ -176,6 +188,11 @@ namespace Scientific_Calculator
             _operationList.Add(" - ");
         }
 
+        /// <summary>
+        /// Gives the multiplicaiton of two numbers
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdMult_Click(object sender, EventArgs e)
         {
             DisplayChar(" x ");
@@ -183,6 +200,11 @@ namespace Scientific_Calculator
             _operationList.Add(" * ");
         }
 
+        /// <summary>
+        /// Gives the division of a number by another
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdDiv_Click(object sender, EventArgs e)
         {
             DisplayChar(" / ");
@@ -190,26 +212,57 @@ namespace Scientific_Calculator
             _operationList.Add(" / ");
         }
 
+        /// <summary>
+        /// Gives the reciprocal (1/x) of a non-null number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdReciprocal_Click(object sender, EventArgs e)
         {
-            DisplayChar("1 / ", -1);
+            DisplayChar("1 / ", _currentNumber.Length * -1);
             EndCurrentNumber();
-            _operationList.Add(" 1/ ");
+            _operationList.Insert(_operationList.Count - 1, " 1/ ");
         }
 
+        /// <summary>
+        /// Gives the factorial of a positive number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdFactorial_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("!");
+            EndCurrentNumber();
+            _operationList.Add("!");
         }
 
+        /// <summary>
+        /// Gives the absolute value of a number
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdAbsValue_Click(object sender, EventArgs e)
         {
+            DisplayChar("|", _currentNumber.Length * -1);
+            DisplayChar("|");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " abs(");
+            _operationList.Add(")");
 
         }
 
+        /// <summary>
+        /// Rounds a number to the nearest integer. .5 rounds to superior.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cmdRound_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("Round(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " round(");
+            _operationList.Add(", 0)");
         }
 
         #endregion
@@ -218,32 +271,56 @@ namespace Scientific_Calculator
 
         private void cmdSin_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("Sin(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " sin(rad(");
+            _operationList.Add("))");
         }
 
         private void cmdCos_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("Cos(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " deg(cos(");
+            _operationList.Add("))");
         }
 
         private void cmdTan_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("Tan(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " deg(tan(");
+            _operationList.Add("))");
         }
 
         private void cmdInvSin_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("InvSin(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " rad(asin(");
+            _operationList.Add("))");
         }
 
         private void cmdInvCos_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("InvCos(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " rad(acos(");
+            _operationList.Add("))");
         }
 
         private void cmdInvTan_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("InvTan(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " rad(atan(");
+            _operationList.Add("))");
         }
 
         #endregion
@@ -252,7 +329,9 @@ namespace Scientific_Calculator
 
         private void cmdSquare_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("^2");
+            EndCurrentNumber();
+            _operationList.Add("^2");
         }
 
         private void cmdSqrt_Click(object sender, EventArgs e)
@@ -295,6 +374,7 @@ namespace Scientific_Calculator
         {
             rtxtDisplay.Clear();
             _operationList.Clear();
+            _currentNumber = "";
         }
 
         /// <summary>
@@ -307,6 +387,8 @@ namespace Scientific_Calculator
             EndCurrentNumber();
             double result = Calculation.Solve(_operationList);
             rtxtDisplay.Text += " = " + result.ToString();
+            _operationList.Clear();
+            _currentNumber = result.ToString();
         }
 
         #endregion
