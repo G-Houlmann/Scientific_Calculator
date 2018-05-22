@@ -18,6 +18,8 @@ namespace Scientific_Calculator
     {
         private List<string> _operationList = new List<string>();
         private string _currentNumber = "";
+        private int _cursorPlace = 0;
+        Predicate<string> _preRtVal = (string s) => { return s.Contains("rtVal"); };
         /// <summary>
         /// Constructor
         /// </summary>
@@ -122,8 +124,7 @@ namespace Scientific_Calculator
         private void cmdInvert_Click(object sender, EventArgs e)
         {
             DisplayChar("-", _currentNumber.Length * -1);
-            EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, "-");
+            _currentNumber = _currentNumber.Insert(0, "-");
         }
 
         private void cmdOpenParenthesis_Click(object sender, EventArgs e)
@@ -336,27 +337,43 @@ namespace Scientific_Calculator
 
         private void cmdSqrt_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("2√", _currentNumber.Length * - 1);
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " sqrt(");
+            _operationList.Add(")");
         }
 
         private void cmdExponentiation_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("^");
+            EndCurrentNumber();
+            _operationList.Add("^");
         }
 
         private void cmdRoot_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("√", _currentNumber.Length * -1);
+            _cursorPlace = (_currentNumber.Length * -1) -1;
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " root(rtVal,  ");
+            _operationList.Add(")");
         }
 
         private void cmdExponential_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("e^", _currentNumber.Length * -1);
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " exp(");
+            _operationList.Add(")");
         }
 
         private void cmdLog_Click(object sender, EventArgs e)
         {
-
+            DisplayChar("log10(", _currentNumber.Length * -1);
+            DisplayChar(")");
+            EndCurrentNumber();
+            _operationList.Insert(_operationList.Count - 1, " log10(");
+            _operationList.Add(")");
         }
 
         private void cmdLn_Click(object sender, EventArgs e)
@@ -375,6 +392,7 @@ namespace Scientific_Calculator
             rtxtDisplay.Clear();
             _operationList.Clear();
             _currentNumber = "";
+            _cursorPlace = 0;
         }
 
         /// <summary>
@@ -389,6 +407,7 @@ namespace Scientific_Calculator
             rtxtDisplay.Text += " = " + result.ToString();
             _operationList.Clear();
             _currentNumber = result.ToString();
+            _cursorPlace = 0;
         }
 
         #endregion
@@ -398,13 +417,21 @@ namespace Scientific_Calculator
         /// </summary>
         private void EndCurrentNumber()
         {
-            _operationList.Add(_currentNumber);
+            int indexRtVal = _operationList.FindLastIndex(_preRtVal);
+            if(indexRtVal != -1)
+            {
+                _operationList[indexRtVal] = " root(" + _currentNumber + ",  ";
+            }
+            else
+            {
+                _operationList.Add(_currentNumber);
+            }
             _currentNumber = "";
         }
 
         private void DisplayChar(string sign, int position = 0)
         {
-            rtxtDisplay.Text = rtxtDisplay.Text.Insert(rtxtDisplay.TextLength + position, sign);
+            rtxtDisplay.Text = rtxtDisplay.Text.Insert(rtxtDisplay.TextLength + position + _cursorPlace, sign);
         }
 
         private void cmdHistory_Click(object sender, EventArgs e)
