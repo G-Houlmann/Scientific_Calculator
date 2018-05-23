@@ -256,13 +256,42 @@ namespace Scientific_Calculator
 
 
         /// <summary>
-        /// Reads the operation string and transforms it into an array.
-        /// The array contains all the math operations and numbers that will have to be used
+        /// Converts a decimal number in a string to an hexadecimal number in a string
         /// </summary>
-        /// <returns>An array conaining the necesarry information to do the operation</returns>
-        private string[] ReadOperation(List<string> operationList)
+        /// <param name="dec"></param>
+        /// <returns></returns>
+        public static string ConvDecHex(string dec)
         {
-            return null;
+            string hex = "";
+            uint nDec = uint.Parse(dec);
+            hex = Convert.ToString(nDec, 16);
+            return hex;
+        }
+
+        /// <summary>
+        /// Converts a decimal number in a string to a binary number in a string
+        /// </summary>
+        /// <param name="dec"></param>
+        /// <returns></returns>
+        public static string ConvDecBin(string dec)
+        {
+            string bin = "";
+            uint nDec = uint.Parse(dec);
+            bin = Convert.ToString(nDec, 2);
+            return bin;
+        }
+
+        /// <summary>
+        /// Converts a decimal number in a string to an octal number in a string
+        /// </summary>
+        /// <param name="dec"></param>
+        /// <returns></returns>
+        public static string ConvDecOct(string dec)
+        {
+            string oct = "";
+            uint nDec = uint.Parse(dec);
+            oct = Convert.ToString(nDec, 8);
+            return oct;
         }
 
         /// <summary>
@@ -283,18 +312,14 @@ namespace Scientific_Calculator
 
             //Solves the operation with the calculate method from the Expression class
             double result = e.calculate();
-
+            ArchiveOperation(opString + " = " + result.ToString());
             return result;
         }
 
-        /// <summary>
-        /// Sends the operation string to the ReadOperation method, then sends the resulted array to the Calculate method, thus obtaining the numeric result.
-        /// </summary>
-        /// <param name="operationString"></param>
-        /// <returns></returns>
-        public double Solve(string operationString)
+        private static void ArchiveOperation(string opString)
         {
-            return 0;
+            DBAccess dba = new DBAccess();
+            dba.InsertOperationInHistory(opString);
         }
     }
 }

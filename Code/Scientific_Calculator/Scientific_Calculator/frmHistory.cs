@@ -21,6 +21,7 @@ namespace Scientific_Calculator
         public frmHistory()
         {
             InitializeComponent();
+            DisplayHistory();
         }
 
         /// <summary>
@@ -28,7 +29,29 @@ namespace Scientific_Calculator
         /// </summary>
         private void DisplayHistory()
         {
+            DBAccess dba = new DBAccess();
+            List<string> lstLog = new List<string>();
 
+            //Retrieving the amount of entries to display
+            int operationsAmount = dba.GetSettingValue("HistoryAmount");
+
+            //The "var" type is used here because List<string[]> caused an error
+            var lstDatas = dba.GetOperationHistory(operationsAmount);
+            //Retrieving
+            int counter = 0;
+            string logString;
+            foreach (string opString in lstDatas.ElementAt(1))
+            {
+                logString = lstDatas.ElementAt(0)[counter] + "   " + opString;
+                lstLog.Add(logString);
+                counter++;
+            }
+
+            //Displaying the items in the listbox
+            foreach (string s in lstLog)
+            {
+                lstHistory.Items.Add(s);
+            }
         }
     }
 }

@@ -85,7 +85,20 @@ namespace Scientific_Calculator
         /// <returns>the numeric value of the constant</returns>
         public double GetConstant(string constantName)
         {
-            return 0;
+            string query = "SELECT value FROM constant WHERE `name` = '" + constantName + "' LIMIT 1;";
+
+            OpenConnection();
+            MySqlCommand q = new MySqlCommand(query, _connection);
+            MySqlDataReader dataReader = q.ExecuteReader();
+            string valueString = "0";
+            while (dataReader.Read())
+            {
+                valueString = dataReader["value"] + "";
+            }
+            dataReader.Close();
+            CloseConnection();
+            double value = double.Parse(valueString);
+            return value;
         }
 
         /// <summary>
@@ -115,7 +128,20 @@ namespace Scientific_Calculator
         /// <returns>the value of the setting</returns>
         public int GetSettingValue(string settingName)
         {
-            return 0;
+            string query = "SELECT value FROM setting WHERE `name` = '" + settingName +"' LIMIT 1;";
+
+            OpenConnection();
+            MySqlCommand q = new MySqlCommand(query, _connection);
+            MySqlDataReader dataReader = q.ExecuteReader();
+            string valueString = "1";
+            while (dataReader.Read())
+            {
+                valueString = dataReader["value"] + "";
+            }
+            dataReader.Close();
+            CloseConnection();
+            int value = int.Parse(valueString);
+            return value;
         }
 
 
@@ -124,9 +150,39 @@ namespace Scientific_Calculator
         /// </summary>
         /// <param name="amount">the amount of operations that need to be retrieved</param>
         /// <returns>a list of the last operations ordered by date</returns>
-        public List<string> GetOperationHistory(int amount)
+        public List<string>[] GetOperationHistory(int amount)
         {
-            return null;
+            string query = "SELECT `date`, operationString FROM archivedoperation ORDER BY `date` DESC LIMIT " + amount + ";";
+
+            //Initializing results lists
+            List<string>[] results = new List<string>[2];
+            results[0] = new List<string>();
+            results[1] = new List<string>();
+
+            try
+            {
+                OpenConnection();
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                MySqlDataReader dataReader = q.ExecuteReader();
+
+                //Reading the results, converting them to strings and storing them in lists
+                while (dataReader.Read())
+                {
+                    results[0].Add(dataReader["date"] + "");
+                    results[1].Add(dataReader["operationString"] + "");
+                }
+
+                dataReader.Close();
+                CloseConnection();
+
+                return results;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+                return null;
+            }
         }
 
         /// <summary>
@@ -135,7 +191,21 @@ namespace Scientific_Calculator
         /// <param name="OperationString">the operaiton string that will be stored in the database</param>
         public void InsertOperationInHistory(string OperationString)
         {
+            DateTime t = DateTime.Now;
+            string today = t.Year + "-" + t.Month + "-" + t.Day + " " + t.Hour + ":" + t.Minute + ":" + t.Second;
+            string query = "INSERT INTO archivedoperation (date, operationString) VALUES ('" + today + "', '" + OperationString + "');";
 
+            OpenConnection();
+            try
+            {
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                q.ExecuteNonQuery();
+                CloseConnection();
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+            }
         }
     }
 }

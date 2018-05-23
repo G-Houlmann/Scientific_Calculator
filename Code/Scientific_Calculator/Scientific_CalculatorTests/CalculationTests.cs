@@ -994,6 +994,40 @@ namespace Scientific_Calculator.Tests
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
         }
 
+        [TestMethod()]
+        public void SolveTestNaturalLog()
+        {
+            //Data preparation-----------------------------------------------------------------
+            List<double[]> lstArrays = CreateRandomArrays();
+            double[] firstMembers = lstArrays.ElementAt(0);
+            double[] resultExpected = lstArrays.ElementAt(2);
+
+            for (int i = 0; i < 102; i++)
+            {
+                /*The result is rounded because after about 10 digits the Solve() method and c# start  
+                rounding the decimals in a different way, giving 2 very close but different values.*/
+                resultExpected[i] = Math.Round(Math.Log(firstMembers[i]), 5);
+            }
+
+            //Testing with zeros
+            firstMembers[102] = 0;
+
+            resultExpected[102] = double.NegativeInfinity;
+
+            //Execution----------------------------------------------------------------------
+            double[] resultCalculated = new double[103];
+            List<string> opList = new List<string>();
+            for (int i = 0; i < 103; i++)
+            {
+                opList.Clear();
+                opList.Add(" ln(");
+                opList.Add(firstMembers[i].ToString() + ")");
+                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+            }
+            //Check----------------------------------------------------------------------------
+            CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
+        }
+
 
 
         #endregion
