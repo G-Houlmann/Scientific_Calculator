@@ -34,6 +34,7 @@ namespace Scientific_Calculator
 
             //Retrieving the amount of entries to display
             int operationsAmount = dba.GetSettingValue("HistoryAmount");
+            lblHistoryAmount.Text = operationsAmount.ToString();
 
             //The "var" type is used here because List<string[]> caused an error
             var lstDatas = dba.GetOperationHistory(operationsAmount);

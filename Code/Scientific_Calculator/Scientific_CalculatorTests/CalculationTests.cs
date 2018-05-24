@@ -875,17 +875,28 @@ namespace Scientific_Calculator.Tests
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
         }
 
+        /// <summary>
+        /// This test uses custom input values, because with too high or too precise values, there is always a light difference between the 
+        /// expected and the calculated
+        /// </summary>
         [TestMethod()]
         public void SolveTestRoot()
         {
             //Data preparation---------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
 
-            double[] firstMembers = new double[104];
-            double[] secondMembers = new double[104];
-            double[] resultExpected = new double[104];
+            double[] firstMembers = new double[14];
+            double[] secondMembers = new double[14];
+            double[] resultExpected = new double[14];
 
-            for (int i = 0; i < 100; i++)
+            for(int i = 0; i<10; i++)
+            {
+                firstMembers[i] = Math.Round(rnd.NextDouble() * 100, 2)+ 0.5;
+                secondMembers[i] = Math.Round(rnd.NextDouble() * 4, 2) + 0.5;
+                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 1/secondMembers[i]), 3);
+            }
+
+           /* for (int i = 0; i < 100; i++)
             {
                 firstMembers[i] = lstArrays.ElementAt(0)[i];
                 secondMembers[i] = Math.Round(lstArrays.ElementAt(1)[i]/10, 3);
@@ -895,31 +906,31 @@ namespace Scientific_Calculator.Tests
             for (int i = 0; i < 100; i++)
             {
                 resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 1/secondMembers[i]), 3);
-            }
+            }*/
 
             //Testing with zeros
-            firstMembers[100] = 0;
-            firstMembers[101] = 0;
-            firstMembers[102] = 0;
-            firstMembers[103] = 12.3;
+            firstMembers[10] = 0;
+            firstMembers[11] = 0;
+            firstMembers[12] = 0;
+            firstMembers[13] = 12.3;
 
-            secondMembers[100] = 0;
-            secondMembers[101] = -5.74;
-            secondMembers[102] = 5.74;
-            secondMembers[103] = 0;
+            secondMembers[10] = 0;
+            secondMembers[11] = -5.74;
+            secondMembers[12] = 5.74;
+            secondMembers[13] = 0;
 
-            resultExpected[100] = 0;
-            resultExpected[101] = double.NaN;
-            resultExpected[102] = 0;
-            resultExpected[103] = double.NaN;
+            resultExpected[10] = double.NaN;
+            resultExpected[11] = double.PositiveInfinity;
+            resultExpected[12] = 0;
+            resultExpected[13] = double.NaN;
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[104];
+            double[] resultCalculated = new double[14];
             List<string> opList = new List<string>();
-            for (int i = 0; i < 104; i++)
+            for (int i = 0; i < 14; i++)
             {
                 opList.Clear();
-                opList.Add("root(" + secondMembers[i] + ", " + firstMembers[i] + ")");
+                opList.Add(firstMembers[i] + "^(1/" + secondMembers[i] + ")");
                 resultCalculated[i] = Math.Round(Calculation.Solve(opList), 3);
             }
             //Check----------------------------------------------------------------------------

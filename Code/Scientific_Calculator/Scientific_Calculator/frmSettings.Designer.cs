@@ -81,7 +81,7 @@ namespace Scientific_Calculator
             // 
             this.nudHistoryAmount.Location = new System.Drawing.Point(15, 120);
             this.nudHistoryAmount.Maximum = new decimal(new int[] {
-            9999,
+            230,
             0,
             0,
             0});

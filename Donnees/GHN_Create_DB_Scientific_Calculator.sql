@@ -81,4 +81,4 @@ INSERT INTO constant (`name`, `value`) VALUES('LightSpeed', 299792458);
 -- ----------------------------------------------------
 
 INSERT INTO setting (`name`, defaultValue, minValue, `maxValue`) VALUES('DecimalsAmount', 5, 1, 12);
-INSERT INTO setting (`name`, defaultValue, minValue, `maxValue`) VALUES('HistoryAmount', 100, 0, 9999);
+INSERT INTO setting (`name`, defaultValue, minValue, `maxValue`) VALUES('HistoryAmount', 100, 0, 230);

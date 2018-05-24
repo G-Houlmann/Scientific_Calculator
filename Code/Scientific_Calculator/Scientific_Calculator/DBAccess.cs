@@ -88,17 +88,27 @@ namespace Scientific_Calculator
             string query = "SELECT value FROM constant WHERE `name` = '" + constantName + "' LIMIT 1;";
 
             OpenConnection();
-            MySqlCommand q = new MySqlCommand(query, _connection);
-            MySqlDataReader dataReader = q.ExecuteReader();
-            string valueString = "0";
-            while (dataReader.Read())
+            try
             {
-                valueString = dataReader["value"] + "";
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                MySqlDataReader dataReader = q.ExecuteReader();
+                string valueString = "0";
+                while (dataReader.Read())
+                {
+                    valueString = dataReader["value"] + "";
+                }
+                dataReader.Close();
+                CloseConnection();
+                double value = double.Parse(valueString);
+                return value;
             }
-            dataReader.Close();
-            CloseConnection();
-            double value = double.Parse(valueString);
-            return value;
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+                return 0;
+            }
+
         }
 
         /// <summary>
@@ -108,7 +118,30 @@ namespace Scientific_Calculator
         /// <returns>the numeric value of the setting</returns>
         public int GetDefaultSetting(string settingName)
         {
-            return 0;
+            string query = "SELECT defaultValue FROM setting WHERE `name` = '" + settingName + "' LIMIT 1;";
+
+            OpenConnection();
+            try
+            {
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                MySqlDataReader dataReader = q.ExecuteReader();
+                string valueString = "1";
+                while (dataReader.Read())
+                {
+                    valueString = dataReader["defaultValue"] + "";
+                }
+                dataReader.Close();
+                CloseConnection();
+                int value = int.Parse(valueString);
+                return value;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+                return 0;
+            }
+
         }
 
         /// <summary>
@@ -118,7 +151,20 @@ namespace Scientific_Calculator
         /// <param name="newValue">the new value given to the setting</param>
         public void UpdateSetting(string settingName, int newValue)
         {
+            string query = "UPDATE setting SET `value` = " + newValue + " WHERE `name` = '" + settingName + "';";
 
+            OpenConnection();
+            try
+            {
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                q.ExecuteNonQuery();
+                CloseConnection();
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+            }
         }
 
         /// <summary>
@@ -131,17 +177,61 @@ namespace Scientific_Calculator
             string query = "SELECT value FROM setting WHERE `name` = '" + settingName +"' LIMIT 1;";
 
             OpenConnection();
-            MySqlCommand q = new MySqlCommand(query, _connection);
-            MySqlDataReader dataReader = q.ExecuteReader();
-            string valueString = "1";
-            while (dataReader.Read())
+            try
             {
-                valueString = dataReader["value"] + "";
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                MySqlDataReader dataReader = q.ExecuteReader();
+                string valueString = "0";
+                while (dataReader.Read())
+                {
+                    valueString = dataReader["value"] + "";
+                }
+                dataReader.Close();
+                CloseConnection();
+                int value = int.Parse(valueString);
+                return value;
             }
-            dataReader.Close();
-            CloseConnection();
-            int value = int.Parse(valueString);
-            return value;
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+                return 0;
+            }
+        }
+
+
+        /// <summary>
+        /// Gets the minimum and maximum value of a chosen setting from the database
+        /// </summary>
+        /// <param name="settingName">the name of the setting</param>
+        /// <returns>the minimum and maximum values of the setting</returns>
+        public int[] GetSettingMinMax(string settingName)
+        {
+            string query = "SELECT minValue, `maxValue` FROM setting WHERE `name` = '" + settingName + "' LIMIT 1;";
+            int[] results = new int[2];
+
+            OpenConnection();
+            try
+            { 
+                MySqlCommand q = new MySqlCommand(query, _connection);
+                MySqlDataReader dataReader = q.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    results[0] = int.Parse(dataReader["minValue"] + "");
+                    results[1] = int.Parse(dataReader["maxValue"] + "");
+                }
+
+                dataReader.Close();
+                CloseConnection();
+                return results;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
+                return null;
+            }
+
         }
 
 
@@ -159,9 +249,9 @@ namespace Scientific_Calculator
             results[0] = new List<string>();
             results[1] = new List<string>();
 
+            OpenConnection();
             try
             {
-                OpenConnection();
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
 
@@ -205,6 +295,7 @@ namespace Scientific_Calculator
             catch (Exception e)
             {
                 System.Windows.Forms.MessageBox.Show("Un problème est survenu avec la base de donnée. Message : " + e.Message);
+                CloseConnection();
             }
         }
     }

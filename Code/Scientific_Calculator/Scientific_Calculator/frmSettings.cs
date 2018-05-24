@@ -15,12 +15,36 @@ namespace Scientific_Calculator
     /// </summary>
     public partial class frmSettings : Form
     {
+        int[] _decimalsAmountMinMax = new int[2];
+        int[] _historyAmountMinMax = new int[2];
+
+        private int _decimalsAmount;
+        private int _historyAmount;
+
+
+
         /// <summary>
         /// Constructor
         /// </summary>
         public frmSettings()
         {
             InitializeComponent();
+            getSettingsValue();
+            nudDecimalsAmount.Minimum = _decimalsAmountMinMax[0];
+            nudDecimalsAmount.Maximum = _decimalsAmountMinMax[1];
+            nudHistoryAmount.Minimum = _historyAmountMinMax[0];
+            nudHistoryAmount.Maximum = _historyAmountMinMax[1];
+        }
+
+        private void getSettingsValue()
+        {
+            DBAccess dba = new DBAccess();
+            _decimalsAmount = dba.GetSettingValue("DecimalsAmount");
+            _historyAmount = dba.GetSettingValue("HistoryAmount");
+            _decimalsAmountMinMax = dba.GetSettingMinMax("DecimalsAmount");
+            _historyAmountMinMax = dba.GetSettingMinMax("HistoryAmount");
+            nudDecimalsAmount.Value = _decimalsAmount;
+            nudHistoryAmount.Value = _historyAmount;
         }
 
         /// <summary>
@@ -30,7 +54,8 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void nudDecimalsAmount_ValueChanged(object sender, EventArgs e)
         {
-
+            DBAccess dba = new DBAccess();
+            dba.UpdateSetting("DecimalsAmount", (int)nudDecimalsAmount.Value);
         }
 
         /// <summary>
@@ -40,7 +65,8 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void nudHistoryAmount_ValueChanged(object sender, EventArgs e)
         {
-
+            DBAccess dba = new DBAccess();
+            dba.UpdateSetting("HistoryAmount", (int)nudHistoryAmount.Value);
         }
     }
 }

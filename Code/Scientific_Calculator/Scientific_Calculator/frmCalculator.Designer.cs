@@ -76,6 +76,8 @@ namespace Scientific_Calculator
             this.cmdLightSpeed = new System.Windows.Forms.Button();
             this.cmdCloseParenthesis = new System.Windows.Forms.Button();
             this.cmdOpenParenthesis = new System.Windows.Forms.Button();
+            this.lblDecimalsAmountTitle = new System.Windows.Forms.Label();
+            this.lblDecimalsAmount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmdGraphDisplayer
@@ -737,11 +739,31 @@ namespace Scientific_Calculator
             this.cmdOpenParenthesis.UseVisualStyleBackColor = false;
             this.cmdOpenParenthesis.Click += new System.EventHandler(this.cmdOpenParenthesis_Click);
             // 
+            // lblDecimalsAmountTitle
+            // 
+            this.lblDecimalsAmountTitle.AutoSize = true;
+            this.lblDecimalsAmountTitle.Location = new System.Drawing.Point(13, 103);
+            this.lblDecimalsAmountTitle.Name = "lblDecimalsAmountTitle";
+            this.lblDecimalsAmountTitle.Size = new System.Drawing.Size(115, 13);
+            this.lblDecimalsAmountTitle.TabIndex = 55;
+            this.lblDecimalsAmountTitle.Text = "Nombre de décimales :";
+            // 
+            // lblDecimalsAmount
+            // 
+            this.lblDecimalsAmount.AutoSize = true;
+            this.lblDecimalsAmount.Location = new System.Drawing.Point(125, 104);
+            this.lblDecimalsAmount.Name = "lblDecimalsAmount";
+            this.lblDecimalsAmount.Size = new System.Drawing.Size(13, 13);
+            this.lblDecimalsAmount.TabIndex = 56;
+            this.lblDecimalsAmount.Text = "1";
+            // 
             // frmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 482);
+            this.Controls.Add(this.lblDecimalsAmount);
+            this.Controls.Add(this.lblDecimalsAmountTitle);
             this.Controls.Add(this.cmdCloseParenthesis);
             this.Controls.Add(this.cmdOpenParenthesis);
             this.Controls.Add(this.cmdLightSpeed);
@@ -793,6 +815,7 @@ namespace Scientific_Calculator
             this.Name = "frmCalculator";
             this.Text = "Calculatrice scientifique";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -845,5 +868,7 @@ namespace Scientific_Calculator
         private System.Windows.Forms.Button cmdLightSpeed;
         private System.Windows.Forms.Button cmdCloseParenthesis;
         private System.Windows.Forms.Button cmdOpenParenthesis;
+        private System.Windows.Forms.Label lblDecimalsAmountTitle;
+        private System.Windows.Forms.Label lblDecimalsAmount;
     }
 }

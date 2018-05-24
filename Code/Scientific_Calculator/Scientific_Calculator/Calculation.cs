@@ -311,8 +311,11 @@ namespace Scientific_Calculator
             Expression e = new Expression(opString);
 
             //Solves the operation with the calculate method from the Expression class
+
             double result = e.calculate();
+
             ArchiveOperation(opString + " = " + result.ToString());
+
             return result;
         }
 

@@ -19,13 +19,24 @@ namespace Scientific_Calculator
         private List<string> _operationList = new List<string>();
         private string _currentNumber = "";
         private int _cursorPlace = 0;
+        private int _decimalsAmount;
+
+        private string addAfter = "";
+
+        /// <summary>
+        /// Predicate used to find whether a root value "rtVal" must be replaced in the operation's list
+        /// </summary>
         Predicate<string> _preRtVal = (string s) => { return s.Contains("rtVal"); };
+
         /// <summary>
         /// Constructor
         /// </summary>
         public frmCalculator()
         {
             InitializeComponent();
+            DBAccess dba = new DBAccess();
+            _decimalsAmount = dba.GetSettingValue("DecimalsAmount");
+            lblDecimalsAmount.Text = _decimalsAmount.ToString();
         }
 
         #region Calculator button events
@@ -543,11 +554,19 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdRoot_Click(object sender, EventArgs e)
         {
-            DisplayString("√", _currentNumber.Length * -1);
+            /*DisplayString("√", _currentNumber.Length * -1);
             _cursorPlace = (_currentNumber.Length * -1) -1;
             EndCurrentNumber();
             _operationList.Insert(_operationList.Count - 1, " root(rtVal,  ");
-            _operationList.Add(")");
+            _operationList.Add(")");*/
+
+
+            DisplayString("√", _currentNumber.Length * -1);
+            _cursorPlace = (_currentNumber.Length * -1) - 1;
+            EndCurrentNumber();
+            _operationList.Add("^(1/");
+            addAfter = ")";
+
         }
 
         /// <summary>
@@ -619,7 +638,7 @@ namespace Scientific_Calculator
         {
             EndCurrentNumber();
             double result = Calculation.Solve(_operationList);
-            rtxtDisplay.Text += " = " + result.ToString();
+            rtxtDisplay.Text += " = " + Math.Round(result, _decimalsAmount).ToString();
             _operationList.Clear();
             _currentNumber = result.ToString();
             _cursorPlace = 0;
@@ -642,6 +661,8 @@ namespace Scientific_Calculator
                 _operationList.Add(_currentNumber);
             }
             _currentNumber = "";
+            _operationList.Add(addAfter);
+            addAfter = "";
         }
 
         /// <summary>
@@ -663,7 +684,6 @@ namespace Scientific_Calculator
         {
             frmHistory historyForm = new frmHistory();
             historyForm.ShowDialog();
-
         }
 
 
@@ -674,7 +694,11 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdSettings_Click(object sender, EventArgs e)
         {
-
+            frmSettings settingsForm = new frmSettings();
+            settingsForm.ShowDialog();
+            DBAccess dba = new DBAccess();
+            _decimalsAmount = dba.GetSettingValue("DecimalsAmount");
+            lblDecimalsAmount.Text = _decimalsAmount.ToString();
         }
 
         /// <summary>
