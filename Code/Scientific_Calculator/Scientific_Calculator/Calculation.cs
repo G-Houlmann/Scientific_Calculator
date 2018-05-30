@@ -254,6 +254,7 @@ namespace Scientific_Calculator
 
         #endregion
 
+        #region conversions
 
         /// <summary>
         /// Converts a decimal number in a string to an hexadecimal number in a string
@@ -293,6 +294,8 @@ namespace Scientific_Calculator
             oct = Convert.ToString(nDec, 8);
             return oct;
         }
+
+        #endregion
 
         /// <summary>
         /// Solves the operation given in parameter with a list using mXParser

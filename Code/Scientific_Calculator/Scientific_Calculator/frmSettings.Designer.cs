@@ -64,9 +64,9 @@ namespace Scientific_Calculator
             this.lblDecimalsAmount.AutoSize = true;
             this.lblDecimalsAmount.Location = new System.Drawing.Point(12, 25);
             this.lblDecimalsAmount.Name = "lblDecimalsAmount";
-            this.lblDecimalsAmount.Size = new System.Drawing.Size(170, 13);
+            this.lblDecimalsAmount.Size = new System.Drawing.Size(109, 13);
             this.lblDecimalsAmount.TabIndex = 1;
-            this.lblDecimalsAmount.Text = "Nombre de chiffres après la virgule";
+            this.lblDecimalsAmount.Text = "Nombre de décimales";
             // 
             // lblHistoryAmount
             // 

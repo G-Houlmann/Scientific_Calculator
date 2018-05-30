@@ -20,8 +20,19 @@ namespace Scientific_Calculator
         private string _currentNumber = "";
         private int _cursorPlace = 0;
         private int _decimalsAmount;
-
+        private int _lastExpressionLength = 0;
         private string addAfter = "";
+        private int _ListCurrentExpressionStart = 0;
+        private int _ListCurrentExpressionEnd = 1;
+        private int _stringCurrentExpressionStart = 0;
+        private int _stringCurrentExpressionEnd = 1;
+
+        /* 0: + and -
+         * 1: * and /
+         * 2: exposants and complex operators
+         * 3: parenthesis
+         */
+        private int _currentExpressionPriorityLevel = 0;
 
         /// <summary>
         /// Predicate used to find whether a root value "rtVal" must be replaced in the operation's list
@@ -34,6 +45,18 @@ namespace Scientific_Calculator
         public frmCalculator()
         {
             InitializeComponent();
+            //Tests the database connection. If a connection cannot be opened, the application closes
+            try
+            {
+                DBAccess dbaTest = new DBAccess();
+                dbaTest.testConnection();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Impossible de se connecter à la base de données. L'applicaiton va se fermer.");
+                Environment.Exit(1);
+            }
+            Program.setSettingsToDefault();
             DBAccess dba = new DBAccess();
             _decimalsAmount = dba.GetSettingValue("DecimalsAmount");
             lblDecimalsAmount.Text = _decimalsAmount.ToString();
@@ -220,6 +243,7 @@ namespace Scientific_Calculator
             EndCurrentNumber();
             DisplayString("(");
             _operationList.Add("(");
+            _currentExpressionPriorityLevel = 3;
         }
 
         /// <summary>
@@ -429,11 +453,13 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdSin_Click(object sender, EventArgs e)
         {
-            DisplayString("Sin(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("Sin(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " sin(rad(");
-            _operationList.Add("))");
+            _operationList.Insert(_ListCurrentExpressionStart, " sin(rad(");
+            _operationList.Insert(_ListCurrentExpressionEnd, "))");
+            _ListCurrentExpressionEnd += 2;
+            _stringCurrentExpressionStart += 4;
         }
 
         /// <summary>
@@ -443,11 +469,13 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdCos_Click(object sender, EventArgs e)
         {
-            DisplayString("Cos(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("Cos(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " deg(cos(");
-            _operationList.Add("))");
+            _operationList.Insert(_ListCurrentExpressionStart, " cos(rad(");
+            _operationList.Insert(_ListCurrentExpressionEnd, "))");
+            _ListCurrentExpressionEnd += 2;
+            _stringCurrentExpressionStart += 4;
         }
 
         /// <summary>
@@ -460,7 +488,7 @@ namespace Scientific_Calculator
             DisplayString("Tan(", _currentNumber.Length * -1);
             DisplayString(")");
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " deg(tan(");
+            _operationList.Insert(_operationList.Count - _lastExpressionLength, " tan(rad(");
             _operationList.Add("))");
         }
 
@@ -627,6 +655,9 @@ namespace Scientific_Calculator
             _operationList.Clear();
             _currentNumber = "";
             _cursorPlace = 0;
+            _lastExpressionLength = 1;
+            _ListCurrentExpressionEnd = 1;
+            _ListCurrentExpressionStart = 0;
         }
 
         /// <summary>
@@ -642,6 +673,9 @@ namespace Scientific_Calculator
             _operationList.Clear();
             _currentNumber = result.ToString();
             _cursorPlace = 0;
+            _lastExpressionLength = 1;
+            _ListCurrentExpressionEnd = 1;
+            _ListCurrentExpressionStart = 0;
         }
 
         #endregion
@@ -651,17 +685,22 @@ namespace Scientific_Calculator
         /// </summary>
         private void EndCurrentNumber()
         {
+            //_stringCurrentExpressionEnd += _currentNumber.Length;
             int indexRtVal = _operationList.FindLastIndex(_preRtVal);
             if(indexRtVal != -1)
             {
                 _operationList[indexRtVal] = " root(" + _currentNumber + ",  ";
             }
-            else
+            else if(_currentNumber != "")
             {
                 _operationList.Add(_currentNumber);
+                _ListCurrentExpressionEnd += 1;
             }
             _currentNumber = "";
-            _operationList.Add(addAfter);
+            if(addAfter != "")
+            {
+                _operationList.Add(addAfter);
+            }
             addAfter = "";
         }
 
@@ -670,9 +709,21 @@ namespace Scientific_Calculator
         /// </summary>
         /// <param name="sign"></param>
         /// <param name="position"></param>
-        private void DisplayString(string stringToDisplay, int position = 0)
+        private void DisplayString(string stringToDisplay, int? position = null)
         {
-            rtxtDisplay.Text = rtxtDisplay.Text.Insert(rtxtDisplay.TextLength + position + _cursorPlace, stringToDisplay);
+            if(position == null)
+            {
+                position = _stringCurrentExpressionEnd;
+            }
+            if(position == rtxtDisplay.Text.Length + 1)
+            {
+                rtxtDisplay.Text += stringToDisplay;
+            }
+            else
+            {
+                rtxtDisplay.Text = rtxtDisplay.Text.Insert((int)position, stringToDisplay);
+            }
+            _stringCurrentExpressionEnd += stringToDisplay.Length;
         }
 
         /// <summary>
@@ -708,7 +759,8 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdGraphDisplayer_Click(object sender, EventArgs e)
         {
-
+            frmFunctionPlot functionForm = new frmFunctionPlot();
+            functionForm.ShowDialog();
         }
     }
 }

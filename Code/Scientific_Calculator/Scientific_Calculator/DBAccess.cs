@@ -46,6 +46,16 @@ namespace Scientific_Calculator
 
         #region connectionHandling
 
+
+        /// <summary>
+        /// Tries to open and close the connection to try it
+        /// </summary>
+        public void testConnection()
+        {
+            _connection.Open();
+            _connection.Close();
+        }
+
         /// <summary>
         /// Opens a connection to the database
         /// </summary>
@@ -85,7 +95,7 @@ namespace Scientific_Calculator
         /// <returns>the numeric value of the constant</returns>
         public double GetConstant(string constantName)
         {
-            string query = "SELECT value FROM constant WHERE `name` = '" + constantName + "' LIMIT 1;";
+            string query = "SELECT value FROM constant WHERE `name` = '" + constantName + "';";
 
             OpenConnection();
             try
@@ -118,7 +128,7 @@ namespace Scientific_Calculator
         /// <returns>the numeric value of the setting</returns>
         public int GetDefaultSetting(string settingName)
         {
-            string query = "SELECT defaultValue FROM setting WHERE `name` = '" + settingName + "' LIMIT 1;";
+            string query = "SELECT defaultValue FROM setting WHERE `name` = '" + settingName + "';";
 
             OpenConnection();
             try
@@ -174,7 +184,7 @@ namespace Scientific_Calculator
         /// <returns>the value of the setting</returns>
         public int GetSettingValue(string settingName)
         {
-            string query = "SELECT value FROM setting WHERE `name` = '" + settingName +"' LIMIT 1;";
+            string query = "SELECT value FROM setting WHERE `name` = '" + settingName +"';";
 
             OpenConnection();
             try
@@ -207,7 +217,7 @@ namespace Scientific_Calculator
         /// <returns>the minimum and maximum values of the setting</returns>
         public int[] GetSettingMinMax(string settingName)
         {
-            string query = "SELECT minValue, `maxValue` FROM setting WHERE `name` = '" + settingName + "' LIMIT 1;";
+            string query = "SELECT minValue, `maxValue` FROM setting WHERE `name` = '" + settingName + "';";
             int[] results = new int[2];
 
             OpenConnection();

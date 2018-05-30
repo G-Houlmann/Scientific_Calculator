@@ -16,14 +16,13 @@ namespace Scientific_Calculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            setSettingsToDefault();
             Application.Run(new frmCalculator());
         }
 
         /// <summary>
         /// Sets the different settings to their default value if no value has already been given to them in the database
         /// </summary>
-        static void setSettingsToDefault()
+        public static void setSettingsToDefault()
         {
             DBAccess dba = new DBAccess();
             string settingName = "decimalsAmount";

@@ -27,7 +27,7 @@ DROP TABLE IF EXISTS `Scientific_Calculator`.`Constant` ;
 
 CREATE TABLE IF NOT EXISTS `Scientific_Calculator`.`Constant` (
   `idConstant` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(40) NOT NULL,
+  `name` VARCHAR(40) NOT NULL UNIQUE,
   `value` DOUBLE NOT NULL,
   PRIMARY KEY (`idConstant`))
 ENGINE = InnoDB;
@@ -53,7 +53,7 @@ DROP TABLE IF EXISTS `Scientific_Calculator`.`Setting` ;
 
 CREATE TABLE IF NOT EXISTS `Scientific_Calculator`.`Setting` (
   `idSetting` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(80) NOT NULL,
+  `name` VARCHAR(80) NOT NULL UNIQUE,
   `value` INT NULL,
   `defaultValue` INT NOT NULL,
   `minValue` INT NULL,
