@@ -117,26 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rtxtFunctionRules.Text" xml:space="preserve">
+    <value>Comment écrire une fonction : 
+ -la variable est indiquée par un "x" minuscule 
+- les opérations de base s'écrivent "+, -, *, /"
+- Les puissances s'écrivent avec un "^"
+- Il est possible d'utiliser des fonctions avancées, telles que sin(x), tan(x), asin(x), exp(x), abs(x) par exemple.
+- Une liste complète des fonctions utilisables est trouvable à l'adresse : https://github.com/mariuszgromada/MathParser.org-mXparser/blob/master/README.md#unary-functions </value>
+  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="linY.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>200, 0, 0, 400</value>
-  </metadata>
-  <metadata name="linY.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>200, 0</value>
-  </metadata>
-  <metadata name="linY.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 400</value>
-  </metadata>
-  <metadata name="linX.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 200, 400, 0</value>
-  </metadata>
-  <metadata name="linX.Location" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>0, 200</value>
-  </metadata>
-  <metadata name="linX.Size" type="System.Drawing.Size, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>400, 0</value>
   </metadata>
   <metadata name="linY.Bounds" type="System.Drawing.Rectangle, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>200, 0, 0, 400</value>

@@ -24,7 +24,7 @@ namespace Scientific_Calculator
 
 
         /// <summary>
-        /// Constructor
+        /// Constructor. Retrives the settings values from the database.
         /// </summary>
         public frmSettings()
         {
@@ -36,6 +36,9 @@ namespace Scientific_Calculator
             nudHistoryAmount.Maximum = _historyAmountMinMax[1];
         }
 
+        /// <summary>
+        /// Retrieving the settings min, max and actual values
+        /// </summary>
         private void getSettingsValue()
         {
             DBAccess dba = new DBAccess();

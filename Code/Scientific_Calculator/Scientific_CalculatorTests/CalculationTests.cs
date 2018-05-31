@@ -62,7 +62,6 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = new List<double[]>();
             double[] firstMembers = new double[103];
             double[] secondMembers = new double[103];
-            double[] resultExpected = new double[103];
 
             /*Filling the arrays "firstMembers" and "SecondMembers" with the randomized values.
             Half of them are turned into negative values. 100 out of 103 values are filled here, 
@@ -145,7 +144,6 @@ namespace Scientific_Calculator.Tests
             }
             lstArrays.Add(firstMembers);
             lstArrays.Add(secondMembers);
-            lstArrays.Add(resultExpected);
 
             return lstArrays;
         }
@@ -161,11 +159,11 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
             double[] secondMembers = lstArrays.ElementAt(1);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
-                resultExpected[i] = Math.Round(firstMembers[i] + secondMembers[i], 4);
+                resultExpected[i] = Math.Round(firstMembers[i] + secondMembers[i], 4).ToString();
             }
 
             //Testing with zeros
@@ -177,12 +175,12 @@ namespace Scientific_Calculator.Tests
             secondMembers[101] = -5.74;
             secondMembers[102] = 0;
 
-            resultExpected[100] = 0;
-            resultExpected[101] = -5.74;
-            resultExpected[102] = 12.3;
+            resultExpected[100] = "0";
+            resultExpected[101] = "-5.74";
+            resultExpected[102] = "12.3";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
@@ -190,7 +188,7 @@ namespace Scientific_Calculator.Tests
                 opList.Add("(" + firstMembers[i].ToString() + ")");
                 opList.Add("+");
                 opList.Add("(" + secondMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 4);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 4).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -204,11 +202,11 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
             double[] secondMembers = lstArrays.ElementAt(1);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 100; i++)
             {
-                resultExpected[i] = Math.Round(firstMembers[i] - secondMembers[i], 4);
+                resultExpected[i] = Math.Round(firstMembers[i] - secondMembers[i], 4).ToString();
             }
 
             //Testing with zeros
@@ -220,12 +218,12 @@ namespace Scientific_Calculator.Tests
             secondMembers[101] = -5.74;
             secondMembers[102] = 0;
 
-            resultExpected[100] = 0;
-            resultExpected[101] = 5.74;
-            resultExpected[102] = 12.3;
+            resultExpected[100] = "0";
+            resultExpected[101] = "5.74";
+            resultExpected[102] = "12.3";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
@@ -233,7 +231,7 @@ namespace Scientific_Calculator.Tests
                 opList.Add("(" + firstMembers[i].ToString() + ")");
                 opList.Add("-");
                 opList.Add("(" + secondMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 4);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 4).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -250,18 +248,16 @@ namespace Scientific_Calculator.Tests
 
             double[] firstMembers = new double[63];
             double[] secondMembers = new double[63];
-            double[] resultExpected = new double[63];
-
+            string[] resultExpected = new string[63];
             for (int i = 0; i < 60; i++)
             {
                 firstMembers[i] = lstArrays.ElementAt(0)[i];
                 secondMembers[i] = lstArrays.ElementAt(1)[i];
-                resultExpected[i] = lstArrays.ElementAt(2)[i];
             }
 
             for (int i = 0; i < 60; i++)
             {
-                resultExpected[i] = Math.Round(firstMembers[i] * secondMembers[i], 4);
+                resultExpected[i] = Math.Round(firstMembers[i] * secondMembers[i], 4).ToString();
             }
 
             //Testing with zeros
@@ -273,12 +269,12 @@ namespace Scientific_Calculator.Tests
             secondMembers[61] = -5.74;
             secondMembers[62] = 0;
 
-            resultExpected[60] = 0;
-            resultExpected[61] = 0;
-            resultExpected[62] = 0;
+            resultExpected[60] = "0";
+            resultExpected[61] = "0";
+            resultExpected[62] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[63];
+            string[] resultCalculated = new string[63];
             List<string> opList = new List<string>();
             for (int i = 0; i < 63; i++)
             {
@@ -286,7 +282,7 @@ namespace Scientific_Calculator.Tests
                 opList.Add("(" + firstMembers[i].ToString() + ")");
                 opList.Add("*");
                 opList.Add("(" + secondMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 4);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 4).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -300,13 +296,12 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
             double[] secondMembers = lstArrays.ElementAt(1);
-            double[] resultExpected = lstArrays.ElementAt(2);
-
+            string[] resultExpected = new string[103];
             for (int i = 0; i < 100; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(firstMembers[i] / secondMembers[i], 5);
+                resultExpected[i] = Math.Round(firstMembers[i] / secondMembers[i], 5).ToString();
             }
 
             //Testing with zeros
@@ -318,12 +313,12 @@ namespace Scientific_Calculator.Tests
             secondMembers[101] = -5.74;
             secondMembers[102] = 0;
 
-            resultExpected[100] = double.NaN;
-            resultExpected[101] = 0;
-            resultExpected[102] = double.NaN;
+            resultExpected[100] = "Non Numérique";
+            resultExpected[101] = "0";
+            resultExpected[102] = "Non Numérique";
 
             //Execution------------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
@@ -331,7 +326,7 @@ namespace Scientific_Calculator.Tests
                 opList.Add("(" + firstMembers[i].ToString() + ")");
                 opList.Add("/");
                 opList.Add("(" + secondMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -343,29 +338,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(1 / firstMembers[i], 5);
+                resultExpected[i] = Math.Round(1 / firstMembers[i], 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = double.NaN;
+            resultExpected[102] = "Non Numérique";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add("1/");
                 opList.Add("(" + firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -382,12 +377,11 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = CreateRandomArrays();
 
             double[] firstMembers = new double[21];
-            double[] resultExpected = new double[21];
+            string[] resultExpected = new string[21];
 
             for (int i = 0; i < 21; i++)
             {
                 firstMembers[i] = lstArrays.ElementAt(0)[i];
-                resultExpected[i] = lstArrays.ElementAt(2)[i];
             }
 
 
@@ -415,21 +409,21 @@ namespace Scientific_Calculator.Tests
                             count++;
                         }
                     }
-                    resultExpected[i] = answer;
+                    resultExpected[i] = answer.ToString();
                 }
                 else
                 {
-                    resultExpected[i] = double.NaN;
+                    resultExpected[i] = "Non Numérique";
                 }
             }
 
             //Testing with zeros and decimal numbers
             firstMembers[20] = 0;
 
-            resultExpected[20] = 1;
+            resultExpected[20] = "1";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[21];
+            string[] resultCalculated = new string[21];
             List<string> opList = new List<string>();
             for (int i = 0; i < 21; i++)
             {
@@ -449,29 +443,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation---------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Abs(firstMembers[i]), 5);
+                resultExpected[i] = Math.Round(Math.Abs(firstMembers[i]), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add("abs(");
                 opList.Add(firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -484,22 +478,22 @@ namespace Scientific_Calculator.Tests
             //Data preparation---------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(firstMembers[i]);
+                resultExpected[i] = Math.Round(firstMembers[i]).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
@@ -523,29 +517,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round((Math.Sin(firstMembers[i] * Math.PI / 180)), 5);
+                resultExpected[i] = Math.Round((Math.Sin(firstMembers[i] * Math.PI / 180)), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" sin(rad(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -557,29 +551,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Cos(firstMembers[i] * Math.PI / 180), 5);
+                resultExpected[i] = Math.Round(Math.Cos(firstMembers[i] * Math.PI / 180), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 1;
+            resultExpected[102] = "1";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" cos(rad(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -591,29 +585,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Tan(firstMembers[i] * Math.PI / 180), 4);
+                resultExpected[i] = Math.Round(Math.Tan(firstMembers[i] * Math.PI / 180), 4).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" tan(rad(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 4);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 4).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -625,29 +619,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Asin(firstMembers[i]) * 180 / Math.PI, 5);
+                resultExpected[i] = Math.Round(Math.Asin(firstMembers[i]) * 180 / Math.PI, 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" deg(asin(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -659,29 +653,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Acos(firstMembers[i]) * 180 / Math.PI, 5);
+                resultExpected[i] = Math.Round(Math.Acos(firstMembers[i]) * 180 / Math.PI, 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 90;
+            resultExpected[102] = "90";
 
             //Execution------------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" deg(acos(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -693,29 +687,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Atan(firstMembers[i]) * 180 / Math.PI, 5);
+                resultExpected[i] = Math.Round(Math.Atan(firstMembers[i]) * 180 / Math.PI, 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" deg(atan(");
                 opList.Add(firstMembers[i].ToString() + "))");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -735,32 +729,31 @@ namespace Scientific_Calculator.Tests
             List<double[]> lstArrays = CreateRandomArrays();
 
             double[] firstMembers = new double[61];
-            double[] resultExpected = new double[61];
+            string[] resultExpected = new string[61];
 
             for (int i = 0; i < 60; i++)
             {
                 firstMembers[i] = lstArrays.ElementAt(0)[i];
-                resultExpected[i] = lstArrays.ElementAt(2)[i];
             }
 
             for (int i = 0; i < 60; i++)
             {
-                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 2), 5);
+                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 2), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[60] = 0;
 
-            resultExpected[60] = 0;
+            resultExpected[60] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[61];
+            string[] resultCalculated = new string[61];
             List<string> opList = new List<string>();
             for (int i = 0; i < 61; i++)
             {
                 opList.Clear();
                 opList.Add("(" + firstMembers[i] + ")^2");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -773,29 +766,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Sqrt(firstMembers[i]), 5);
+                resultExpected[i] = Math.Round(Math.Sqrt(firstMembers[i]), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 0;
+            resultExpected[102] = "0";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" sqrt(");
                 opList.Add(firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -812,7 +805,7 @@ namespace Scientific_Calculator.Tests
 
             double[] firstMembers = new double[64];
             double[] secondMembers = new double[64];
-            double[] resultExpected = new double[64];
+            string[] resultExpected = new string[64];
 
             for (int i = 0; i < 60; i++)
             {
@@ -837,13 +830,11 @@ namespace Scientific_Calculator.Tests
                     secondMembers[i] /= 15;
                     secondMembers[i] = Math.Round(secondMembers[i] + 0.5 * Math.Sign(secondMembers[i]));
                 }
-
-                resultExpected[i] = lstArrays.ElementAt(2)[i];
             }
 
             for (int i = 0; i < 60; i++)
             {
-                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], secondMembers[i]), 4);
+                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], secondMembers[i]), 4).ToString();
             }
 
             //Testing with zeros
@@ -857,19 +848,19 @@ namespace Scientific_Calculator.Tests
             secondMembers[62] = 5.74;
             secondMembers[63] = 0;
 
-            resultExpected[60] = 1;
-            resultExpected[61] = double.PositiveInfinity;
-            resultExpected[62] = 0;
-            resultExpected[63] = 1;
+            resultExpected[60] = "1";
+            resultExpected[61] = "+Infini";
+            resultExpected[62] = "0";
+            resultExpected[63] = "1";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[64];
+            string[] resultCalculated = new string[64];
             List<string> opList = new List<string>();
             for (int i = 0; i < 64; i++)
             {
                 opList.Clear();
                 opList.Add("(" + firstMembers[i] + ")^" + "(" + secondMembers[i] + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 4);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 4).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -887,26 +878,14 @@ namespace Scientific_Calculator.Tests
 
             double[] firstMembers = new double[14];
             double[] secondMembers = new double[14];
-            double[] resultExpected = new double[14];
+            string[] resultExpected = new string[14];
 
-            for(int i = 0; i<10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                firstMembers[i] = Math.Round(rnd.NextDouble() * 100, 2)+ 0.5;
+                firstMembers[i] = Math.Round(rnd.NextDouble() * 100, 2) + 0.5;
                 secondMembers[i] = Math.Round(rnd.NextDouble() * 4, 2) + 0.5;
-                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 1/secondMembers[i]), 3);
+                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 1 / secondMembers[i]), 3).ToString();
             }
-
-           /* for (int i = 0; i < 100; i++)
-            {
-                firstMembers[i] = lstArrays.ElementAt(0)[i];
-                secondMembers[i] = Math.Round(lstArrays.ElementAt(1)[i]/10, 3);
-                resultExpected[i] = lstArrays.ElementAt(2)[i];
-            }
-
-            for (int i = 0; i < 100; i++)
-            {
-                resultExpected[i] = Math.Round(Math.Pow(firstMembers[i], 1/secondMembers[i]), 3);
-            }*/
 
             //Testing with zeros
             firstMembers[10] = 0;
@@ -919,19 +898,19 @@ namespace Scientific_Calculator.Tests
             secondMembers[12] = 5.74;
             secondMembers[13] = 0;
 
-            resultExpected[10] = double.NaN;
-            resultExpected[11] = double.PositiveInfinity;
-            resultExpected[12] = 0;
-            resultExpected[13] = double.NaN;
+            resultExpected[10] = "Non Numérique";
+            resultExpected[11] = "+Infini";
+            resultExpected[12] = "0";
+            resultExpected[13] = "Non Numérique";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[14];
+            string[] resultCalculated = new string[14];
             List<string> opList = new List<string>();
             for (int i = 0; i < 14; i++)
             {
                 opList.Clear();
                 opList.Add(firstMembers[i] + "^(1/" + secondMembers[i] + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 3);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 3).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -943,29 +922,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Exp(firstMembers[i]), 5);
+                resultExpected[i] = Math.Round(Math.Exp(firstMembers[i]), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = 1;
+            resultExpected[102] = "1";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" exp(");
                 opList.Add(firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -977,29 +956,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Log10(firstMembers[i]), 5);
+                resultExpected[i] = Math.Round(Math.Log10(firstMembers[i]), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = double.NegativeInfinity;
+            resultExpected[102] = "-Infini";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" log10(");
                 opList.Add(firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -1011,29 +990,29 @@ namespace Scientific_Calculator.Tests
             //Data preparation-----------------------------------------------------------------
             List<double[]> lstArrays = CreateRandomArrays();
             double[] firstMembers = lstArrays.ElementAt(0);
-            double[] resultExpected = lstArrays.ElementAt(2);
+            string[] resultExpected = new string[103];
 
             for (int i = 0; i < 102; i++)
             {
                 /*The result is rounded because after about 10 digits the Solve() method and c# start  
                 rounding the decimals in a different way, giving 2 very close but different values.*/
-                resultExpected[i] = Math.Round(Math.Log(firstMembers[i]), 5);
+                resultExpected[i] = Math.Round(Math.Log(firstMembers[i]), 5).ToString();
             }
 
             //Testing with zeros
             firstMembers[102] = 0;
 
-            resultExpected[102] = double.NegativeInfinity;
+            resultExpected[102] = "-Infini";
 
             //Execution----------------------------------------------------------------------
-            double[] resultCalculated = new double[103];
+            string[] resultCalculated = new string[103];
             List<string> opList = new List<string>();
             for (int i = 0; i < 103; i++)
             {
                 opList.Clear();
                 opList.Add(" ln(");
                 opList.Add(firstMembers[i].ToString() + ")");
-                resultCalculated[i] = Math.Round(Calculation.Solve(opList), 5);
+                resultCalculated[i] = Math.Round(double.Parse(Calculation.Solve(opList)), 5).ToString();
             }
             //Check----------------------------------------------------------------------------
             CollectionAssert.AreEquivalent(resultExpected, resultCalculated);
@@ -1042,5 +1021,47 @@ namespace Scientific_Calculator.Tests
 
 
         #endregion
+
+        [TestMethod()]
+        public void ConvDecBinTest()
+        {
+            //Data preparation-----------------------------------------------------------------
+            string decVal = "56";
+            string resultExpected = "111000";
+
+            //Execution----------------------------------------------------------------------
+            string resultCalculated = Calculation.ConvDecBin(decVal);
+
+            //Check----------------------------------------------------------------------------
+            Assert.AreEqual(resultExpected, resultCalculated);
+        }
+
+        [TestMethod()]
+        public void ConvDecHexTest()
+        {
+            //Data preparation-----------------------------------------------------------------
+            string decVal = "56";
+            string resultExpected = "38";
+
+            //Execution----------------------------------------------------------------------
+            string resultCalculated = Calculation.ConvDecHex(decVal);
+
+            //Check----------------------------------------------------------------------------
+            Assert.AreEqual(resultExpected, resultCalculated);
+        }
+
+        [TestMethod()]
+        public void ConvDecOctTest()
+        {
+            //Data preparation-----------------------------------------------------------------
+            string decVal = "56";
+            string resultExpected = "70";
+
+            //Execution----------------------------------------------------------------------
+            string resultCalculated = Calculation.ConvDecOct(decVal);
+
+            //Check----------------------------------------------------------------------------
+            Assert.AreEqual(resultExpected, resultCalculated);
+        }
     }
 }

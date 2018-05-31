@@ -103,6 +103,7 @@ namespace Scientific_Calculator
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
                 string valueString = "0";
+                //Reading the datas and storing them in an array
                 while (dataReader.Read())
                 {
                     valueString = dataReader["value"] + "";
@@ -136,6 +137,7 @@ namespace Scientific_Calculator
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
                 string valueString = "1";
+                //Reading the datas and storing them in an array
                 while (dataReader.Read())
                 {
                     valueString = dataReader["defaultValue"] + "";
@@ -166,6 +168,7 @@ namespace Scientific_Calculator
             OpenConnection();
             try
             {
+                //Executing query
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 q.ExecuteNonQuery();
                 CloseConnection();
@@ -192,6 +195,7 @@ namespace Scientific_Calculator
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
                 string valueString = "0";
+                //Reading the datas and storing them in an array
                 while (dataReader.Read())
                 {
                     valueString = dataReader["value"] + "";
@@ -225,6 +229,8 @@ namespace Scientific_Calculator
             { 
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
+
+                //Reading the datas and storing them in an array
                 while (dataReader.Read())
                 {
                     results[0] = int.Parse(dataReader["minValue"] + "");
@@ -265,7 +271,7 @@ namespace Scientific_Calculator
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 MySqlDataReader dataReader = q.ExecuteReader();
 
-                //Reading the results, converting them to strings and storing them in lists
+                //Reading the datas and storing them in an array
                 while (dataReader.Read())
                 {
                     results[0].Add(dataReader["date"] + "");
@@ -298,6 +304,7 @@ namespace Scientific_Calculator
             OpenConnection();
             try
             {
+                //Executing query
                 MySqlCommand q = new MySqlCommand(query, _connection);
                 q.ExecuteNonQuery();
                 CloseConnection();

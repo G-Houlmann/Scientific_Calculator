@@ -29,6 +29,7 @@ namespace Scientific_Calculator
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFunctionPlot));
             this.txtFunction = new System.Windows.Forms.TextBox();
             this.lblFunction = new System.Windows.Forms.Label();
             this.rtxtFunctionRules = new System.Windows.Forms.RichTextBox();
@@ -46,6 +47,7 @@ namespace Scientific_Calculator
             this.linY = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.linX = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.rctGraphBorders = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.lblFx = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trbScaleY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbScaleX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbAccuracy)).BeginInit();
@@ -53,15 +55,16 @@ namespace Scientific_Calculator
             // 
             // txtFunction
             // 
-            this.txtFunction.Location = new System.Drawing.Point(453, 40);
+            this.txtFunction.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtFunction.Location = new System.Drawing.Point(453, 95);
             this.txtFunction.Name = "txtFunction";
-            this.txtFunction.Size = new System.Drawing.Size(200, 20);
+            this.txtFunction.Size = new System.Drawing.Size(200, 23);
             this.txtFunction.TabIndex = 1;
             // 
             // lblFunction
             // 
             this.lblFunction.AutoSize = true;
-            this.lblFunction.Location = new System.Drawing.Point(453, 21);
+            this.lblFunction.Location = new System.Drawing.Point(453, 76);
             this.lblFunction.Name = "lblFunction";
             this.lblFunction.Size = new System.Drawing.Size(54, 13);
             this.lblFunction.TabIndex = 2;
@@ -70,16 +73,17 @@ namespace Scientific_Calculator
             // rtxtFunctionRules
             // 
             this.rtxtFunctionRules.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.rtxtFunctionRules.Location = new System.Drawing.Point(456, 85);
+            this.rtxtFunctionRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rtxtFunctionRules.Location = new System.Drawing.Point(453, 169);
             this.rtxtFunctionRules.Name = "rtxtFunctionRules";
             this.rtxtFunctionRules.ReadOnly = true;
-            this.rtxtFunctionRules.Size = new System.Drawing.Size(197, 231);
+            this.rtxtFunctionRules.Size = new System.Drawing.Size(316, 173);
             this.rtxtFunctionRules.TabIndex = 3;
-            this.rtxtFunctionRules.Text = "Comment écrire une fonction :";
+            this.rtxtFunctionRules.Text = resources.GetString("rtxtFunctionRules.Text");
             // 
             // cmdFunction
             // 
-            this.cmdFunction.Location = new System.Drawing.Point(659, 37);
+            this.cmdFunction.Location = new System.Drawing.Point(659, 93);
             this.cmdFunction.Name = "cmdFunction";
             this.cmdFunction.Size = new System.Drawing.Size(51, 23);
             this.cmdFunction.TabIndex = 4;
@@ -146,7 +150,7 @@ namespace Scientific_Calculator
             // 
             this.lblLoading.AutoSize = true;
             this.lblLoading.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic);
-            this.lblLoading.Location = new System.Drawing.Point(450, 62);
+            this.lblLoading.Location = new System.Drawing.Point(450, 120);
             this.lblLoading.Name = "lblLoading";
             this.lblLoading.Size = new System.Drawing.Size(187, 17);
             this.lblLoading.TabIndex = 13;
@@ -211,11 +215,22 @@ namespace Scientific_Calculator
             this.rctGraphBorders.Name = "rctGraphBorders";
             this.rctGraphBorders.Size = new System.Drawing.Size(400, 400);
             // 
+            // lblFx
+            // 
+            this.lblFx.AutoSize = true;
+            this.lblFx.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFx.Location = new System.Drawing.Point(411, 98);
+            this.lblFx.Name = "lblFx";
+            this.lblFx.Size = new System.Drawing.Size(40, 17);
+            this.lblFx.TabIndex = 17;
+            this.lblFx.Text = "f(x) =";
+            // 
             // frmFunctionPlot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 548);
+            this.Controls.Add(this.lblFx);
             this.Controls.Add(this.lblAccuracy);
             this.Controls.Add(this.trbAccuracy);
             this.Controls.Add(this.lblLoading);
@@ -258,5 +273,6 @@ namespace Scientific_Calculator
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rctGraphBorders;
         private Microsoft.VisualBasic.PowerPacks.LineShape linY;
         private Microsoft.VisualBasic.PowerPacks.LineShape linX;
+        private System.Windows.Forms.Label lblFx;
     }
 }

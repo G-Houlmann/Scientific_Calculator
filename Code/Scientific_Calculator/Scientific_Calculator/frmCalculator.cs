@@ -18,21 +18,12 @@ namespace Scientific_Calculator
     {
         private List<string> _operationList = new List<string>();
         private string _currentNumber = "";
-        private int _cursorPlace = 0;
+        private int _cursorPlace = -1;
         private int _decimalsAmount;
-        private int _lastExpressionLength = 0;
         private string addAfter = "";
         private int _ListCurrentExpressionStart = 0;
-        private int _ListCurrentExpressionEnd = 1;
         private int _stringCurrentExpressionStart = 0;
         private int _stringCurrentExpressionEnd = 1;
-
-        /* 0: + and -
-         * 1: * and /
-         * 2: exposants and complex operators
-         * 3: parenthesis
-         */
-        private int _currentExpressionPriorityLevel = 0;
 
         /// <summary>
         /// Predicate used to find whether a root value "rtVal" must be replaced in the operation's list
@@ -223,8 +214,8 @@ namespace Scientific_Calculator
         {
             if (_currentNumber.ElementAt(0) != '-')
             {
-                DisplayString("-", _currentNumber.Length * -1);
-                _currentNumber = _currentNumber.Insert(0, "-");
+                DisplayString("-", _stringCurrentExpressionStart);
+                _currentNumber = "-" + _currentNumber;
             }
             else
             {
@@ -243,7 +234,6 @@ namespace Scientific_Calculator
             EndCurrentNumber();
             DisplayString("(");
             _operationList.Add("(");
-            _currentExpressionPriorityLevel = 3;
         }
 
         /// <summary>
@@ -269,6 +259,7 @@ namespace Scientific_Calculator
             {
                 _currentNumber = _currentNumber.Remove(_currentNumber.Length - 1, 1);
                 rtxtDisplay.Text = rtxtDisplay.Text.Remove(rtxtDisplay.Text.Length - 1, 1);
+                _stringCurrentExpressionEnd--;
             }
         }
 
@@ -348,7 +339,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdPlus_Click(object sender, EventArgs e)
         {
-            DisplayString(" + ");
+            DisplayString(" + ", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add(" + ");
         }
@@ -360,7 +351,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdMinus_Click(object sender, EventArgs e)
         {
-            DisplayString(" - ");
+            DisplayString(" - ", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add(" - ");
         }
@@ -372,7 +363,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdMult_Click(object sender, EventArgs e)
         {
-            DisplayString(" x ");
+            DisplayString(" x ", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add(" * ");
         }
@@ -384,7 +375,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdDiv_Click(object sender, EventArgs e)
         {
-            DisplayString(" / ");
+            DisplayString(" / ", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add(" / ");
         }
@@ -396,9 +387,9 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdReciprocal_Click(object sender, EventArgs e)
         {
-            DisplayString("1 / ", _currentNumber.Length * -1);
+            DisplayString("1 / ", _stringCurrentExpressionStart);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " 1/ ");
+            _operationList.Insert(_ListCurrentExpressionStart, " 1/ ");
         }
 
         /// <summary>
@@ -408,7 +399,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdFactorial_Click(object sender, EventArgs e)
         {
-            DisplayString("!");
+            DisplayString("!", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add("!");
         }
@@ -420,25 +411,25 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdAbsValue_Click(object sender, EventArgs e)
         {
-            DisplayString("|", _currentNumber.Length * -1);
-            DisplayString("|");
+            DisplayString("|", _stringCurrentExpressionStart);
+            DisplayString("|", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " abs(");
+            _operationList.Insert(_ListCurrentExpressionStart, " abs(");
             _operationList.Add(")");
 
         }
 
         /// <summary>
-        /// Rounds a number to the nearest integer. .5 rounds to superior.
+        /// Rounds a number to the nearest integer. (.5 rounds to superior).
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void cmdRound_Click(object sender, EventArgs e)
         {
-            DisplayString("Round(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("Round(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " round(");
+            _operationList.Insert(_ListCurrentExpressionStart, " round(");
             _operationList.Add(", 0)");
         }
 
@@ -457,9 +448,8 @@ namespace Scientific_Calculator
             DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Insert(_ListCurrentExpressionStart, " sin(rad(");
-            _operationList.Insert(_ListCurrentExpressionEnd, "))");
-            _ListCurrentExpressionEnd += 2;
-            _stringCurrentExpressionStart += 4;
+            _operationList.Add("))");
+            //_ListCurrentExpressionEnd += 2;
         }
 
         /// <summary>
@@ -473,9 +463,8 @@ namespace Scientific_Calculator
             DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Insert(_ListCurrentExpressionStart, " cos(rad(");
-            _operationList.Insert(_ListCurrentExpressionEnd, "))");
-            _ListCurrentExpressionEnd += 2;
-            _stringCurrentExpressionStart += 4;
+            _operationList.Add("))");
+            //_ListCurrentExpressionEnd += 2;
         }
 
         /// <summary>
@@ -485,10 +474,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdTan_Click(object sender, EventArgs e)
         {
-            DisplayString("Tan(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("Tan(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - _lastExpressionLength, " tan(rad(");
+            _operationList.Insert(_ListCurrentExpressionStart, " tan(rad(");
             _operationList.Add("))");
         }
 
@@ -499,10 +488,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdInvSin_Click(object sender, EventArgs e)
         {
-            DisplayString("InvSin(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("invSin(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " deg(asin(");
+            _operationList.Insert(_ListCurrentExpressionStart, " deg(asin(");
             _operationList.Add("))");
         }
 
@@ -513,10 +502,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdInvCos_Click(object sender, EventArgs e)
         {
-            DisplayString("InvCos(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("invCos(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " deg(acos(");
+            _operationList.Insert(_ListCurrentExpressionStart, " deg(acos(");
             _operationList.Add("))");
         }
 
@@ -527,10 +516,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdInvTan_Click(object sender, EventArgs e)
         {
-            DisplayString("InvTan(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("invTan(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " deg(atan(");
+            _operationList.Insert(_ListCurrentExpressionStart, " deg(atan(");
             _operationList.Add("))");
         }
 
@@ -545,7 +534,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdSquare_Click(object sender, EventArgs e)
         {
-            DisplayString("^2");
+            DisplayString("^2", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add("^2");
         }
@@ -557,9 +546,9 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdSqrt_Click(object sender, EventArgs e)
         {
-            DisplayString("2√", _currentNumber.Length * - 1);
+            DisplayString("2√", _stringCurrentExpressionStart);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " sqrt(");
+            _operationList.Insert(_ListCurrentExpressionStart, " sqrt(");
             _operationList.Add(")");
         }
 
@@ -570,7 +559,7 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdExponentiation_Click(object sender, EventArgs e)
         {
-            DisplayString("^");
+            DisplayString("^", _stringCurrentExpressionEnd);
             EndCurrentNumber();
             _operationList.Add("^");
         }
@@ -582,19 +571,11 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdRoot_Click(object sender, EventArgs e)
         {
-            /*DisplayString("√", _currentNumber.Length * -1);
-            _cursorPlace = (_currentNumber.Length * -1) -1;
+            DisplayString("√", _stringCurrentExpressionStart);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " root(rtVal,  ");
-            _operationList.Add(")");*/
-
-
-            DisplayString("√", _currentNumber.Length * -1);
-            _cursorPlace = (_currentNumber.Length * -1) - 1;
-            EndCurrentNumber();
+            _cursorPlace = _stringCurrentExpressionStart;
             _operationList.Add("^(1/");
             addAfter = ")";
-
         }
 
         /// <summary>
@@ -604,9 +585,9 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdExponential_Click(object sender, EventArgs e)
         {
-            DisplayString("e^", _currentNumber.Length * -1);
+            DisplayString("e^", _stringCurrentExpressionStart);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " exp(");
+            _operationList.Insert(_ListCurrentExpressionStart, " exp(");
             _operationList.Add(")");
         }
 
@@ -617,10 +598,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdLog_Click(object sender, EventArgs e)
         {
-            DisplayString("log10(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("log10(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " log10(");
+            _operationList.Insert(_ListCurrentExpressionStart, " log10(");
             _operationList.Add(")");
         }
 
@@ -631,10 +612,10 @@ namespace Scientific_Calculator
         /// <param name="e"></param>
         private void cmdLn_Click(object sender, EventArgs e)
         {
-            DisplayString("ln(", _currentNumber.Length * -1);
-            DisplayString(")");
+            DisplayString("ln(", _stringCurrentExpressionStart);
+            DisplayString(")", _stringCurrentExpressionEnd);
             EndCurrentNumber();
-            _operationList.Insert(_operationList.Count - 1, " ln(");
+            _operationList.Insert(_ListCurrentExpressionStart, " ln(");
             _operationList.Add(")");
         }
 
@@ -645,7 +626,7 @@ namespace Scientific_Calculator
 
 
         /// <summary>
-        /// Clears the displayer
+        /// Clears the displayer and resets the variables used for handling input
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -654,10 +635,10 @@ namespace Scientific_Calculator
             rtxtDisplay.Clear();
             _operationList.Clear();
             _currentNumber = "";
-            _cursorPlace = 0;
-            _lastExpressionLength = 1;
-            _ListCurrentExpressionEnd = 1;
+            _cursorPlace = -1;
             _ListCurrentExpressionStart = 0;
+            _stringCurrentExpressionStart = 0;
+            _stringCurrentExpressionEnd = 1;
         }
 
         /// <summary>
@@ -668,61 +649,82 @@ namespace Scientific_Calculator
         private void cmdEqual_Click(object sender, EventArgs e)
         {
             EndCurrentNumber();
-            double result = Calculation.Solve(_operationList);
-            rtxtDisplay.Text += " = " + Math.Round(result, _decimalsAmount).ToString();
+            //Gets the result of the operation
+            string resultString = Calculation.Solve(_operationList);
+
+            //Rounds the result to the number of decimals wanted if it is a number, and then displays it
+            double result = 0;
+            if(double.TryParse(resultString, out result))
+            {
+                result = Math.Round(result, _decimalsAmount);
+                DisplayString(" = " + Math.Round(result, _decimalsAmount).ToString());
+            }
+            else
+            {
+                DisplayString(" = " + resultString);
+            }
+
+            //Resetting or setting some input handling variables
+            _stringCurrentExpressionStart = rtxtDisplay.Text.Length + 3;
             _operationList.Clear();
-            _currentNumber = result.ToString();
-            _cursorPlace = 0;
-            _lastExpressionLength = 1;
-            _ListCurrentExpressionEnd = 1;
+            _operationList.Add(resultString);
+            _currentNumber = "";
             _ListCurrentExpressionStart = 0;
         }
 
         #endregion
 
         /// <summary>
-        /// Ends the entry of the current number and stores it in the _operationList
+        /// Ends the current number and stores it in the _operationList
         /// </summary>
         private void EndCurrentNumber()
         {
-            //_stringCurrentExpressionEnd += _currentNumber.Length;
-            int indexRtVal = _operationList.FindLastIndex(_preRtVal);
-            if(indexRtVal != -1)
-            {
-                _operationList[indexRtVal] = " root(" + _currentNumber + ",  ";
-            }
-            else if(_currentNumber != "")
+            //Adds the current number to the operation list and resets it
+            if(_currentNumber != "")
             {
                 _operationList.Add(_currentNumber);
-                _ListCurrentExpressionEnd += 1;
             }
             _currentNumber = "";
+
+            //If an operator needed to add something at the end of the current number, adds it
             if(addAfter != "")
             {
                 _operationList.Add(addAfter);
             }
             addAfter = "";
+            _cursorPlace = -1;
         }
 
         /// <summary>
         /// Displays a string in the rich textbox. Inserts at the end by default, but can be inserted before
         /// </summary>
-        /// <param name="sign"></param>
-        /// <param name="position"></param>
+        /// <param name="stringToDisplay">String that has to be displayed on the displayer</param>
+        /// <param name="position">The index in the text where the string has to be inserted</param>
         private void DisplayString(string stringToDisplay, int? position = null)
         {
-            if(position == null)
+            //If the cursor is set somewhere other than it's default value (-1), the string is displayed there
+            if (_cursorPlace != -1)
             {
-                position = _stringCurrentExpressionEnd;
+                rtxtDisplay.Text = rtxtDisplay.Text.Insert(_cursorPlace, stringToDisplay);
+                _cursorPlace += stringToDisplay.Length;
             }
-            if(position == rtxtDisplay.Text.Length + 1)
-            {
-                rtxtDisplay.Text += stringToDisplay;
-            }
+
+            //Displays the string at the given position
             else
             {
-                rtxtDisplay.Text = rtxtDisplay.Text.Insert((int)position, stringToDisplay);
-            }
+                if (position == null)
+                {
+                    position = _stringCurrentExpressionEnd;
+                }
+                if (position == rtxtDisplay.Text.Length + 1)
+                {
+                    rtxtDisplay.Text += stringToDisplay;
+                }
+                else
+                {
+                    rtxtDisplay.Text = rtxtDisplay.Text.Insert((int)position, stringToDisplay);
+                }
+            } 
             _stringCurrentExpressionEnd += stringToDisplay.Length;
         }
 
@@ -739,7 +741,7 @@ namespace Scientific_Calculator
 
 
         /// <summary>
-        /// Opens the settings form as a dialog window
+        /// Opens the settings form as a dialog window and sets the amount of decimals in case it got changed
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

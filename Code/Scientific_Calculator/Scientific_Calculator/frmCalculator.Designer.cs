@@ -459,7 +459,7 @@ namespace Scientific_Calculator
             this.cmdFactorial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.cmdFactorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmdFactorial.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.cmdFactorial.Location = new System.Drawing.Point(337, 224);
+            this.cmdFactorial.Location = new System.Drawing.Point(332, 223);
             this.cmdFactorial.Name = "cmdFactorial";
             this.cmdFactorial.Size = new System.Drawing.Size(35, 35);
             this.cmdFactorial.TabIndex = 40;
