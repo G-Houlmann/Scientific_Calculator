@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_1e13f573cef3b351b715cf1c32c975cf" kind="dir">
+    <compoundname>C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_CalculatorTests/Properties</compoundname>
+    <innerfile refid="ests_2_properties_2_assembly_info_8cs">AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_CalculatorTests/Properties/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1frm_function_plot" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::frmFunctionPlot</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a2f78c23a3a411107fe5a11fdcc3647f0" prot="private" static="no" mutable="no">
+        <type>Graphics</type>
+        <definition>Graphics Scientific_Calculator.frmFunctionPlot._g</definition>
+        <argsstring></argsstring>
+        <name>_g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="20" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a686ba2a38410b5affcd36a172c3e27f1" prot="private" static="no" mutable="no">
+        <type>Pen</type>
+        <definition>Pen Scientific_Calculator.frmFunctionPlot._pen</definition>
+        <argsstring></argsstring>
+        <name>_pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="21" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a779afaebe43f42c47faf52d6783e7cbc" prot="private" static="no" mutable="no">
+        <type>Pen</type>
+        <definition>Pen Scientific_Calculator.frmFunctionPlot._scalePen</definition>
+        <argsstring></argsstring>
+        <name>_scalePen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="22" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a12c904cdf352aefa44e5e5e9a5d00882" prot="private" static="no" mutable="no">
+        <type>Brush</type>
+        <definition>Brush Scientific_Calculator.frmFunctionPlot._graphBrush</definition>
+        <argsstring></argsstring>
+        <name>_graphBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="23" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a234fa0f0e56db3de7ec3d8f35da1c973" prot="private" static="no" mutable="no">
+        <type>Brush</type>
+        <definition>Brush Scientific_Calculator.frmFunctionPlot._scaleBrush</definition>
+        <argsstring></argsstring>
+        <name>_scaleBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="24" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a5914d7d35ba9c910a0e265dcabf2cd8e" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point Scientific_Calculator.frmFunctionPlot._origin</definition>
+        <argsstring></argsstring>
+        <name>_origin</name>
+        <initializer>= new Point(200, 200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="25" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1ae5dc76ba55208fe1fa18ab688ed68e52" prot="private" static="no" mutable="no">
+        <type>List&lt; Label &gt;</type>
+        <definition>List&lt;Label&gt; Scientific_Calculator.frmFunctionPlot.lstLabels</definition>
+        <argsstring></argsstring>
+        <name>lstLabels</name>
+        <initializer>= new List&lt;Label&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="26" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1ad3578548898ed850a252ea96bf57c027" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Scientific_Calculator.frmFunctionPlot.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="8" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a7541925e07e097b1e2dd795c72161eed" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox Scientific_Calculator.frmFunctionPlot.txtFunction</definition>
+        <argsstring></argsstring>
+        <name>txtFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="259" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1aebb9fba7a8eb01cfd8b56174c66900fa" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblFunction</definition>
+        <argsstring></argsstring>
+        <name>lblFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="260" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a73addd5934b6f5d631580b3ee04f33bb" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RichTextBox</type>
+        <definition>System.Windows.Forms.RichTextBox Scientific_Calculator.frmFunctionPlot.rtxtFunctionRules</definition>
+        <argsstring></argsstring>
+        <name>rtxtFunctionRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="261" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1acf078743af853d97939f23cc51b9751a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmFunctionPlot.cmdFunction</definition>
+        <argsstring></argsstring>
+        <name>cmdFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="262" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1ae1f7216286dab5da7b8f15fb684fdee8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ContextMenuStrip</type>
+        <definition>System.Windows.Forms.ContextMenuStrip Scientific_Calculator.frmFunctionPlot.contextMenuStrip1</definition>
+        <argsstring></argsstring>
+        <name>contextMenuStrip1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="263" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a226cbd7e2386a571289f67dbee4f4bec" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TrackBar</type>
+        <definition>System.Windows.Forms.TrackBar Scientific_Calculator.frmFunctionPlot.trbScaleY</definition>
+        <argsstring></argsstring>
+        <name>trbScaleY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="264" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a970ec06de57d4a7304649a4c9f7946b0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblScaleY</definition>
+        <argsstring></argsstring>
+        <name>lblScaleY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="265" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a05b43660079da222c5823649a9629e02" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblScaleX</definition>
+        <argsstring></argsstring>
+        <name>lblScaleX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="266" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a756cc8adfd8a56b0c51eb92dfd6e8bea" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TrackBar</type>
+        <definition>System.Windows.Forms.TrackBar Scientific_Calculator.frmFunctionPlot.trbScaleX</definition>
+        <argsstring></argsstring>
+        <name>trbScaleX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="267" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a76d19aa0d773fd15aa85e501a2f09a46" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmFunctionPlot.cmdReload</definition>
+        <argsstring></argsstring>
+        <name>cmdReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="268" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a9db425cba457d6675515b068bb59bde5" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblLoading</definition>
+        <argsstring></argsstring>
+        <name>lblLoading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="269" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a16e561ab270146252300cbd9835a186a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TrackBar</type>
+        <definition>System.Windows.Forms.TrackBar Scientific_Calculator.frmFunctionPlot.trbAccuracy</definition>
+        <argsstring></argsstring>
+        <name>trbAccuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="270" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1af2f27c4102a00e1b3d65984655b22236" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblAccuracy</definition>
+        <argsstring></argsstring>
+        <name>lblAccuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="271" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a24dee652575f0b4c7f6bad5035604e2b" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.ShapeContainer</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.ShapeContainer Scientific_Calculator.frmFunctionPlot.shapeContainer1</definition>
+        <argsstring></argsstring>
+        <name>shapeContainer1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="272" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a79cc66121ea14494121cef766d417f60" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.RectangleShape</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.RectangleShape Scientific_Calculator.frmFunctionPlot.rctGraphBorders</definition>
+        <argsstring></argsstring>
+        <name>rctGraphBorders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="273" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1ab1e0ff8e60e672d31ff8365b8ff550e2" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.LineShape</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.LineShape Scientific_Calculator.frmFunctionPlot.linY</definition>
+        <argsstring></argsstring>
+        <name>linY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="274" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a0fa95a45f626ada106984120d3167b17" prot="private" static="no" mutable="no">
+        <type>Microsoft.VisualBasic.PowerPacks.LineShape</type>
+        <definition>Microsoft.VisualBasic.PowerPacks.LineShape Scientific_Calculator.frmFunctionPlot.linX</definition>
+        <argsstring></argsstring>
+        <name>linX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="275" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_function_plot_1a67a13a6161f26d1a48ea89f944f00ae0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmFunctionPlot.lblFx</definition>
+        <argsstring></argsstring>
+        <name>lblFx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="276" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_scientific___calculator_1_1frm_function_plot_1ad824361cf1c08e3213f9ed615a38bca0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Scientific_Calculator.frmFunctionPlot.ScaleX</definition>
+        <argsstring></argsstring>
+        <name>ScaleX</name>
+        <briefdescription>
+<para>Returns the value of the trbScaleX trackbar </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="31" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_scientific___calculator_1_1frm_function_plot_1a731a87d14cbc9933da8c13dcdcf5ad21" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Scientific_Calculator.frmFunctionPlot.ScaleY</definition>
+        <argsstring></argsstring>
+        <name>ScaleY</name>
+        <briefdescription>
+<para>Returns the value of the trbScaleY trackbar </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="39" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_scientific___calculator_1_1frm_function_plot_1a1015faaf05c4ee74d0c1ddecccba4533" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Scientific_Calculator.frmFunctionPlot.Accuracy</definition>
+        <argsstring></argsstring>
+        <name>Accuracy</name>
+        <briefdescription>
+<para>Returns the value of the trbAccuracy trackbar </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="47" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1ae747a0991aecf3c9f82e111913248f1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Scientific_Calculator.frmFunctionPlot.frmFunctionPlot</definition>
+        <argsstring>()</argsstring>
+        <name>frmFunctionPlot</name>
+        <briefdescription>
+<para>Constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="55" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1aaa95d8bb1991a4d24c089034277efd46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.cmdFunction_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdFunction_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the function string when the button is clicked </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="65" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a85c0aeab972e5e4e7c8942aaa50b268b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.ErasePreviousScale</definition>
+        <argsstring>()</argsstring>
+        <name>ErasePreviousScale</name>
+        <briefdescription>
+<para>Erases the previous labels that were used to show values on the scales in the previous graph </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="73" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a804341c34dc1c8769309531a59f9d9d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.createLabel</definition>
+        <argsstring>(string text, int x, int y)</argsstring>
+        <name>createLabel</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Creates a label used to show values on the axis </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number that will be displayed on the label</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the X coordinate</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Y coordinate</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="88" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="88" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1ad15eda48a35f5c2b8a947fc645d48f44" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.drawAxisScale</definition>
+        <argsstring>(float scaleX, float scaleY)</argsstring>
+        <name>drawAxisScale</name>
+        <param>
+          <type>float</type>
+          <declname>scaleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleY</declname>
+        </param>
+        <briefdescription>
+<para>Draws the axis and their scales according the scale decided by the user </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max value of the X axis</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max value of the Y axis</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="112" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="112" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a8a9ffb3d87dfe4647ec7f76645340228" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.drawScales</definition>
+        <argsstring>(double scaleX, double scaleY)</argsstring>
+        <name>drawScales</name>
+        <param>
+          <type>double</type>
+          <declname>scaleX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>scaleY</declname>
+        </param>
+        <briefdescription>
+<para>Erases the previous scale numbers and creates the new axis </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max value of the X axis</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max value of the Y axis&lt;/param </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="208" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="208" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a5ba7efa254df2e8d4624b719b375a069" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.DrawPlot</definition>
+        <argsstring>(string expr)</argsstring>
+        <name>DrawPlot</name>
+        <param>
+          <type>string</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Draws the plot in the defined area </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="217" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="217" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a81992430d4255b677187cc1b7f360625" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.frmFunctionPlot_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>frmFunctionPlot_Load</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the graphic variables </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="283" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="283" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1af6a19844226acef33fa29a0a39c07d07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.cmdScale_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdScale_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Draws or redraws the graph </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="297" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1a6b7dbf6697ea9bc8928c1911266a0f04" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmFunctionPlot.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="29" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="29" bodyend="256"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_function_plot_1aa502a35dc8fc827e93659199df349dce" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Scientific_Calculator.frmFunctionPlot.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" line="14" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Form that displays a graph from a given function </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>Form</label>
+      </node>
+      <node id="10">
+        <label>Scientific_Calculator.frmFunctionPlot</label>
+        <link refid="class_scientific___calculator_1_1frm_function_plot"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>Form</label>
+      </node>
+      <node id="12">
+        <label>Scientific_Calculator.frmFunctionPlot</label>
+        <link refid="class_scientific___calculator_1_1frm_function_plot"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" line="19" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/frmFunctionPlot.cs" bodystart="18" bodyend="301"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a2f78c23a3a411107fe5a11fdcc3647f0" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_g</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a12c904cdf352aefa44e5e5e9a5d00882" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_graphBrush</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a5914d7d35ba9c910a0e265dcabf2cd8e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_origin</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a686ba2a38410b5affcd36a172c3e27f1" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_pen</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a234fa0f0e56db3de7ec3d8f35da1c973" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_scaleBrush</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a779afaebe43f42c47faf52d6783e7cbc" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>_scalePen</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a1015faaf05c4ee74d0c1ddecccba4533" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>Accuracy</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1acf078743af853d97939f23cc51b9751a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>cmdFunction</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1aaa95d8bb1991a4d24c089034277efd46" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>cmdFunction_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a76d19aa0d773fd15aa85e501a2f09a46" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>cmdReload</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1af6a19844226acef33fa29a0a39c07d07" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>cmdScale_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ad3578548898ed850a252ea96bf57c027" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>components</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ae1f7216286dab5da7b8f15fb684fdee8" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>contextMenuStrip1</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a804341c34dc1c8769309531a59f9d9d7" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>createLabel</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1aa502a35dc8fc827e93659199df349dce" prot="protected" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>Dispose</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ad15eda48a35f5c2b8a947fc645d48f44" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>drawAxisScale</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a5ba7efa254df2e8d4624b719b375a069" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>DrawPlot</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a8a9ffb3d87dfe4647ec7f76645340228" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>drawScales</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a85c0aeab972e5e4e7c8942aaa50b268b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>ErasePreviousScale</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ae747a0991aecf3c9f82e111913248f1a" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>frmFunctionPlot</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a81992430d4255b677187cc1b7f360625" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>frmFunctionPlot_Load</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a6b7dbf6697ea9bc8928c1911266a0f04" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>InitializeComponent</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1af2f27c4102a00e1b3d65984655b22236" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblAccuracy</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1aebb9fba7a8eb01cfd8b56174c66900fa" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblFunction</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a67a13a6161f26d1a48ea89f944f00ae0" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblFx</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a9db425cba457d6675515b068bb59bde5" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblLoading</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a05b43660079da222c5823649a9629e02" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblScaleX</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a970ec06de57d4a7304649a4c9f7946b0" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lblScaleY</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a0fa95a45f626ada106984120d3167b17" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>linX</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ab1e0ff8e60e672d31ff8365b8ff550e2" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>linY</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ae5dc76ba55208fe1fa18ab688ed68e52" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>lstLabels</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a79cc66121ea14494121cef766d417f60" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>rctGraphBorders</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a73addd5934b6f5d631580b3ee04f33bb" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>rtxtFunctionRules</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1ad824361cf1c08e3213f9ed615a38bca0" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>ScaleX</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a731a87d14cbc9933da8c13dcdcf5ad21" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>ScaleY</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a24dee652575f0b4c7f6bad5035604e2b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>shapeContainer1</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a16e561ab270146252300cbd9835a186a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>trbAccuracy</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a756cc8adfd8a56b0c51eb92dfd6e8bea" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>trbScaleX</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a226cbd7e2386a571289f67dbee4f4bec" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>trbScaleY</name></member>
+      <member refid="class_scientific___calculator_1_1frm_function_plot_1a7541925e07e097b1e2dd795c72161eed" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmFunctionPlot</scope><name>txtFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

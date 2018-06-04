@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_17b75b5d54e9b37b7b5696376c148cf4" kind="dir">
+    <compoundname>C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator</compoundname>
+    <innerdir refid="dir_fefe55040062f2a004839c37f2006052">C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/obj</innerdir>
+    <innerdir refid="dir_485cca3deece340a7005baf5cbc3e3a1">C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Properties</innerdir>
+    <innerfile refid="_calculation_8cs">Calculation.cs</innerfile>
+    <innerfile refid="_d_b_access_8cs">DBAccess.cs</innerfile>
+    <innerfile refid="frm_calculator_8cs">frmCalculator.cs</innerfile>
+    <innerfile refid="frm_calculator_8_designer_8cs">frmCalculator.Designer.cs</innerfile>
+    <innerfile refid="frm_function_plot_8cs">frmFunctionPlot.cs</innerfile>
+    <innerfile refid="frm_function_plot_8_designer_8cs">frmFunctionPlot.Designer.cs</innerfile>
+    <innerfile refid="frm_history_8cs">frmHistory.cs</innerfile>
+    <innerfile refid="frm_history_8_designer_8cs">frmHistory.Designer.cs</innerfile>
+    <innerfile refid="frm_settings_8cs">frmSettings.cs</innerfile>
+    <innerfile refid="frm_settings_8_designer_8cs">frmSettings.Designer.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/"/>
+  </compounddef>
+</doxygen>

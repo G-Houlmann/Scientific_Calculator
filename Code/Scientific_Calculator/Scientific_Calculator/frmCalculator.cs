@@ -44,7 +44,7 @@ namespace Scientific_Calculator
             }
             catch (Exception)
             {
-                MessageBox.Show("Impossible de se connecter à la base de données. L'applicaiton va se fermer.");
+                MessageBox.Show("Impossible de se connecter à la base de données. L'application va se fermer.");
                 Environment.Exit(1);
             }
             Program.setSettingsToDefault();
@@ -206,7 +206,7 @@ namespace Scientific_Calculator
         }
 
         /// <summary>
-        /// If the current number is positive, puts an "-" sign in front of it. If the number is negative, removes the "-" in fromt of it
+        /// If the current number is positive, puts a "-" sign in front of it. If the number is negative, removes the "-" in front of it
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -221,6 +221,7 @@ namespace Scientific_Calculator
             {
                 rtxtDisplay.Text = rtxtDisplay.Text.Remove(rtxtDisplay.Text.LastIndexOf('-'), 1);
                 _currentNumber = _currentNumber.Remove(_currentNumber.LastIndexOf('-'), 1);
+                _stringCurrentExpressionEnd--;
             }
         }
 

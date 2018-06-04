@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_44dca1e27006ad0b6930f5bdc4498d6e" kind="dir">
+    <compoundname>C:/Scientific_Calculator/Scientific_Calculator</compoundname>
+    <innerdir refid="dir_4ab78a6f9cc9a30e91314b9124cd14ed">C:/Scientific_Calculator/Scientific_Calculator/Code</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/"/>
+  </compounddef>
+</doxygen>

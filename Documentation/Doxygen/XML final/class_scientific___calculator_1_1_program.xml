@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1_program" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_program_1ae452b30f43d6258cc9da4682acb05079" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Scientific_Calculator.Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+<para>The main entry point for the application. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" line="15" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_program_1a58a2f09e0fbb4113926ff3a0f7c7b4b3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Scientific_Calculator.Program.setSettingsToDefault</definition>
+        <argsstring>()</argsstring>
+        <name>setSettingsToDefault</name>
+        <briefdescription>
+<para>Sets the different settings to their default value if no value has already been given to them in the database </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" line="25" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" bodystart="25" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" line="10" column="1" bodyfile="C:/Scientific_Calculator/Scientific_Calculator/Code/Scientific_Calculator/Scientific_Calculator/Program.cs" bodystart="9" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1_program_1ae452b30f43d6258cc9da4682acb05079" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Program</scope><name>Main</name></member>
+      <member refid="class_scientific___calculator_1_1_program_1a58a2f09e0fbb4113926ff3a0f7c7b4b3" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Program</scope><name>setSettingsToDefault</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
