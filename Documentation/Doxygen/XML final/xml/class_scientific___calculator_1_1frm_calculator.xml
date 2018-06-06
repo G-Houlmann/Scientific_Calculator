@@ -1,0 +1,2588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1frm_calculator" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::frmCalculator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a598e8a15f41ea018c8c080ce2883f880" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Scientific_Calculator.frmCalculator._operationList</definition>
+        <argsstring></argsstring>
+        <name>_operationList</name>
+        <initializer>= new List&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="19" column="1" bodyfile="frmCalculator.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a5bcbe963d07c7b4de4ed2b94e67c1225" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Scientific_Calculator.frmCalculator._currentNumber</definition>
+        <argsstring></argsstring>
+        <name>_currentNumber</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="20" column="1" bodyfile="frmCalculator.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ab9cd77b1932a0a6a7f8a121a4ccdade0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scientific_Calculator.frmCalculator._cursorPlace</definition>
+        <argsstring></argsstring>
+        <name>_cursorPlace</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="21" column="1" bodyfile="frmCalculator.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a2215039b2b7f95510aed65e413bec605" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scientific_Calculator.frmCalculator._decimalsAmount</definition>
+        <argsstring></argsstring>
+        <name>_decimalsAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="22" column="1" bodyfile="frmCalculator.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a360aeda7c7240294765a3c41bbe514dd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Scientific_Calculator.frmCalculator.addAfter</definition>
+        <argsstring></argsstring>
+        <name>addAfter</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="23" column="1" bodyfile="frmCalculator.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ae086b16de9937cdbc17b0f640525ff93" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scientific_Calculator.frmCalculator._ListCurrentExpressionStart</definition>
+        <argsstring></argsstring>
+        <name>_ListCurrentExpressionStart</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="24" column="1" bodyfile="frmCalculator.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a47dc31cf26e112c6c435bd279c4206c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scientific_Calculator.frmCalculator._stringCurrentExpressionStart</definition>
+        <argsstring></argsstring>
+        <name>_stringCurrentExpressionStart</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="25" column="1" bodyfile="frmCalculator.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a410925dff8a1052636363e6b3cdb38ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Scientific_Calculator.frmCalculator._stringCurrentExpressionEnd</definition>
+        <argsstring></argsstring>
+        <name>_stringCurrentExpressionEnd</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="26" column="1" bodyfile="frmCalculator.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a339af948b1fa7cd735de0be3efc6d73d" prot="private" static="no" mutable="no">
+        <type>Predicate&lt; string &gt;</type>
+        <definition>Predicate&lt;string&gt; Scientific_Calculator.frmCalculator._preRtVal</definition>
+        <argsstring></argsstring>
+        <name>_preRtVal</name>
+        <initializer>= (string s) =&gt; { return s.Contains(&quot;rtVal&quot;); }</initializer>
+        <briefdescription>
+<para>Predicate used to find whether a root value &quot;rtVal&quot; must be replaced in the operation&apos;s list </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="31" column="1" bodyfile="frmCalculator.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a8310cbd3c32602fe07934c416e2d7fdf" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Scientific_Calculator.frmCalculator.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="8" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a0efb84dbc7f9425cf78ddd916c741d25" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdGraphDisplayer</definition>
+        <argsstring></argsstring>
+        <name>cmdGraphDisplayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="823" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a3e7e99edc4721e83003f9c342474f43a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSettings</definition>
+        <argsstring></argsstring>
+        <name>cmdSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="824" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a802f750d777c30315d66549c4127f107" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdHistory</definition>
+        <argsstring></argsstring>
+        <name>cmdHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="825" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1af75941127006f9c0a461af690f4e9627" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdExponential</definition>
+        <argsstring></argsstring>
+        <name>cmdExponential</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="826" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ad59b64a7a72bd75f8d6a4a702c791c2c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSin</definition>
+        <argsstring></argsstring>
+        <name>cmdSin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="827" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1abecd5f29d369cadc147a5daedfc42c55" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdCos</definition>
+        <argsstring></argsstring>
+        <name>cmdCos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="828" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="828" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a092020c18992351d3bce2dbf430f4b18" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdReciprocal</definition>
+        <argsstring></argsstring>
+        <name>cmdReciprocal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="829" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a9ceb948803454c584eac8eaafc2e665f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdLog</definition>
+        <argsstring></argsstring>
+        <name>cmdLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="830" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="830" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a68ed99a719a633422e7042bf65840a52" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdNA</definition>
+        <argsstring></argsstring>
+        <name>cmdNA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="831" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1aeade85b4baab4cb26d106aecb20407e5" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdTan</definition>
+        <argsstring></argsstring>
+        <name>cmdTan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="832" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a5f7e6e72ea49a94e0a05d06e553eb5dc" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdPi</definition>
+        <argsstring></argsstring>
+        <name>cmdPi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="833" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a671b3c4e60a8d03d2f86a9cfb87e076d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdExponentiation</definition>
+        <argsstring></argsstring>
+        <name>cmdExponentiation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="834" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a926ac65abd452f5a72166e35cee014f0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdDiv</definition>
+        <argsstring></argsstring>
+        <name>cmdDiv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="835" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ae705f830e4964bdc28b2fac81e78a6be" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdRoot</definition>
+        <argsstring></argsstring>
+        <name>cmdRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="836" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a87d4cd2d682be4ebcfd3dc204b4c1670" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdMult</definition>
+        <argsstring></argsstring>
+        <name>cmdMult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="837" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a24e2ae11334ea794786b8bf8cd4e10f9" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdInvSin</definition>
+        <argsstring></argsstring>
+        <name>cmdInvSin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="838" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a24ce112430c3a283f12c6cd90e5297e9" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdMinus</definition>
+        <argsstring></argsstring>
+        <name>cmdMinus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="839" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a01f6c2277ca8997a1dc3bf74aad1c4a7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdInvCos</definition>
+        <argsstring></argsstring>
+        <name>cmdInvCos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="840" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a3935bd851f9ae59d4a5e99e32efc9bb7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdPlus</definition>
+        <argsstring></argsstring>
+        <name>cmdPlus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="841" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1aefada1cc25eb06f76dec7eb57d3e2a6c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdInvTan</definition>
+        <argsstring></argsstring>
+        <name>cmdInvTan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="842" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a7871da4158276689ff746b8446abe463" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.RichTextBox</type>
+        <definition>System.Windows.Forms.RichTextBox Scientific_Calculator.frmCalculator.rtxtDisplay</definition>
+        <argsstring></argsstring>
+        <name>rtxtDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="843" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a00eff72c67f45215b53d79734060d2a2" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSquare</definition>
+        <argsstring></argsstring>
+        <name>cmdSquare</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="844" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a4e662089b272b89935b63338e7624009" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdInvert</definition>
+        <argsstring></argsstring>
+        <name>cmdInvert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="845" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ab350d4e5fa7dd69b7b158d8631ff3d7f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSqrt</definition>
+        <argsstring></argsstring>
+        <name>cmdSqrt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="846" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1aaebedab5d8d2ead52eb22d8768d81516" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdComma</definition>
+        <argsstring></argsstring>
+        <name>cmdComma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="847" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ad29e0ab7a35b0562df386063f8f8dddb" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdAbsValue</definition>
+        <argsstring></argsstring>
+        <name>cmdAbsValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="848" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a8a53d64e2717beba08506a43e8fbf964" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdZero</definition>
+        <argsstring></argsstring>
+        <name>cmdZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="849" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1afbb3329a25fb68302df0ef8ca5548089" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdFactorial</definition>
+        <argsstring></argsstring>
+        <name>cmdFactorial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="850" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1af329e4b5c5f2fa7176dd4095edcfae21" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdThree</definition>
+        <argsstring></argsstring>
+        <name>cmdThree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="851" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a57cc0cd436d9977c892a041e0f1738ac" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdLn</definition>
+        <argsstring></argsstring>
+        <name>cmdLn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="852" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a94dba3b59e04cee10f5e69ff13d61bfa" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdTwo</definition>
+        <argsstring></argsstring>
+        <name>cmdTwo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="853" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1adbc2304ced1baada46dfd6aa2f759d96" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdConvDecBin</definition>
+        <argsstring></argsstring>
+        <name>cmdConvDecBin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="854" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a8e72a9a013dc414c31c1e7bc2306f653" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdOne</definition>
+        <argsstring></argsstring>
+        <name>cmdOne</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="855" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ac81826a6a0184c6e202bba7733aaaacf" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdConvDecOct</definition>
+        <argsstring></argsstring>
+        <name>cmdConvDecOct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="856" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a80212eef8cbdefff37e297cfb71f8fbc" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSix</definition>
+        <argsstring></argsstring>
+        <name>cmdSix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="857" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1acde049d280546e8562bff5fcaa731ccf" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdConvDecHex</definition>
+        <argsstring></argsstring>
+        <name>cmdConvDecHex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="858" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ac6f54482e9172f621983a8011e206141" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdFive</definition>
+        <argsstring></argsstring>
+        <name>cmdFive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="859" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a8ca310609ac695518533f92af96e4ba6" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdDel</definition>
+        <argsstring></argsstring>
+        <name>cmdDel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="860" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a3009989f30ed40e19d3da5d5dc0baacf" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdFour</definition>
+        <argsstring></argsstring>
+        <name>cmdFour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="861" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a9e5861d7c48cf66d97b9f75c8ff40a62" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdClear</definition>
+        <argsstring></argsstring>
+        <name>cmdClear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="862" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a399bab416b1f62fc7823ec4601bf0e86" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdNine</definition>
+        <argsstring></argsstring>
+        <name>cmdNine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="863" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a6b9f6daadaa6e222167900d344e8a20e" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdEqual</definition>
+        <argsstring></argsstring>
+        <name>cmdEqual</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="864" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a6b2b06cc097a7cc999738e20579f36df" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdEight</definition>
+        <argsstring></argsstring>
+        <name>cmdEight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="865" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a79b92d439c79ba370821b49b2ef6ae0f" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdRound</definition>
+        <argsstring></argsstring>
+        <name>cmdRound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="866" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1ac55cbbc4301712a4139e0e7830e2701c" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdSeven</definition>
+        <argsstring></argsstring>
+        <name>cmdSeven</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="867" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a47bc4489b75ce690b071659a6ce05b09" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdLightSpeed</definition>
+        <argsstring></argsstring>
+        <name>cmdLightSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="868" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="868" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a10445cb074f05ef6560d91eaa1222214" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdCloseParenthesis</definition>
+        <argsstring></argsstring>
+        <name>cmdCloseParenthesis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="869" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a85278ea16b52441a9b90db84b2568cfd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Scientific_Calculator.frmCalculator.cmdOpenParenthesis</definition>
+        <argsstring></argsstring>
+        <name>cmdOpenParenthesis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="870" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a040726766f8d0571c69941c0fba050f3" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmCalculator.lblDecimalsAmountTitle</definition>
+        <argsstring></argsstring>
+        <name>lblDecimalsAmountTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="871" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scientific___calculator_1_1frm_calculator_1a04fcf7d2feb18a7b03fecb3cf86e7418" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Scientific_Calculator.frmCalculator.lblDecimalsAmount</definition>
+        <argsstring></argsstring>
+        <name>lblDecimalsAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="872" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="872" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a0959073ecdf7a5b1f1bee0b47a56cee9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Scientific_Calculator.frmCalculator.frmCalculator</definition>
+        <argsstring>()</argsstring>
+        <name>frmCalculator</name>
+        <briefdescription>
+<para>Constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="36" column="1" bodyfile="frmCalculator.cs" bodystart="36" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a385c55b1faa7bd49416e937ba6518959" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdZero_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdZero_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="63" column="1" bodyfile="frmCalculator.cs" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a72210eab979539409502d39b9e56db01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdOne_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdOne_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 1 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="72" column="1" bodyfile="frmCalculator.cs" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aee387ef053bc778ec8d8f77d405106e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdTwo_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdTwo_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 2 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="81" column="1" bodyfile="frmCalculator.cs" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a3f0ecbbfe7e5f2c666de08ae4fb45ff6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdThree_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdThree_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 3 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="90" column="1" bodyfile="frmCalculator.cs" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1af0ade6eb7a50b3a70ba8b6e6bef71147" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdFour_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdFour_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 4 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="99" column="1" bodyfile="frmCalculator.cs" bodystart="99" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a233e5431533300e7e69a0be11cea9b2a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdFive_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdFive_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 5 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="108" column="1" bodyfile="frmCalculator.cs" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aae822daa7981b88ca18fb42384cfd690" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSix_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSix_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 6 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="117" column="1" bodyfile="frmCalculator.cs" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a987891221e41be5ec85116bfa72377e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSeven_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSeven_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 7 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="126" column="1" bodyfile="frmCalculator.cs" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a62ba6167709d3768387c6ea9bc1ccb55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdEight_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdEight_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 8 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="135" column="1" bodyfile="frmCalculator.cs" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a7ec0e9c2e190606886d1a1ea1cf007d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdNine_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdNine_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Displays a 9 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="144" column="1" bodyfile="frmCalculator.cs" bodystart="144" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a797121e664de71c4cb2ca9e0da9796b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdLightSpeed_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdLightSpeed_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gets the light speed constant from the database, and displays it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="159" column="1" bodyfile="frmCalculator.cs" bodystart="159" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1abc4bdf7bc9797842eebec672e09f9bca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdNA_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdNA_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Avogadro number constant from the database, and displays it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="172" column="1" bodyfile="frmCalculator.cs" bodystart="172" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a61a5f608dc4103d061fdc89dd7474e4d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdPi_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdPi_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Pi constant from the database, and displays it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="185" column="1" bodyfile="frmCalculator.cs" bodystart="185" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a595c2b73f3f2b392a4e61bed5dc4d32c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdComma_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdComma_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a comma at the end of the current number. The next numbers entered will be the decimals </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="202" column="1" bodyfile="frmCalculator.cs" bodystart="202" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a4e665d3468db307e8c1bb1394df26545" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdInvert_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdInvert_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>If the current number is positive, puts a &quot;-&quot; sign in front of it. If the number is negative, removes the &quot;-&quot; in front of it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="213" column="1" bodyfile="frmCalculator.cs" bodystart="213" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a8a74f5a72e2d5b373abd590287665b04" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdOpenParenthesis_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdOpenParenthesis_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Opens a parenthesis and displays it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="233" column="1" bodyfile="frmCalculator.cs" bodystart="233" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a51196fce856ad984e669360af86ea549" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdCloseParenthesis_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdCloseParenthesis_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Closes a parenthesis and displays it </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="245" column="1" bodyfile="frmCalculator.cs" bodystart="245" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1ae6a48220e9042374c1088d660a41394b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdDel_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdDel_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Removes the last number/comma from the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="257" column="1" bodyfile="frmCalculator.cs" bodystart="257" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a3971416884d055247612fa02ea3faf53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdConvDecHex_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdConvDecHex_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Converts the current number into it&apos;s hexadecimal value. If the number is unable to be converted (negative, decimal, non numerical), an error message is displayed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="277" column="1" bodyfile="frmCalculator.cs" bodystart="277" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a4c6deba4b633590afa3b847436400601" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdConvDecOct_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdConvDecOct_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Converts the current number into it&apos;s octal value. If the number is unable to be converted (negative, decimal, non numerical), an error message is displayed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="296" column="1" bodyfile="frmCalculator.cs" bodystart="296" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a0c7077119a7e7e996891d9680a954eb1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdConvDecBin_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdConvDecBin_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Converts the current number into it&apos;s binary value. If the number is unable to be converted (negative, decimal, non numerical), an error message is displayed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="316" column="1" bodyfile="frmCalculator.cs" bodystart="316" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1af7074d56f79c0cbe6d462216e5163d6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdPlus_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdPlus_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the sum of two numbers </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="341" column="1" bodyfile="frmCalculator.cs" bodystart="341" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a4bd240022e7ecad46345d7f2a2db2c6b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdMinus_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdMinus_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the substraction of a number by another </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="353" column="1" bodyfile="frmCalculator.cs" bodystart="353" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a93056cfb63525f1edee3d5f534b823e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdMult_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdMult_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the multiplicaiton of two numbers </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="365" column="1" bodyfile="frmCalculator.cs" bodystart="365" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a9f86d7c42ced4bdefd5510d3b70b5e18" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdDiv_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdDiv_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the division of a number by another </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="377" column="1" bodyfile="frmCalculator.cs" bodystart="377" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1ae97414399583b72b21b2cd99b3e68e28" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdReciprocal_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdReciprocal_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the reciprocal (1/x) of a non-null number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="389" column="1" bodyfile="frmCalculator.cs" bodystart="389" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a0d208e0c3ce57208482f912bebd87969" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdFactorial_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdFactorial_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the factorial of a positive number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="401" column="1" bodyfile="frmCalculator.cs" bodystart="401" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1af926ac66cd74624476db8a3e1812c9da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdAbsValue_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdAbsValue_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the absolute value of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="413" column="1" bodyfile="frmCalculator.cs" bodystart="413" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a8438fb0ddbfb6b7074d40e5deb3f06db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdRound_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdRound_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Rounds a number to the nearest integer. (.5 rounds to superior). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="428" column="1" bodyfile="frmCalculator.cs" bodystart="428" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aa77f1cf39b46b64c7457ef8e5ef20923" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSin_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSin_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the sine of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="446" column="1" bodyfile="frmCalculator.cs" bodystart="446" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a7b5099b90039edc8c2a3b5540651dd25" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdCos_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdCos_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the cosine of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="461" column="1" bodyfile="frmCalculator.cs" bodystart="461" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a3a6a98aeb9bc3469ca1e3eae6c431361" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdTan_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdTan_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the tangent of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="476" column="1" bodyfile="frmCalculator.cs" bodystart="476" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1af14d3cd78b741d6ce45b26c9a6e809db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdInvSin_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdInvSin_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the inverse sine of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="490" column="1" bodyfile="frmCalculator.cs" bodystart="490" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a83fcd988b8a73ebd49be2e41847039e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdInvCos_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdInvCos_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the inverse cosine of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="504" column="1" bodyfile="frmCalculator.cs" bodystart="504" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a2541be36eec423bfc8c41d3481190a8a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdInvTan_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdInvTan_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the inverse tangent of the current number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="518" column="1" bodyfile="frmCalculator.cs" bodystart="518" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1ae298b4ba066187c18cd76929e0ea7c29" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSquare_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSquare_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the square value of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="536" column="1" bodyfile="frmCalculator.cs" bodystart="536" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aabb24c91ad65c1eab74bb1e19625d88e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSqrt_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSqrt_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the square root of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="548" column="1" bodyfile="frmCalculator.cs" bodystart="548" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a8d8e42db5202080089bff0f468bba04f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdExponentiation_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdExponentiation_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Allows to raise a number to the power of another number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="561" column="1" bodyfile="frmCalculator.cs" bodystart="561" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a3de577ba73fcc0ba9c5422965dc8232b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdRoot_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdRoot_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Allows to calculate the nth root of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="573" column="1" bodyfile="frmCalculator.cs" bodystart="573" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a37cce3c3d9191e3c0063deff3c8b59dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdExponential_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdExponential_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the exponential value of a number (e to the power of this number) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="587" column="1" bodyfile="frmCalculator.cs" bodystart="587" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aa62d8fc08d13c575c86089aed0e54a4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdLog_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdLog_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Gives the 10th base logarithm of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="600" column="1" bodyfile="frmCalculator.cs" bodystart="600" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a14ef1af0903e2f6e2ceb9fcd2ce8e624" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdLn_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdLn_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>gives the natural logarithm of a number </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="614" column="1" bodyfile="frmCalculator.cs" bodystart="614" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a1d94829bc8191946d24535ec0ff12c10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdClear_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdClear_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Clears the displayer and resets the variables used for handling input </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="634" column="1" bodyfile="frmCalculator.cs" bodystart="634" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1ac4851c8a31a75a23c21ae2c930f515b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdEqual_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdEqual_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Ends the current number, then calls the Calculation.Calculate method to solve the operation contained in _operationList </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="650" column="1" bodyfile="frmCalculator.cs" bodystart="650" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a9763b2aa0b46f9e7db89c3817ac2b2bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.EndCurrentNumber</definition>
+        <argsstring>()</argsstring>
+        <name>EndCurrentNumber</name>
+        <briefdescription>
+<para>Ends the current number and stores it in the _operationList </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="681" column="1" bodyfile="frmCalculator.cs" bodystart="681" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a9d5ff762761668b2f757db1db0c1dda1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.DisplayString</definition>
+        <argsstring>(string stringToDisplay, int? position=null)</argsstring>
+        <name>DisplayString</name>
+        <param>
+          <type>string</type>
+          <declname>stringToDisplay</declname>
+        </param>
+        <param>
+          <type>int?</type>
+          <declname>position</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Displays a string in the rich textbox. Inserts at the end by default, but can be inserted before </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stringToDisplay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String that has to be displayed on the displayer</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index in the text where the string has to be inserted</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="704" column="1" bodyfile="frmCalculator.cs" bodystart="704" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a77fb53c24c34a9604d018ab51fe1b20e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdHistory_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdHistory_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Opens the operations history form as a dialog window </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="737" column="1" bodyfile="frmCalculator.cs" bodystart="737" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a9df2bd5d8f046aaaa48eb2cb5de3f0ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdSettings_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdSettings_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Opens the settings form as a dialog window and sets the amount of decimals in case it got changed </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="749" column="1" bodyfile="frmCalculator.cs" bodystart="749" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a4f2f3c82deb10dbf092419bab84083fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.cmdGraphDisplayer_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>cmdGraphDisplayer_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Opens the graph displayer form as a dialog window </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.cs" line="763" column="1" bodyfile="frmCalculator.cs" bodystart="763" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1aa2956084653cd032f5437b2689af9426" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Scientific_Calculator.frmCalculator.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="29" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="29" bodyend="820"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1frm_calculator_1a3839d5570f4cf4bf018fbed788f93823" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Scientific_Calculator.frmCalculator.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="frmCalculator.Designer.cs" line="14" column="1" bodyfile="frmCalculator.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main form, contains the calculator itself and buttons to open all the other forms as dialog windows </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Form</label>
+      </node>
+      <node id="4">
+        <label>Scientific_Calculator.frmCalculator</label>
+        <link refid="class_scientific___calculator_1_1frm_calculator"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Form</label>
+      </node>
+      <node id="6">
+        <label>Scientific_Calculator.frmCalculator</label>
+        <link refid="class_scientific___calculator_1_1frm_calculator"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="frmCalculator.cs" line="18" column="1" bodyfile="frmCalculator.cs" bodystart="17" bodyend="768"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a5bcbe963d07c7b4de4ed2b94e67c1225" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_currentNumber</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ab9cd77b1932a0a6a7f8a121a4ccdade0" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_cursorPlace</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a2215039b2b7f95510aed65e413bec605" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_decimalsAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ae086b16de9937cdbc17b0f640525ff93" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_ListCurrentExpressionStart</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a598e8a15f41ea018c8c080ce2883f880" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_operationList</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a339af948b1fa7cd735de0be3efc6d73d" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_preRtVal</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a410925dff8a1052636363e6b3cdb38ae" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_stringCurrentExpressionEnd</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a47dc31cf26e112c6c435bd279c4206c2" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>_stringCurrentExpressionStart</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a360aeda7c7240294765a3c41bbe514dd" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>addAfter</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ad29e0ab7a35b0562df386063f8f8dddb" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdAbsValue</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af926ac66cd74624476db8a3e1812c9da" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdAbsValue_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9e5861d7c48cf66d97b9f75c8ff40a62" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdClear</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a1d94829bc8191946d24535ec0ff12c10" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdClear_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a10445cb074f05ef6560d91eaa1222214" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdCloseParenthesis</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a51196fce856ad984e669360af86ea549" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdCloseParenthesis_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aaebedab5d8d2ead52eb22d8768d81516" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdComma</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a595c2b73f3f2b392a4e61bed5dc4d32c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdComma_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1adbc2304ced1baada46dfd6aa2f759d96" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecBin</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a0c7077119a7e7e996891d9680a954eb1" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecBin_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1acde049d280546e8562bff5fcaa731ccf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecHex</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3971416884d055247612fa02ea3faf53" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecHex_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ac81826a6a0184c6e202bba7733aaaacf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecOct</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a4c6deba4b633590afa3b847436400601" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdConvDecOct_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1abecd5f29d369cadc147a5daedfc42c55" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdCos</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a7b5099b90039edc8c2a3b5540651dd25" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdCos_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8ca310609ac695518533f92af96e4ba6" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdDel</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ae6a48220e9042374c1088d660a41394b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdDel_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a926ac65abd452f5a72166e35cee014f0" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdDiv</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9f86d7c42ced4bdefd5510d3b70b5e18" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdDiv_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a6b2b06cc097a7cc999738e20579f36df" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdEight</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a62ba6167709d3768387c6ea9bc1ccb55" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdEight_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a6b9f6daadaa6e222167900d344e8a20e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdEqual</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ac4851c8a31a75a23c21ae2c930f515b9" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdEqual_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af75941127006f9c0a461af690f4e9627" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdExponential</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a37cce3c3d9191e3c0063deff3c8b59dc" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdExponential_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a671b3c4e60a8d03d2f86a9cfb87e076d" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdExponentiation</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8d8e42db5202080089bff0f468bba04f" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdExponentiation_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1afbb3329a25fb68302df0ef8ca5548089" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFactorial</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a0d208e0c3ce57208482f912bebd87969" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFactorial_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ac6f54482e9172f621983a8011e206141" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFive</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a233e5431533300e7e69a0be11cea9b2a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFive_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3009989f30ed40e19d3da5d5dc0baacf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFour</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af0ade6eb7a50b3a70ba8b6e6bef71147" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdFour_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a0efb84dbc7f9425cf78ddd916c741d25" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdGraphDisplayer</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a4f2f3c82deb10dbf092419bab84083fa" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdGraphDisplayer_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a802f750d777c30315d66549c4127f107" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdHistory</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a77fb53c24c34a9604d018ab51fe1b20e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdHistory_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a01f6c2277ca8997a1dc3bf74aad1c4a7" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvCos</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a83fcd988b8a73ebd49be2e41847039e6" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvCos_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a4e662089b272b89935b63338e7624009" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvert</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a4e665d3468db307e8c1bb1394df26545" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvert_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a24e2ae11334ea794786b8bf8cd4e10f9" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvSin</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af14d3cd78b741d6ce45b26c9a6e809db" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvSin_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aefada1cc25eb06f76dec7eb57d3e2a6c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvTan</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a2541be36eec423bfc8c41d3481190a8a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdInvTan_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a47bc4489b75ce690b071659a6ce05b09" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLightSpeed</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a797121e664de71c4cb2ca9e0da9796b2" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLightSpeed_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a57cc0cd436d9977c892a041e0f1738ac" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLn</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a14ef1af0903e2f6e2ceb9fcd2ce8e624" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLn_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9ceb948803454c584eac8eaafc2e665f" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLog</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aa62d8fc08d13c575c86089aed0e54a4b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdLog_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a24ce112430c3a283f12c6cd90e5297e9" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdMinus</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a4bd240022e7ecad46345d7f2a2db2c6b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdMinus_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a87d4cd2d682be4ebcfd3dc204b4c1670" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdMult</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a93056cfb63525f1edee3d5f534b823e3" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdMult_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a68ed99a719a633422e7042bf65840a52" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdNA</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1abc4bdf7bc9797842eebec672e09f9bca" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdNA_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a399bab416b1f62fc7823ec4601bf0e86" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdNine</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a7ec0e9c2e190606886d1a1ea1cf007d8" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdNine_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8e72a9a013dc414c31c1e7bc2306f653" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdOne</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a72210eab979539409502d39b9e56db01" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdOne_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a85278ea16b52441a9b90db84b2568cfd" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdOpenParenthesis</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8a74f5a72e2d5b373abd590287665b04" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdOpenParenthesis_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a5f7e6e72ea49a94e0a05d06e553eb5dc" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdPi</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a61a5f608dc4103d061fdc89dd7474e4d" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdPi_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3935bd851f9ae59d4a5e99e32efc9bb7" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdPlus</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af7074d56f79c0cbe6d462216e5163d6e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdPlus_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a092020c18992351d3bce2dbf430f4b18" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdReciprocal</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ae97414399583b72b21b2cd99b3e68e28" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdReciprocal_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ae705f830e4964bdc28b2fac81e78a6be" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdRoot</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3de577ba73fcc0ba9c5422965dc8232b" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdRoot_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a79b92d439c79ba370821b49b2ef6ae0f" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdRound</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8438fb0ddbfb6b7074d40e5deb3f06db" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdRound_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3e7e99edc4721e83003f9c342474f43a" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSettings</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9df2bd5d8f046aaaa48eb2cb5de3f0ca" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSettings_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ac55cbbc4301712a4139e0e7830e2701c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSeven</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a987891221e41be5ec85116bfa72377e4" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSeven_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ad59b64a7a72bd75f8d6a4a702c791c2c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSin</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aa77f1cf39b46b64c7457ef8e5ef20923" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSin_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a80212eef8cbdefff37e297cfb71f8fbc" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSix</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aae822daa7981b88ca18fb42384cfd690" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSix_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ab350d4e5fa7dd69b7b158d8631ff3d7f" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSqrt</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aabb24c91ad65c1eab74bb1e19625d88e" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSqrt_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a00eff72c67f45215b53d79734060d2a2" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSquare</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1ae298b4ba066187c18cd76929e0ea7c29" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdSquare_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aeade85b4baab4cb26d106aecb20407e5" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdTan</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3a6a98aeb9bc3469ca1e3eae6c431361" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdTan_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1af329e4b5c5f2fa7176dd4095edcfae21" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdThree</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3f0ecbbfe7e5f2c666de08ae4fb45ff6" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdThree_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a94dba3b59e04cee10f5e69ff13d61bfa" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdTwo</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aee387ef053bc778ec8d8f77d405106e6" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdTwo_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8a53d64e2717beba08506a43e8fbf964" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdZero</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a385c55b1faa7bd49416e937ba6518959" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>cmdZero_Click</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a8310cbd3c32602fe07934c416e2d7fdf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>components</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9d5ff762761668b2f757db1db0c1dda1" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>DisplayString</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a3839d5570f4cf4bf018fbed788f93823" prot="protected" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>Dispose</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a9763b2aa0b46f9e7db89c3817ac2b2bf" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>EndCurrentNumber</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a0959073ecdf7a5b1f1bee0b47a56cee9" prot="public" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>frmCalculator</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1aa2956084653cd032f5437b2689af9426" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>InitializeComponent</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a04fcf7d2feb18a7b03fecb3cf86e7418" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>lblDecimalsAmount</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a040726766f8d0571c69941c0fba050f3" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>lblDecimalsAmountTitle</name></member>
+      <member refid="class_scientific___calculator_1_1frm_calculator_1a7871da4158276689ff746b8446abe463" prot="private" virt="non-virtual"><scope>Scientific_Calculator::frmCalculator</scope><name>rtxtDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

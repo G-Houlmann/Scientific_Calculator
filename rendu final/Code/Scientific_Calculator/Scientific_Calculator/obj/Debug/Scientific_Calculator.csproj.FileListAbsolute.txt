@@ -1,0 +1,65 @@
+c:\users\gildas.houlmann\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe.config
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.pdb
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.Properties.Resources.resources
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.GenerateResource.Cache
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.exe
+C:\Users\Gildas.HOULMANN\documents\visual studio 2015\Projects\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.pdb
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe.config
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.exe
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.pdb
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.pdb
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csprojResolveAssemblyReference.cache
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.Properties.Resources.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.GenerateResource.Cache
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MySql.Data.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MySql.Data.xml
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmCalculator.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmFunctionPlot.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmHistory.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmSettings.resources
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Scientific_Calculator\Scientific_Calculator\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MathParser.org-mXparser.Net462.dll
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe.config
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.pdb
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MySql.Data.xml
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csprojResolveAssemblyReference.cache
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmCalculator.resources
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmFunctionPlot.resources
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmHistory.resources
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmSettings.resources
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.Properties.Resources.resources
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.GenerateResource.cache
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.CopyComplete
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.exe
+C:\Users\gilda\Desktop\Scientific_Calculator-master\Scientific_Calculator-master\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.pdb
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe.config
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.exe
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Scientific_Calculator.pdb
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MySql.Data.dll
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\MySql.Data.xml
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\bin\Debug\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmCalculator.resources
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmFunctionPlot.resources
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmHistory.resources
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.frmSettings.resources
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.Properties.Resources.resources
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.csproj.GenerateResource.Cache
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.exe
+C:\Users\Gildas.HOULMANN\AppData\Local\Microsoft\Windows\Burn\Burn\Code\Scientific_Calculator\Scientific_Calculator\obj\Debug\Scientific_Calculator.pdb

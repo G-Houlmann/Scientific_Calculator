@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_scientific___calculator" kind="namespace" language="C#">
+    <compoundname>Scientific_Calculator</compoundname>
+    <innerclass refid="class_scientific___calculator_1_1_calculation" prot="public">Scientific_Calculator::Calculation</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1_d_b_access" prot="public">Scientific_Calculator::DBAccess</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1frm_calculator" prot="public">Scientific_Calculator::frmCalculator</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1frm_function_plot" prot="public">Scientific_Calculator::frmFunctionPlot</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1frm_history" prot="public">Scientific_Calculator::frmHistory</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1frm_settings" prot="public">Scientific_Calculator::frmSettings</innerclass>
+    <innerclass refid="class_scientific___calculator_1_1_program" prot="public">Scientific_Calculator::Program</innerclass>
+    <innernamespace refid="namespace_scientific___calculator_1_1_properties">Scientific_Calculator::Properties</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Calculation.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

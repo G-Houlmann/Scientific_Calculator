@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_scientific___calculator_1_1_calculation" kind="class" language="C#" prot="public">
+    <compoundname>Scientific_Calculator::Calculation</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a9bde1661391ac86bc8ebd9541152a9da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Scientific_Calculator.Calculation.ConvDecHex</definition>
+        <argsstring>(string dec)</argsstring>
+        <name>ConvDecHex</name>
+        <param>
+          <type>string</type>
+          <declname>dec</declname>
+        </param>
+        <briefdescription>
+<para>Converts a decimal number in a string to an hexadecimal number in a string </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dec</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculation.cs" line="24" column="1" bodyfile="Calculation.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a8ba42b38bc42ce032895fe36014e59f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Scientific_Calculator.Calculation.ConvDecBin</definition>
+        <argsstring>(string dec)</argsstring>
+        <name>ConvDecBin</name>
+        <param>
+          <type>string</type>
+          <declname>dec</declname>
+        </param>
+        <briefdescription>
+<para>Converts a decimal number in a string to a binary number in a string </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dec</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculation.cs" line="37" column="1" bodyfile="Calculation.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a38e3ead8fc9202b82a12d1ffc21319ff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Scientific_Calculator.Calculation.ConvDecOct</definition>
+        <argsstring>(string dec)</argsstring>
+        <name>ConvDecOct</name>
+        <param>
+          <type>string</type>
+          <declname>dec</declname>
+        </param>
+        <briefdescription>
+<para>Converts a decimal number in a string to an octal number in a string </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dec</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculation.cs" line="50" column="1" bodyfile="Calculation.cs" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1aa06bef4102f63adc1715ad55928d3d8a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Scientific_Calculator.Calculation.Solve</definition>
+        <argsstring>(List&lt; string &gt; operationList)</argsstring>
+        <name>Solve</name>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>operationList</declname>
+        </param>
+        <briefdescription>
+<para>Solves the operation given in parameter with a list using mXParser </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a string containing the result</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculation.cs" line="64" column="1" bodyfile="Calculation.cs" bodystart="64" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_scientific___calculator_1_1_calculation_1a99566db61cc6e813d3361d4ddce99a2c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Scientific_Calculator.Calculation.ArchiveOperation</definition>
+        <argsstring>(string opString)</argsstring>
+        <name>ArchiveOperation</name>
+        <param>
+          <type>string</type>
+          <declname>opString</declname>
+        </param>
+        <briefdescription>
+<para>Inserts the operation in the database for the history </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opString</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Calculation.cs" line="96" column="1" bodyfile="Calculation.cs" bodystart="96" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that handles all the mathematics of the program, and interpretes the operations inputs </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Calculation.cs" line="16" column="1" bodyfile="Calculation.cs" bodystart="15" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_scientific___calculator_1_1_calculation_1a99566db61cc6e813d3361d4ddce99a2c" prot="private" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>ArchiveOperation</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a8ba42b38bc42ce032895fe36014e59f0" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>ConvDecBin</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a9bde1661391ac86bc8ebd9541152a9da" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>ConvDecHex</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1a38e3ead8fc9202b82a12d1ffc21319ff" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>ConvDecOct</name></member>
+      <member refid="class_scientific___calculator_1_1_calculation_1aa06bef4102f63adc1715ad55928d3d8a" prot="public" virt="non-virtual"><scope>Scientific_Calculator::Calculation</scope><name>Solve</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
